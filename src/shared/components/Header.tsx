@@ -1,0 +1,83 @@
+import { Button, CustomFlowbiteTheme, Navbar } from "flowbite-react";
+import { menuItems } from "./data/MenuItems";
+import { MenuItem } from "./types/MenuItems";
+import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
+
+export default function Header() {
+
+  
+  const location = useLocation();
+  const currentPath = location.pathname || "/";
+
+  const navTheme: CustomFlowbiteTheme["navbar"] = {
+    collapse: {
+      base: "w-full md:block md:w-auto absolute md:relative bg-white top-20 md:top-0 transition-all transition-transform duration-1000 ",
+      list: "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium",
+      hidden: {
+        on: "hidden",
+        off: "",
+      },
+    },
+
+    link: {
+      active: {
+        on: "text-bold decoration-[#3B4FA2] border-b-2 border-[#3B4FA2] border-solid",
+      },
+    },
+  };
+
+  return (
+    <div className="border-b-4">
+    <Navbar
+      theme={navTheme}
+      fluid
+      rounded
+      className="sticky backdrop-blur-2xl z-50 dark:border-[#3B4FA2] dark:bg-[#3B4FA2]  sm:px-4 rounded container mx-auto  top-2 px-8 py-2"
+    >
+      <Navbar.Brand href="/">
+        <img
+          src="images/logo/dentallogo.png"
+          className="w-36 h-16"
+          alt="Dental Hospital"
+        />
+      </Navbar.Brand>
+      
+      
+      <div className="flex md:order-2 ">
+      <Navbar.Collapse className="mt-3" >
+        {menuItems.map((menu: MenuItem) => {
+          return (
+            <motion.div >
+            <Navbar.Link
+              href={`${menu.path}`}
+              className="text-bold "
+              active={menu.path == currentPath}
+            >
+              {" "}
+              {menu.label}
+              </Navbar.Link>
+              </motion.div>
+          );
+        })}
+      </Navbar.Collapse>
+
+
+        
+        <Link
+          to={{
+            pathname: "/contact",
+          }}
+        >
+          {" "}
+          <Button className="bg-[#3B4FA2] ms-4">Make Appointment</Button>
+        </Link>
+
+
+        <Navbar.Toggle />
+      </div>
+
+    </Navbar>
+    </div>
+  );
+}
