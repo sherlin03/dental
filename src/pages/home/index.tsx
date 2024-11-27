@@ -9,17 +9,17 @@ export default function Home() {
         <>
         
         
-        <section className="container w-5/6 md:w-4/5 mx-auto relative">
-        <img src="./images/home/s5.png" className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-28 absolute top-24  hidden md:block md:-right-20 lg:-right-28" alt="" />
+    <section className="container w-5/6 md:w-4/5 mx-auto relative">
+        <img src="./images/home/s5.png" className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-28 absolute top-24 hidden md:block md:-right-20 lg:-right-28" alt="" />
 
             {/* first block start  */}
             <div >
-                <div className="grid w-full gap-8 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6  mb-8">
+                <div className="grid w-full gap-8 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6 mb-8">
                     <div className="grid justify-items-end">
-                        <img src="./images/home/s1.png" className="h-60 sm:h-64 md:h-80 lg:h-96  " alt="" />
+                        <img src="./images/home/s1.png" className="h-52 sm:h-64 md:h-80 lg:h-96 " alt="" />
                     </div>
                     <div className="justify-items-start">
-                        <img src="./images/home/s2.png" className="h-60 sm:h-64 md:h-80 lg:h-96 " alt="" />
+                        <img src="./images/home/s2.png" className="h-52 sm:h-64 md:h-80 lg:h-96 " alt="" />
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ export default function Home() {
 
   {/* Right Text Section */}
   <div className="md:col-span-6">
-    <p className="text-xl sm:text-2xl font-semibold mt-6 md:mt-12 text-center md:text-left ">
+    <p className="text-xl sm:text-3xl font-semibold mt-6 md:mt-12 text-center md:text-left ">
       General Dentistry
     </p>
     <p className="mt-3 sm:mt-5 text-sm sm:text-base">
@@ -111,22 +111,21 @@ export default function Home() {
         {/* Happy Customers start */}
         <section className="relative mt-24">
              <div className="relative">
-                <img src="./images/home/s11.png" className=" w-full h-[500px]  realative  " alt="" />
-                         
-                
+                <img src="./images/home/s11.png" className=" w-full h-[500px] realative" alt="" />
+
                 <img src="./images/home/s10.png" className=" absolute 
                             h-[550px] 
                             top-[-3rem] left-2 sm:left-[10%] md:left-1/4 lg:left-[35%] 
                             sm:top-[-3rem] md:top-[-3rem] lg:top-[-3rem] px-6" alt="" />
                 <p className="absolute 
                    text-base sm:text-lg md:text-2xl lg:text-4xl  text-white font-semibold 
-                   top-36 sm:top-12 left-[5%] md:left-[8%] lg:left-[10%]  
+                   top-8 sm:top-12 left-[5%] md:left-[8%] lg:left-[10%]  
                    "
                 >
                     Happy Customers
                 </p>
                 <img src="./images/home/s9.png" className="absolute  
-                   top-44 sm:top-[80px] md:top-[90px] left-[5%] md:left-[8%] lg:left-[10%] " alt="" />
+                   top-16 sm:top-[80px] md:top-[90px] left-[5%] md:left-[8%] lg:left-[10%] " alt="" />
                     
                     
                     

@@ -38,7 +38,7 @@ export default function Header() {
       <Navbar.Brand href="/">
         <img
           src="images/logo/dentallogo.png"
-          className="w-36 h-16"
+          className="w-16 sm:w-36 h-10 sm:h-16"
           alt="Dental Hospital"
         />
       </Navbar.Brand>
