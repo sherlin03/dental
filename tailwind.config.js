@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{js,jsx,ts,tsx}',
-  'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
+  content: ['./src/**/*.{js,jsx,ts,tsx,html}',
+  'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx,html}'],
   safelist: [
     "text-[#3B4FA2]",
     "border-[#3B4FA2]",
