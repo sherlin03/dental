@@ -23,9 +23,8 @@ export default function Header() {
 
     link: {
       active: {
-        on: "font-bold !text-[rgba(59,79,162,1)] !border-b-2 !border-[rgba(59,79,162,1)] border-solid",
+        on: "font-bold !text-[rgba(59,79,162,1)] !border-b-2 !border-[rgba(59,79,162,1)] border-solid  ",
       },
-      base: "hover:text-[rgba(59,79,162,1)]",
     },
   };
 
