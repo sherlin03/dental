@@ -81,3 +81,9 @@ circle {
 .services-description *{
   color: white !important;
 }
+
+.nav-active {
+  font-weight: bold;
+  color: #3B4FA2 !important;
+  border-bottom: 2px solid #3B4FA2 !important;
+}

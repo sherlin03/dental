@@ -2,6 +2,10 @@
 export default {
   content: ['./src/**/*.{js,jsx,ts,tsx}',
   'node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}'],
+  safelist: [
+    "text-[#3B4FA2]",
+    "border-[#3B4FA2]",
+  ],
   theme: {
     container:{
       padding:'2rem'

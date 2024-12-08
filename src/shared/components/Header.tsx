@@ -9,6 +9,7 @@ export default function Header() {
   
   const location = useLocation();
   const currentPath = location.pathname || "/";
+  
 
   const navTheme: CustomFlowbiteTheme["navbar"] = {
     collapse: {
@@ -22,8 +23,9 @@ export default function Header() {
 
     link: {
       active: {
-        on: "text-bold decoration-[#3B4FA2] border-b-2 border-[#3B4FA2] border-solid",
+        on: "font-bold !text-[rgba(59,79,162,1)] !border-b-2 !border-[rgba(59,79,162,1)] border-solid",
       },
+      base: "hover:text-[rgba(59,79,162,1)]",
     },
   };
 
@@ -33,7 +35,7 @@ export default function Header() {
       theme={navTheme}
       fluid
       rounded
-      className="sticky backdrop-blur-2xl z-50 dark:border-[#3B4FA2] dark:bg-[#3B4FA2]  sm:px-4 rounded container mx-auto  top-2 px-8 py-2"
+      className="sticky backdrop-blur-2xl z-50  dark:border-[#3B4FA2] dark:bg-[#3B4FA2]  sm:px-4 rounded container mx-auto  top-2 px-8 py-2"
     >
       <Navbar.Brand href="/">
         <img

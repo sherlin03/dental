@@ -12,7 +12,7 @@ export default function PatientExperience() {
                 <div className="mt-12 mb-12 container mx-auto">
                     {/* block 1 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        <div className="relative">
+                        <div className="relative"  data-aos="fade-up-right" data-aos-duration="3000" data-aos-mirror="true" >
                             <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-16">
                                 <span className="bg-[rgba(249,247,247,1)] px-5 py-2">Patience Experience</span>
                             </p>
@@ -33,7 +33,7 @@ export default function PatientExperience() {
                             </button>
                             
                         </div>
-                        <div className="mt-10 lg:mt-0">
+                        <div className="mt-10 lg:mt-0"  data-aos="fade-down-left" data-aos-duration="3000" data-aos-mirror="true">
                             <img src="./images/PatientExperience/p1.png" alt=" " className="w-full" />
                         </div>
 
@@ -85,7 +85,7 @@ export default function PatientExperience() {
 
                 </div>
 
-                <div className="">
+                <div data-aos="flip-down" data-aos-duration="3000" data-aos-mirror="true"  >
                         <img src="./images/PatientExperience/p10.png" className="w-full" alt="" />
                 </div>
 

@@ -20,7 +20,9 @@ export default function Contact() {
     pb-12
     justify-items-center
   "
-            style={{ boxShadow: '0px 4px 4px rgba(0,0,0,0.25)' }}>
+            style={{ boxShadow: '0px 4px 4px rgba(0,0,0,0.25)' }} 
+            data-aos="zoom-in" data-aos-duration="3000" data-aos-mirror="true"
+            >
             <div className="grid pt-5 justify-items-center ">
               <img src="./images/contact/c1.png" className="bg-[rgba(59,79,162,1)] px-2 py-2  " alt="" />
             </div>
@@ -29,7 +31,7 @@ export default function Contact() {
                 “Perfect Your Smile with Dr. P. Kamalashankar's Advanced Dental Implants.”
               </p>
               <p className="pt-4 text-center px-10">
-                “Perfect Your Smile with Dr. P. Kamalashankar's Advanced Dental Implants.”
+              20 years of experience in dental implants
               </p>
             </div>
             <div
@@ -111,7 +113,7 @@ export default function Contact() {
         {/* block 2 start  */}
         <div className="container mx-auto relative mt-12 mb-2 lg:mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  ">
-            <div>
+            <div data-aos="flip-left" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
               <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-16">
                 <span className="bg-[rgba(249,247,247,1)] px-4 py-2">Contact Us</span>
               </p>
@@ -161,7 +163,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="flex  justify-center h-[85vh] ">
+            <div className="flex  justify-center h-[85vh] " data-aos="flip-right" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
               <div className="bg-white shadow-2xl h-fit rounded-[20px] p-6 mt-16 mb-16 w-full max-w-lg">
                 {/* Header Section */}
                 <div className=" mb-6 justify-items-center">
@@ -334,7 +336,7 @@ export default function Contact() {
         </div>
         {/* block 2 End  */}
         {/* block 3 Start  */}
-        <div className="w-full">
+        <div className="w-full" data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.6635874444887!2d77.86449257366554!3d8.336185399451606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b047ff2ae30e983%3A0xd2ddb4e57965b313!2sSubha%20Dental%20Clinic%20Thisaiyanvilai!5e0!3m2!1sen!2sin!4v1732184675639!5m2!1sen!2sin"
