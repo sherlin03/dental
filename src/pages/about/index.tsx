@@ -46,7 +46,7 @@ export default function About() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-12">
                         <div>
-                            <img src="./images/about/a1.png" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-anchor-placement="top-center" alt="" className="w-5/6  " />
+                            <img src="./images/about/a1.png" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-anchor-placement="top-center" alt="" className="w-5/6 h-[100%] " />
 
                         </div>
                         <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
@@ -74,7 +74,7 @@ export default function About() {
                     {/* block 3 end */}
                     {/* block 4 start */}
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-12 ">
-                                <div data-aos="flip-left" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
+                                <div data-aos="zoom-in-up" data-aos-duration="3000" >
                                     <img src="./images/about/a5.png"  alt=""  className="h-72 w-full"/>
                                     <div className="bg-[rgba(65,185,129,1)] rounded-2xl p-5 mt-4">
                                         <p className="text-white text-sm 2xl:textr-base">
@@ -91,7 +91,7 @@ export default function About() {
 
                                 </div>
 
-                                <div data-aos="flip-right" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
+                                <div data-aos="zoom-in-up" data-aos-duration="3000" >
                                 <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 w-full lg:w-1/2">
                                         <p className="text-white text-lg 2xl:text-xl  ">
                                         <span className="font-[Risque]">Dental Implants with</span>  <br />

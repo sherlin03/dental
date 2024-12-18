@@ -13,14 +13,13 @@ export default function Header() {
 
   const navTheme: CustomFlowbiteTheme["navbar"] = {
     collapse: {
-      base: "w-full md:block md:w-auto absolute md:relative bg-white top-20 md:top-0 transition-all transition-transform duration-1000 ",
+      base: "w-full md:block md:w-auto absolute md:relative bg-white top-20 md:top-0 right-0 transition-all transition-transform duration-1000 ",
       list: "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium",
       hidden: {
         on: "hidden",
         off: "",
       },
     },
-
     link: {
       active: {
         on: "font-bold !text-[rgba(59,79,162,1)] !border-b-2 !border-[rgba(59,79,162,1)] border-solid  ",
