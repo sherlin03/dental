@@ -30,7 +30,7 @@ export default function Service() {
                      <p className=" text-base 2xl:text-lg text-center my-8 "  data-aos="zoom-out-up" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
                      Comprehensive Dental Care at <span className="text-[rgba(55,83,188,1)] font-bold" >“SHUBHA’s DENTAL CARE”</span> at Shuba Dental Care, we offer a comprehensive range of dental treatments and procedures to ensure the optimal health and beauty of your smile. Our experienced team of dentists is dedicated to providing personalized care in a serene environment.
                     </p>
-                    <button className="bg-blue-800 text-center text-white font-semibold py-3 mt-2 px-4 rounded-lg hover:bg-blue-700">
+                    <button className="bg-blue-800 text-center text-white font-semibold py-3 mt-2 px-4 rounded-lg hover:bg-blue-700"  data-aos="zoom-out-up" data-aos-duration="3000" data-aos-easing="ease-in-out-cubic">
                     Book Now
                     </button>
                     </div>
@@ -77,7 +77,7 @@ export default function Service() {
                     {/* block 2 end  */}
                     {/* block 3 start  */}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-24">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-24"  data-aos="zoom-in-right" data-aos-duration="3000" data-aos-mirror="true">
                         <div>
                             <div className="relative">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
@@ -154,7 +154,7 @@ export default function Service() {
                     {/* block 4 end  */}
                     {/* block 5 start  */}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-24">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-24" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-anchor-placement="top-center">
                         <div>
                             <div className="relative">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
@@ -222,7 +222,8 @@ export default function Service() {
                     </div>
                     {/* block 6 end  */}
                    
-                 
+             
+
                 </div>
 
             </section>

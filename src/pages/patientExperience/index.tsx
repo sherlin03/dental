@@ -16,7 +16,7 @@ export default function PatientExperience() {
                             <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-16">
                                 <span className="bg-[rgba(249,247,247,1)] px-5 py-2">Patience Experience</span>
                             </p>
-                        <div className="pl-10">
+                        
                             <p className="text-2xl font-bold mt-6 text-[rgba(59,79,162,1)]">
                                 Schedule Your Consultation Today!
                             </p>
@@ -29,7 +29,7 @@ export default function PatientExperience() {
                             <p className="text-base mt-2 justify-items-start">
                             Ph.No:+91 9487325401
                             </p>
-                        </div>
+                       
                             <button className="bg-blue-800 text-white font-semibold py-3 mt-4 px-4 rounded-lg hover:bg-blue-700">
                             Shedule Now
                             </button>
@@ -119,7 +119,7 @@ export default function PatientExperience() {
         <img
             src="./images/PatientExperience/p3.png"
             alt="New Image 5"
-            className="absolute top-16 lg:top-20 right-32 lg:right-36 xl:right-40 2xl:right-44 w-36 lg:w-48 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            className="absolute top-16 lg:top-16 xl:top-4 right-72 lg:right-[320px] xl:right-[500px] 2xl:right-[550px] w-36 lg:w-48 xl:w-56 2xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
         />
         
     </div>
@@ -172,9 +172,11 @@ export default function PatientExperience() {
 
                     {/* block 2 end */}
                     {/* block 2 mob start */}
-                    <div className="grid grid-cols-1 mt-12 mb-12 justify-items-center sm:block md:hidden">
-                        <div className="mt-12 w-48">
+                    {/* <div className="grid grid-cols-1 mt-12 mb-12 justify-items-center sm:block md:hidden relative">
+                        <div className="mt-12 w-48 relative">
                         <img src="./images/PatientExperience/p2.png" alt="" /> 
+                        
+                        
                         </div>
                         <div className="mt-12 w-48">
                         <img src="./images/PatientExperience/p3.png" alt="" /> 
@@ -196,7 +198,101 @@ export default function PatientExperience() {
                         </div>
                         
 
-                    </div>
+                    </div> */}
+
+<div className="grid grid-cols-1 mt-12 mb-12 justify-items-center sm:block md:hidden relative gap-8">
+        {/* Image 1 */}
+        <div className="relative group">
+            <img
+                src="./images/PatientExperience/p2.png"
+                id="1"
+                alt="Image 1"
+                className="w-36 lg:w-48 xl:w-56"
+            />
+            <img
+                src="./images/PatientExperience/p3.png"
+                alt="Image 2"
+                className="absolute top-16 left-20 w-36 lg:w-48 xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            />
+        </div>
+
+        {/* Image 2 */}
+        <div className="relative group">
+            <img
+                src="./images/PatientExperience/p4.png"
+                id="2"
+                alt="Image 3"
+                className="w-36 lg:w-48 xl:w-56"
+            />
+            <img
+                src="./images/PatientExperience/p3.png"
+                alt="New Image 3"
+                className="absolute top-16 left-20 w-36 lg:w-48 xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            />
+        </div>
+
+        {/* Image 3 */}
+        <div className="relative group">
+            <img
+                src="./images/PatientExperience/p5.png"
+                id="3"
+                alt="Image 4"
+                className="w-36 lg:w-48 xl:w-56"
+            />
+            <img
+                src="./images/PatientExperience/p3.png"
+                alt="New Image 4"
+                className="absolute top-16 left-20 w-36 lg:w-48 xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            />
+        </div>
+
+        {/* Image 4 */}
+        <div className="relative group">
+            <img
+                src="./images/PatientExperience/p6.png"
+                id="4"
+                alt="Image 5"
+                className="w-36 lg:w-48 xl:w-56"
+            />
+            <img
+                src="./images/PatientExperience/p3.png"
+                alt="New Image 5"
+                className="absolute top-16 left-20 w-36 lg:w-48 xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            />
+        </div>
+
+        {/* Image 5 */}
+        <div className="relative group">
+            <img
+                src="./images/PatientExperience/p7.png"
+                id="5"
+                alt="Image 6"
+                className="w-36 lg:w-48 xl:w-56"
+            />
+            <img
+                src="./images/PatientExperience/p3.png"
+                alt="New Image 6"
+                className="absolute top-16 left-20 w-36 lg:w-48 xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+            />
+        </div>
+
+        {/* Image 6 */}
+        <div className="relative group">
+            <img
+                src="./images/PatientExperience/p8.png"
+                id="6"
+                alt="Image 7"
+                className="w-36 lg:w-48 xl:w-56"
+            />
+            <img
+                src="./images/PatientExperience/p3.png"
+                alt="New Image 7"
+                className="absolute top-16 left-20 w-36 lg:w-48 xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            />
+        </div>
+    </div>
+
+
                     {/* block 2 mob end */}
                    
 
