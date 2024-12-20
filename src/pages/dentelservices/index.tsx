@@ -1,6 +1,6 @@
 import  { useEffect } from "react";
 import AOS from "aos";
-// import MotionPathWithFramer from "./components/MotionPathWithFramer";
+
 
 
 export default function Service() {
@@ -65,8 +65,8 @@ export default function Service() {
                             <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <img src="./images/services/s13.png" alt="" className="absolute top-[-30px] right-36" />
                             <div >
-                                <img src="./images/services/s1.png" alt=" " className="w-full h-96" />
-                                <img src="./images/services/s2.png" alt=" " className="w-[83%] h-96 absolute bottom-[-32px] left-0" />
+                                <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
+                                <img src="./images/services/s2.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0" />
                             </div>
                             </div>
                             
@@ -77,20 +77,21 @@ export default function Service() {
                     {/* block 2 end  */}
                     {/* block 3 start  */}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-24"  data-aos="zoom-in-right" data-aos-duration="3000" data-aos-mirror="true">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 sm
+                    mb-5 lg:mb-24"  data-aos="zoom-in-right" data-aos-duration="3000" data-aos-mirror="true">
                         <div>
                             <div className="relative">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
                                 <div >
-                                    <img src="./images/services/s4.png" alt=" " className="w-full h-96" />
-                                    <img src="./images/services/s5.png" alt=" " className="w-[83%] h-96 absolute bottom-[-32px] right-0" />
+                                    <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
+                                    <img src="./images/services/s5.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
                                 </div>
                             </div>
 
                         </div>
 
 
-                        <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                                 Cosmetic Dentistry
                             </p>
@@ -117,7 +118,7 @@ export default function Service() {
                     {/* block 4 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-24">
                         <div className="relative mt-0 2xl:mt-8" data-aos="fade-right" data-aos-duration="3000" data-aos-mirror="true">
-                            <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
+                            <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
                                 Restorative Dentistry:
                             </p>
                             <p className="text-base 2xl:text-lg mt-6 justify-items-start">
@@ -140,8 +141,8 @@ export default function Service() {
 
                             <img src="./images/services/s9.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <div >
-                                <img src="./images/services/s7.png" alt=" " className="w-full h-96" />
-                                <img src="./images/services/s8.png" alt=" " className="w-[83%] h-96 absolute bottom-[-32px] left-0" />
+                                <img src="./images/services/s7.png" alt=" " className="w-full h-64 sm:h-96" />
+                                <img src="./images/services/s8.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0" />
                                 <img src="./images/services/s10.png" alt=" " className="absolute bottom-36 -left-7" />
 
                             </div>
@@ -154,20 +155,21 @@ export default function Service() {
                     {/* block 4 end  */}
                     {/* block 5 start  */}
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-24" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 sm
+                    mb-5 lg:mb-24" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-anchor-placement="top-center">
                         <div>
                             <div className="relative">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
                                 <div >
-                                    <img src="./images/services/s4.png" alt=" " className="w-full h-96" />
-                                    <img src="./images/services/s11.png" alt=" " className="w-[83%] h-96 absolute bottom-[-32px] right-0" />
+                                    <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
+                                    <img src="./images/services/s11.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
                                 </div>
                             </div>
 
                         </div>
 
 
-                        <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
+                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                             Orthodontics
                             </p>
@@ -192,7 +194,7 @@ export default function Service() {
                      {/* block 6 start  */}
                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-24">
                         <div className="relative mt-0 2xl:mt-8" data-aos="fade-right" data-aos-duration="3000"              data-aos-mirror="true">
-                            <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
+                            <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
                               Oral Surgery
                             </p>
                             <p className="text-base 2xl:text-lg mt-6 justify-items-start">
@@ -213,8 +215,8 @@ export default function Service() {
                             <div className="relative">
                             <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <div >
-                                <img src="./images/services/s1.png" alt=" " className="w-full h-96" />
-                                <img src="./images/services/s12.png" alt=" " className="w-[83%] h-96 absolute bottom-[-32px] left-0" />
+                                <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
+                                <img src="./images/services/s12.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0" />
                             </div>
                             </div>
                         </div>
