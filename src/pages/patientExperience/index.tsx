@@ -54,7 +54,7 @@ export default function PatientExperience() {
                     {/* block 2 end */}
                     {/* block 2 mob start */}
                      
-                <div className="grid grid-cols-1 mt-24 mb-12 justify-items-center sm:block md:hidden relative gap-8"> 
+                <div className="grid grid-cols-1 mb-12 justify-items-center sm:block md:hidden relative gap-8"> 
                 <MobImageGallery/>
                      </div> 
                     {/* block 2 mob end */}
