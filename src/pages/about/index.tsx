@@ -46,7 +46,7 @@ export default function About() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-12">
                         <div>
-                            <img src="./images/about/a1.png" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-anchor-placement="top-center" alt="" className="w-5/6 h-[100%] " />
+                            <img src="./images/about/a1.png" data-aos="zoom-in-right" data-aos-duration="3000" data-aos-anchor-placement="top-center" alt="" className="w-5/6 h-[85%] " />
 
                         </div>
                         <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="3000" data-aos-anchor-placement="top-center">
@@ -100,10 +100,10 @@ export default function About() {
                                         </p>
 
                                 </div>
-                                <div className="mt-5">
+                                <div className="mt-4">
                                     <img src="./images/about/a6.png" className="h-72 2xl:h-80 w-full " alt="" />
                                 </div>
-                                <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 mt-5">
+                                <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 mt-4">
                                     <p className="text-white text-sm 2xl:text-base">
                                     As a director in <span className="text-lg 2xl:text-xl font-semibold">15 Dental and Implant Xperts</span> (Hosur, Tirunelveli ,and Chennai) and Xperts Dento Facial Imaging Pvt Ltd (Tirunelveli, Namakal,Chennai,Tangore), Dr. Kamalashankar leads with a commitment to innovation and patient-centered care.
                                     </p>
