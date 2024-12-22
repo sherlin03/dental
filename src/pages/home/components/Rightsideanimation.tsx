@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 const AnimatedImages = () => {
   // Static image paths in the public folder
   const images = Array.from({ length: 11 }, (_, i) =>
-    `images/home/right/image${i+1}.png`
+    `/images/home/right/image${i+1}.png`
   );
 
   // Initialize AOS

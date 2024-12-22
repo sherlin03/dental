@@ -4,6 +4,8 @@ import  { useEffect } from "react";
 import AOS from "aos";
 import GenServices from "./components/GenServices";
 import TypingEffectHead from "./components/TypingEffectHead";
+import DentalTheme from "./components/DentalTheme";
+
 
 export default function Home() {
 
@@ -63,10 +65,12 @@ export default function Home() {
             {/* <div className="justify-items-center">
             <img src="./images/home/s4.png" className="w-full h-60 sm:h-64 md:h-80 lg:h-[600px] " data-aos="flip-right" alt="" /> 
             </div> */}
-
+{/* 
             <div className="justify-items-center">
                   <img src="./images/home/s4.png" className="w-full h-60 sm:h-64 md:h-80 lg:h-[600px] "  alt="" /> 
-            </div>
+            </div> */}
+
+            <DentalTheme/>
 
             {/* dental image end */}
 
