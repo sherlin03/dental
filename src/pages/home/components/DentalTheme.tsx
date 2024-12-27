@@ -62,7 +62,7 @@ export default function DentalTheme() {
                             <img src="./images/home/s9.png" alt="" className="h-4 lg:h-6 w-10 lg:w-20 absolute bottom-[-50px] lg:bottom-[-85px] right-0 z-10" />
 
                             
-                            <img src="./images/home/d8.gif" className="w-[65%]  lg:w-[68%] xl:w-[68%] 2xl:w-[70%] h-[90px] xl:h-[150px] 2xl:h-[200px] absolute bottom-[-50px] lg:bottom-[-55px] xl:bottom-[-100px] 2xl:bottom-[-120px] right-[0] " alt="" />
+                            <img src="./images/home/d8.gif" className="w-[65%]  lg:w-[68%] xl:w-[68%] 2xl:w-[70%] h-[90px] xl:h-[150px] 2xl:h-[200px] absolute bottom-[-50px] lg:bottom-[-55px] xl:bottom-[-90px] 2xl:bottom-[-120px] right-[0] " alt="" />
 
                         </div>
                         <img src="./images/home/d2.png" alt="" className="absolute bottom-4 left-0 w-full " />

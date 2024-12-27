@@ -21,7 +21,7 @@ export default function Header() {
     },
     link: {
       active: {
-        on:"font-bold text-[rgba(59,79,162,1)] border-b-2 border-[rgba(59,79,162,1)] border-solid",
+        on: "font-bold !text-[rgba(59,79,162,1)] !border-b-2 !border-[rgba(59,79,162,1)] border-solid  ",
       },
     },
   };
@@ -54,7 +54,7 @@ export default function Header() {
               return (
                 <motion.div key={menu.path}>
                   <Navbar.Link
-                    href={menu.path}
+                    href={`${menu.path}`}
                     className="text-bold"
                     active={menu.path == currentPath}
                     onClick={handleLinkClick} // Call handleLinkClick on click
