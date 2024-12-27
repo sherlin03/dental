@@ -85,20 +85,21 @@ export default function Home() {
         {/* Happy Customers start */}
         <section className="relative mt-24" >
              <div className="relative">
-                <img src="./images/home/s11.png" className=" w-full h-[500px] realative" alt="" />
+                <img src="./images/home/s11.png" className=" w-full max-[490px]:h-[300px] h-[500px] realative" alt="" />
 
                 <img src="./images/home/Mask group.png" className=" absolute 
-                            h-[550px] 
-                            top-[-3rem] left-2 sm:left-[20%] md:left-1/4 lg:left-[35%] 
+                           max-[490px]:h-[350px] h-[550px] 
+                            top-[-3rem] max-[490px]:left-[25%] left-[15%] sm:left-[20%] md:left-1/4 lg:left-[35%] 
                             sm:top-[-3rem] md:top-[-3rem] lg:top-[-3rem] px-6 transition-transform duration-1000 hover:scale-[1]" alt="" />
-                <img src="./images/home/Group 104.png" className=" absolute w-48 h-32 bottom-[30%] left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2]" />
-                <img src="./images/home/Group 102.png" className=" absolute w-56 h-36 bottom-[-5%] left-[5%] md:left-[10%] lg:left-[24%] xl:left-[26%]  transition-transform duration-1000 hover:scale-[1.2]" />
+                <img src="./images/home/Group 104.png" className=" absolute max-[490px]:w-24 w-48 max-[490px]:h-16 h-32 bottom-[30%] max-[490px]:left-[25%] left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2]" />
+                <img src="./images/home/Group 102.png" className=" absolute max-[490px]:w-28 w-56 max-[490px]:h-16 h-36 bottom-[-5%] max-[490px]:left-[15%] left-[5%] md:left-[10%] lg:left-[24%] xl:left-[26%]  transition-transform duration-1000 hover:scale-[1.2]" />
 
-                <img src="./images/home/Group 106.png" className=" absolute w-40 h-24 bottom-[28%] right-[10%] sm:right-[18%] md:right-[22%] lg:right-[25%] xl:right-[31%] 2xl:right-[39%]  transition-transform duration-1000 hover:scale-[1.2]" />
-                <img src="./images/home/Group 74.png" className=" absolute w-40 h-16 bottom-[3%]  right-[10%] sm:right-[20%] md:right-[23%] lg:right-[24%] xl:right-[32%] 2xl:right-[40%] transition-transform duration-1000 hover:scale-[1.2]" />
+                <img src="./images/home/Group 106.png" className=" absolute w-40 max-[490px]:w-20 max-[490px]:h-12 h-24  bottom-[28%] max-[490px]:right-[15%] right-[10%] sm:right-[18%] md:right-[22%] lg:right-[25%] xl:right-[31%] 2xl:right-[39%]  transition-transform duration-1000 hover:scale-[1.2]" />
+
+                <img src="./images/home/Group 74.png" className=" absolute max-[490px]:w-20 w-40 max-[490px]:h-8 h-16 bottom-[3%] max-[490px]:right-[12%]  right-[10%] sm:right-[20%] md:right-[23%] lg:right-[24%] xl:right-[32%] 2xl:right-[40%] transition-transform duration-1000 hover:scale-[1.2]" />
                 
                 <p className="absolute 
-                   text-base sm:text-lg md:text-2xl lg:text-4xl  text-white font-semibold 
+                  max-[490px]:text-sm text-base sm:text-lg md:text-2xl lg:text-4xl  text-white font-semibold 
                    top-8 sm:top-12 left-[5%] md:left-[8%] lg:left-[10%]  
                    "
                 >
@@ -106,9 +107,6 @@ export default function Home() {
                 </p>
                 <img src="./images/home/s9.png" className="absolute  
                    top-16 sm:top-[80px] md:top-[90px] left-[5%] md:left-[8%] lg:left-[10%] " alt="" />
-                    
-                    
-                    
 
              </div>
 

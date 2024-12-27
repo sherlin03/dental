@@ -15,25 +15,25 @@ export default function VerticalLineWithExpertise() {
       title: "Advanced Technology",
       description:
         "We utilize Latest equipment and techniques to deliver top-tier dental care, prioritizing your comfort and safety throughout.",
-      image: "./images/home/s6.png",
+      image: "./images/home/advanced technology.jpg",
     },
     {
       title: "Personalized Approach",
       description:
         "Every patient receives individualized attention, with treatment plans meticulously tailored to meet their specific dental needs and aesthetic goals.",
-      image: "./images/home/s6.png",
+      image: "./images/home/personalized approach.jpg",
     },
     {
       title: "Comprehensive Services",
       description:
         "From routine check-ups to complex implant surgeries, we provide a full spectrum of dental services to restore and enhance your smile.",
-      image: "./images/home/s6.png",
+      image: "./images/home/Comprehensive Services.jpg",
     },
     {
       title: "Patient-Centered Care",
       description:
         "Our warm and compassionate team ensures you feel welcome and supported at every visit, striving to make your dental experience as pleasant and stress-free as possible.",
-      image: "./images/home/s6.png",
+      image: "./images/home/Patient-Centered Care.jpg",
     },
   ];
 
@@ -127,13 +127,12 @@ export default function VerticalLineWithExpertise() {
 
         {/* Scrollable Content Section */}
         <div
-          className="col-span-4 justify-items-start  mt-10 "
+          className="col-span-4 justify-items-start w-full lg:w-[500px] max-[390px]:h-[480px] h-[425px] sm:h-[390px]  mt-10 "
           id="why1"
           ref={scrollContainerRef}
           onScroll={handleScroll}
           style={{
-            width: "500px", // Fixed width for the scrollable box
-            height: "390px", // Fixed height for the scrollable box
+           
             overflowY: "auto", // Enable vertical scrolling
             overflowX: "hidden", // Hide horizontal scrollbar
             padding: "20px", // Inner padding for spacing
