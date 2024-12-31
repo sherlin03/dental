@@ -21,18 +21,20 @@ export default function Home() {
         <>
         
         
-    <section className="container w-5/6 md:w-4/5 mx-auto relative">
+    <section className="container mx-auto relative ">
         {/* <img src="./images/home/s5.png" className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-28 absolute top-24 hidden md:block md:-right-20 lg:-right-28" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" alt="" /> */}
-          <div className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-28 absolute top-24 hidden md:block md:-right-20 lg:-right-28">
+          <div className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-16 lg:w-20  absolute top-24 hidden lg:block md:-right-20 lg:-right-12">
          
           <TypingEffectHead/>
           </div>
 
 
+
             {/* first block start  */}
+           
             <div >
                 <div className="grid w-full gap-2 p-4 pb-2 py-8 lg:px-8 grid-cols-3 md:px-6 mb-8">
-                    <div className="grid justify-items-end">
+                    <div className="grid justify-items-start lg:justify-items-end ">
                         <img src="./images/home/s1.png" className="h-44 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 !hover:scale-[1.1]"
       data-aos="zoom-in-up"  data-aos-duration="3000" alt="" />
                     </div>
@@ -40,49 +42,47 @@ export default function Home() {
                         <img src="./images/home/s2.png" className="h-44 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 !hover:scale-[1.1]"
       data-aos="zoom-in-up" data-aos-duration="3000" alt="" />
                     </div>
-                    <div className="justify-items-start">
+                    <div className="justify-items-end lg:justify-items-start ">
                         <img src="./images/home/s12.png" className="h-44 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 hover:scale-[1.1]"
       data-aos="zoom-in-up" data-aos-duration="3000" alt="" />
                     </div>
                 </div>
             </div>
+          
             {/* first block End  */}
             {/* intro words start */}
             <div className="justify-items-center mb-8 " data-aos="zoom-in-down" data-aos-duration="1500">
 
-            <p className="text-2xl font-bold text-center"><span className="bg-[rgba(88,215,155,1)] rounded pl-1 pr-0 shadow shadow-[#333635]">Subha Dent</span>al care, Where Your Smile Matters Most!</p>
-            <p className="text-center text-sm mt-4">
+            <p className="text-2xl font-bold  text-justify lg:text-center"><span className="bg-[rgba(88,215,155,1)] rounded pl-1 pr-0 shadow shadow-[#333635]">Subha Dent</span>al care, Where Your Smile Matters Most!</p>
+            <p className= "text-justify lg:text-center text-sm mt-4">
             We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. Whether you're here for a routine check-up or a complete smile makeover, we are committed to helping you achieve and maintain a healthy, beautiful smile.
                </p>
             </div>
+            </section>
             {/* intro words end */}
             {/* Services  start */}
-           
+            <section className="container w-[95%] lg:w-[90%] relative mx-auto">
               <GenServices/>
+            </section>
             {/* Services  end */}
 
             {/* dental image start */}
-            {/* <div className="justify-items-center">
-            <img src="./images/home/s4.png" className="w-full h-60 sm:h-64 md:h-80 lg:h-[600px] " data-aos="flip-right" alt="" /> 
-            </div> */}
-{/* 
-            <div className="justify-items-center">
-                  <img src="./images/home/s4.png" className="w-full h-60 sm:h-64 md:h-80 lg:h-[600px] "  alt="" /> 
-            </div> */}
-
+       
+           
             <DentalTheme/>
-
+       
             {/* dental image end */}
 
             {/* why us start */}
-    
+            <section className="container w-[95%] lg:w-[90%] relative mx-auto">
                 <VerticalLineWithExpertise/>
-
+            </section>
             {/* why us End */}
             
-        </section>
+      
 
         {/* Happy Customers start */}
+     
         <section className="relative mt-24" >
              <div className="relative">
                 <img src="./images/home/s11.png" className=" w-full max-[490px]:h-[300px] h-[500px] realative" alt="" />
@@ -115,11 +115,6 @@ export default function Home() {
         </section>
          {/* Happy Customers end */}
 
-      
-            
-       
-       
-        
         </>  
     )
 }

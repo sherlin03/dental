@@ -18,7 +18,7 @@ export default function DentalTheme() {
                                 className="h-[230px] lg:h-[300px] xl:h-[350px] 2xl:h-[400px] w-[130px] lg:w-[200px] xl:w-[250px] 2xl:w-[300px] absolute top-1/4 left-[30%] z-10"
 
                             />
-                            {/* <img src="./images/home/d4.png" alt="" className="h-8 lg:h-10 xl:h-12 2xl:h-20 w-[75px] lg:w-[130px] xl:w-[200px] 2xl:w-[250px] absolute top-6 lg:top-9 2xl:top-6 left-[34%] xl:left-[32%]  2xl:left-[32%] z-10" /> */}
+                        
 
                             <motion.img
                                 src="./images/home/d4.png"

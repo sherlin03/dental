@@ -14,7 +14,7 @@ export default function PatientExperience() {
                 <div className=" mt-0 lg:mt-12  mb-12 container mx-auto">
                     {/* block 1 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        <div className="relative"  data-aos="fade-up-right" data-aos-duration="3000" data-aos-mirror="true" >
+                        <div className="relative" >
                             <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-16">
                                 <span className="bg-[rgba(249,247,247,1)] px-5 py-2">Patience Experience</span>
                             </p>
@@ -37,8 +37,8 @@ export default function PatientExperience() {
                             </button>
                             
                         </div>
-                        <div className="mt-10 lg:mt-0"  data-aos="fade-down-left" data-aos-duration="3000" data-aos-mirror="true">
-                            <img src="./images/PatientExperience/p1.png" alt=" " className="w-full h-96" />
+                        <div className="mt-10 lg:mt-0"  >
+                            <img src="./images/PatientExperience/p1.png" alt=" " className="w-full h-auto " />
                         </div>
 
                     </div>
@@ -47,21 +47,21 @@ export default function PatientExperience() {
 
                     {/* desktopview  */}
 <div>
-            <div className="mt-20 mb-12 hidden md:block relative h-[365px] lg:h-[580px]">
+            <div className="mt-20 mb-5 hidden md:block relative h-[365px] lg:h-[580px]">
  
             <ImageGallery/>
             </div>
                     {/* block 2 end */}
                     {/* block 2 mob start */}
                      
-                <div className="grid grid-cols-1 mb-12 justify-items-center sm:block md:hidden relative gap-8"> 
+                <div className=" mb-5 justify-items-center sm:block md:hidden relative gap-8"> 
                 <MobImageGallery/>
                      </div> 
                     {/* block 2 mob end */}
                 </div>
                 </div>
 
-                <div data-aos="flip-down" data-aos-duration="3000" data-aos-mirror="true"  >
+                <div>
                         <img src="./images/PatientExperience/p10.png" className="w-full" alt="" />
                 </div>
 

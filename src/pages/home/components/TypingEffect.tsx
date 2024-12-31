@@ -20,7 +20,7 @@ const TypingEffect = ({ text, speed }: { text: string; speed: number }) => {
   }, [text, speed]);
 
   return (
-  <div className=" w-[650px] text-left " >
+    <div className=" w-[650px] text-left " >
     <p className="  absolute bottom-[-25px] lg:bottom-[-50px] text-[12px] lg:text-[17px] xl:text-[26px] 2xl:text-3xl font-bold right-0 text-[rgba(55,83,188,1)] flex">
       {displayedText}
     </p>

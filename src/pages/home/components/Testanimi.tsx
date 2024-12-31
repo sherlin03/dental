@@ -6,7 +6,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 const reviews = [
   {
     id: 1,
-    image: "/images/home/s13.svg",
+    image: "/images/home/s13.png",
     content: "Professionals in their craft! All products were super amazing.",
     title: "General Dentistry",
     description:
@@ -20,7 +20,7 @@ const reviews = [
   },
   {
     id: 2,
-    image: "/images/home/s14.svg",
+    image: "/images/home/s14.png",
     content: "Outstanding service and attention to detail!",
     title: "Cosmetic Dentistry",
     description:
@@ -29,7 +29,7 @@ const reviews = [
   },
   {
     id: 3,
-    image: "/images/home/s15.svg",
+    image: "/images/home/s15.png",
     content: "Exceptional quality and a team that truly cares.",
     title: "Orthodontics",
     description:
@@ -43,7 +43,7 @@ const reviews = [
   },
   {
     id: 4,
-    image: "/images/home/s16.svg",
+    image: "/images/home/s16.png",
     content: "A wonderful experience from start to finish.",
     title: "Pediatric Dentistry",
     description:
@@ -57,7 +57,7 @@ const reviews = [
   },
   {
     id: 5,
-    image: "/images/home/s17.svg",
+    image: "/images/home/s17.png",
     content: "Highly recommend for any project, big or small!",
     title: "Periodontics",
     description:
@@ -99,17 +99,12 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="relative mt-24">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 p-0 sm:p-6">
+    <div className="relative mt-24 w-5/6 mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 p-6">
         {/* Images Container */}
-        <div className="flex flex-wrap w-full justify-evenly col-span-7 2xl:col-span-6 gap-1 mb-6 items-end relative">
+        <div className="flex flex-nowrap col-span-7 2xl:col-span-6 gap-1 mb-6 items-end relative">
           {/* Background Image */}
-          <img
-            src="/images/home/s18.png"
-            alt=""
-            className="absolute -top-4 right-28 max-[390px]:right-24 max-[490px]:right-32 xl:right-40 w-12 sm:w-20 md:w-20 lg:w-20 h-40 sm:h-32 md:h-32 lg:h-48"
-           
-          />
+          
 
           {/* Review Images */}
           {orderedImages.map((review, index) => (
@@ -119,8 +114,8 @@ const App: React.FC = () => {
               alt={`User ${review.id}`}
               className={`cursor-pointer rounded-lg object-cover transition-all duration-1000 ease-in-out ${
                 index === orderedImages.length - 1
-                  ? "w-16 max-[450px]:w-12 max-[390px]:w-20 sm:w-28 md:w-28 lg:w-32  max-[490px]:h-[350px] h-[490px]  sm:h-80 md:h-[490px] lg:h-[500px]"
-                  : "w-16  !max-[390px]:w-12 max-[450px]:w-16 sm:w-24 md:w-24 lg:w-24 max-[490px]:h-[200px] h-48  sm:h-48  md:h-48 lg:h-[60%] opacity-70"
+                  ? "w-28 h-[490px] sm:w-28 sm:h-80 md:w-28 md:h-[490px] lg:w-32 lg:h-[500px]"
+                  : "w-24 h-48 sm:w-24 sm:h-48 md:w-24 md:h-48 lg:w-24 lg:h-[60%] opacity-70"
               }`}
               onClick={() => handleImageClick(index)}
               data-aos={index === orderedImages.length - 1 ? "zoom-in" : "zoom-in"}
@@ -129,8 +124,8 @@ const App: React.FC = () => {
         </div>
 
         {/* Content Section */}
-        <div className=" text-left md:text-left ps-0 lg:ps-6 col-span-5 2xl:col-span-6">
-          <p className="text-3xl sm:text-3xl font-semibold mt-6 md:mt-12">
+        <div className="p-6 text-center md:text-left ps-6 col-span-5 2xl:col-span-6">
+          <p className="text-xl sm:text-3xl font-semibold mt-6 md:mt-12">
             {orderedImages[orderedImages.length - 1].title}
           </p>
           <p className="mt-3 sm:mt-5 text-sm sm:text-base">

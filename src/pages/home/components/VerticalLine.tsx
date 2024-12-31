@@ -74,10 +74,10 @@ export default function VerticalLineWithExpertise() {
   return (
     <>
       <div className="justify-items-start">
-        <p className="text-3xl font-bold ml-0 sm:ml-20" data-aos="fade-right">
+        <p className="text-3xl font-bold ml-0 sm:ml-20" >
           Why Us
         </p>
-        <p className="text-lg mt-5 mb-5 sm:ml-20" data-aos="fade-down">
+        <p className="text-lg text-justify mt-5 mb-5 sm:ml-20" >
           At Subha Dental care, we stand out for our commitment to excellence
           and patient-centered care. Led by Dr. P. Kamalashankar, a
           distinguished expert with over 20 years of dedicated experience, we
@@ -89,7 +89,7 @@ export default function VerticalLineWithExpertise() {
         {/* Vertical Line Container */}
         <div
           className="relative h-[200px] col-span-1 mt-5 lg:mt-0"
-          data-aos="fade-up-right"
+          
         >
           {/* Main Vertical Line */}
           <div className="absolute left-1/2 -translate-x-1/2 h-full w-[5px] bg-gray-400"></div>
@@ -104,7 +104,7 @@ export default function VerticalLineWithExpertise() {
         {/* Expertise Items */}
         <div
           className="flex flex-col space-y-4 col-span-2"
-          data-aos="fade-up-right"
+         
         >
           {content.map((item, index) => (
             <div

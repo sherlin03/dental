@@ -9,7 +9,7 @@ function ImageGallery() {
 
   return (
     <>
-    // <div className="mt-20 mb-12 hidden md:block relative h-[365px] lg:h-[580px]">
+    <div className="mt-20  hidden md:block relative h-[365px] lg:h-[580px]">
       {/* Image 1 */}
       <div
         className="relative group"
@@ -130,7 +130,7 @@ function ImageGallery() {
           className="absolute top-0 right-1/2 "
         />
       </div>
-    // </div>
+     </div>
     </>
   );
 }

@@ -12,17 +12,17 @@ function MobImageGallery() {
      
 
       {/* Mobile view images (Grid Layout) */}
-      <div className="grid grid-cols-1 mt-24 mb-12 justify-items-center sm:block md:hidden relative gap-8   ">
+      <div className="grid  mt-24 mb-12 justify-items-center sm:block md:hidden relative gap-8   ">
         {/* Image 1 */}
         <div
            className={`relative group ${activeImage === 1 ? "mr-20" : ""}`}
-          onMouseEnter={() => handleImageChange(1)}
+          onClick={() => handleImageChange(1)}
         >
           <img
             src="./images/PatientExperience/p2.png"
             id="1"
             alt="Image 1"
-            className={`w-72 max-[490px]:w-52  mt-16  ${activeImage === 1 ? "max-[490px]:w-32" : "max-[490px]:w-52"}`}
+            className={`w-72   mt-16  ${activeImage === 1 ? "max-[490px]:w-40" : "max-[490px]:w-60"}`}
           />
           <img
             src="./images/PatientExperience/p3.png"
@@ -34,13 +34,13 @@ function MobImageGallery() {
         {/* Image 2 */}
         <div
            className={`relative group ${activeImage === 2 ? "mr-20" : ""}`}
-          onMouseEnter={() => handleImageChange(2)}
+          onClick={() => handleImageChange(2)}
         >
           <img
             src="./images/PatientExperience/p4.png"
             id="2"
             alt="Image 3"
-            className={`w-72 max-[490px]:w-52  mt-16  ${activeImage === 2 ? "max-[490px]:w-32" : "max-[490px]:w-52"}`}
+            className={`w-72   mt-16  ${activeImage === 2 ? "max-[490px]:w-40" : "max-[490px]:w-60"}`}
           />
           <img
             src="./images/PatientExperience/p3.png"
@@ -52,13 +52,13 @@ function MobImageGallery() {
         {/* Image 3 */}
         <div
            className={`relative group ${activeImage === 3 ? "mr-20" : ""}`}
-          onMouseEnter={() => handleImageChange(3)}
+          onClick={() => handleImageChange(3)}
         >
           <img
             src="./images/PatientExperience/p5.png"
             id="3"
             alt="Image 4"
-            className={`w-72 max-[490px]:w-52  mt-16  ${activeImage === 3 ? "max-[490px]:w-32" : "max-[490px]:w-52"}`}
+            className={`w-72  mt-16  ${activeImage === 3 ? "max-[490px]:w-40" : "max-[490px]:w-60"}`}
           />
           <img
             src="./images/PatientExperience/p3.png"
@@ -70,13 +70,13 @@ function MobImageGallery() {
         {/* Image 4 */}
         <div
            className={`relative group ${activeImage === 4 ? "mr-20" : ""}`}
-          onMouseEnter={() => handleImageChange(4)}
+          onClick={() => handleImageChange(4)}
         >
           <img
             src="./images/PatientExperience/p6.png"
             id="4"
             alt="Image 5"
-            className={`w-72 max-[490px]:w-52  mt-16  ${activeImage === 4 ? "max-[490px]:w-32" : "max-[490px]:w-52"}`}
+            className={`w-72   mt-16  ${activeImage === 4 ? "max-[490px]:w-40" : "max-[490px]:w-60"}`}
           />
           <img
             src="./images/PatientExperience/p3.png"
@@ -88,13 +88,13 @@ function MobImageGallery() {
         {/* Image 5 */}
         <div
            className={`relative group ${activeImage === 5 ? "mr-20" : ""}`}
-          onMouseEnter={() => handleImageChange(5)}
+          onClick={() => handleImageChange(5)}
         >
           <img
             src="./images/PatientExperience/p7.png"
             id="5"
             alt="Image 6"
-            className={`w-72 max-[490px]:w-52  mt-16  ${activeImage === 5 ? "max-[490px]:w-32" : "max-[490px]:w-52"}`}
+            className={`w-72  mt-16  ${activeImage === 5 ? "max-[490px]:w-40" : "max-[490px]:w-60"}`}
           />
           <img
             src="./images/PatientExperience/p3.png"
@@ -106,13 +106,13 @@ function MobImageGallery() {
         {/* Image 6 */}
         <div
            className={`relative group ${activeImage === 6 ? "mr-20" : ""}`}
-          onMouseEnter={() => handleImageChange(6)}
+          onClick={() => handleImageChange(6)}
         >
           <img
             src="./images/PatientExperience/p8.png"
             id="6"
             alt="Image 7"
-            className={`w-72 max-[490px]:w-52  mt-16  ${activeImage === 6 ? "max-[490px]:w-32" : "max-[490px]:w-52"}`}
+            className={`w-72  mt-16  ${activeImage === 6 ? "max-[490px]:w-40" : "max-[490px]:w-60"}`}
           />
           <img
             src="./images/PatientExperience/p3.png"
