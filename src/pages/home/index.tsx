@@ -21,7 +21,7 @@ export default function Home() {
         <>
         
         
-    <section className="container mx-auto relative ">
+    <section className="container w-[90%] mx-auto relative ">
         {/* <img src="./images/home/s5.png" className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-28 absolute top-24 hidden md:block md:-right-20 lg:-right-28" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" alt="" /> */}
           <div className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-16 lg:w-20  absolute top-24 hidden lg:block md:-right-20 lg:-right-12">
          

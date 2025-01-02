@@ -46,7 +46,7 @@ export default function DentalTheme() {
                             {/* <img src="./images/home/d7.png" alt="" className="h-[155px] lg:h-[175px] 2xl:h-[190px] w-[135px] lg:w-[185px] 2xl:w-[205px] absolute top-[-75px] left-[45%] lg:left-[50%] 2xl:left-[50%] z-10" /> */}
 
                             <motion.img
-                                src="./images/home/d7.png"
+                                src="./images/home/d7.svg"
                                 alt=""
                                 className="h-[155px] lg:h-[175px] 2xl:h-[190px] w-[135px] lg:w-[185px] 2xl:w-[205px] absolute top-[-75px] left-[45%] lg:left-[50%] 2xl:left-[50%] z-10"
                                 animate={{

@@ -73,11 +73,11 @@ export default function VerticalLineWithExpertise() {
 
   return (
     <>
-      <div className="justify-items-start">
-        <p className="text-3xl font-bold ml-0 sm:ml-20" >
+      <div className="justify-items-start mt-20 lg:mt-0">
+        <p className="text-3xl font-bold " >
           Why Us
         </p>
-        <p className="text-lg text-justify mt-5 mb-5 sm:ml-20" >
+        <p className="text-lg text-justify mt-5 mb-5 " >
           At Subha Dental care, we stand out for our commitment to excellence
           and patient-centered care. Led by Dr. P. Kamalashankar, a
           distinguished expert with over 20 years of dedicated experience, we

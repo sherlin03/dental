@@ -6,7 +6,7 @@ import "aos/dist/aos.css"; // Import AOS styles
 const reviews = [
   {
     id: 1,
-    image: "/images/home/s13.svg",
+    image: "./images/home/s13.svg",
     content: "Professionals in their craft! All products were super amazing.",
     title: "General Dentistry",
     description:
@@ -20,7 +20,7 @@ const reviews = [
   },
   {
     id: 2,
-    image: "/images/home/s14.svg",
+    image: "./images/home/s14.svg",
     content: "Outstanding service and attention to detail!",
     title: "Cosmetic Dentistry",
     description:
@@ -29,7 +29,7 @@ const reviews = [
   },
   {
     id: 3,
-    image: "/images/home/s15.svg",
+    image: "./images/home/s15.svg",
     content: "Exceptional quality and a team that truly cares.",
     title: "Orthodontics",
     description:
@@ -43,7 +43,7 @@ const reviews = [
   },
   {
     id: 4,
-    image: "/images/home/s16.svg",
+    image: "./images/home/s16.svg",
     content: "A wonderful experience from start to finish.",
     title: "Pediatric Dentistry",
     description:
@@ -57,7 +57,7 @@ const reviews = [
   },
   {
     id: 5,
-    image: "/images/home/s17.svg",
+    image: "./images/home/s17.svg",
     content: "Highly recommend for any project, big or small!",
     title: "Periodontics",
     description:
@@ -105,7 +105,7 @@ const App: React.FC = () => {
         <div className="flex flex-wrap w-full justify-evenly col-span-7 2xl:col-span-6 gap-1 mb-6 items-end relative">
           {/* Background Image */}
           <img
-            src="/images/home/s18.png"
+            src="./images/home/s18.png"
             alt=""
             className="absolute -top-4 right-28 max-[390px]:right-24 max-[490px]:right-32 xl:right-40 w-12 sm:w-20 md:w-20 lg:w-20 h-40 sm:h-32 md:h-32 lg:h-48"
            
