@@ -52,7 +52,7 @@ export default function PatientExperience() {
 
                     {/* desktopview  */}
 <div>
-            <div className="mt-20 mb-5 hidden md:block relative h-[365px] lg:h-[450px] 2xl:h-[550px]">
+            <div className="mt-20 mb-5 hidden md:block relative h-[365px] lg:h-[450px] 2xl:h-[]">
  
             <ImageGallery/>
             </div>
@@ -67,7 +67,7 @@ export default function PatientExperience() {
      <div className=" mt-24 mb-12  sm:block md:hidden ">
        {/* Image 1 */}
        <div
-          className={`relative rel group ${activeImage === 1 ? "mob  pe-64 sm:pe-72 max-[490]:pe-60 justify-items-start" : " justify-items-center"}`}
+          className={`relative rel group ${activeImage === 1 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"}`}
          onClick={() => handleImageChange(1)}
        >
          <img
@@ -85,7 +85,7 @@ export default function PatientExperience() {
 
        {/* Image 2 */}
        <div
-          className={`relative mt-12 group ${activeImage === 2 ? "mob pe-60 justify-items-start" : " justify-items-center"} ${activeImage === 1 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative mt-12 group ${activeImage === 2 ? "mob  pe-64 sm:pe-72   justify-items-start" : " justify-items-center"} ${activeImage === 1 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
          onClick={() => handleImageChange(2)}
        >
          <img
@@ -103,7 +103,7 @@ export default function PatientExperience() {
 
        {/* Image 3 */}
        <div
-          className={`relative rel group ${activeImage === 3 ? "mob  pe-64 sm:pe-72 max-[490]:pe-60 justify-items-start" : " justify-items-center"} ${activeImage === 2 ? " mtalign mt-56 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative rel group ${activeImage === 3 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 2 ? " mtalign2 mt-56 sm:mt-80 justify-items-center" : " "}`}
          onClick={() => handleImageChange(3)}
        >
          <img
@@ -121,7 +121,7 @@ export default function PatientExperience() {
 
        {/* Image 4 */}
        <div
-          className={`relative rel group ${activeImage === 4 ? "mob  pe-64 sm:pe-72 max-[490]:pe-60 justify-items-start" : " justify-items-center"} ${activeImage === 3 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative rel group ${activeImage === 4 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 3 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
          onClick={() => handleImageChange(4)}
        >
          <img
@@ -139,7 +139,7 @@ export default function PatientExperience() {
 
        {/* Image 5 */}
        <div
-          className={`relative rel group ${activeImage === 5 ? "mob  pe-64 sm:pe-72 max-[490]:pe-60 justify-items-start" : " justify-items-center"} ${activeImage === 4 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative rel group ${activeImage === 5 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 4 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
          onClick={() => handleImageChange(5)}
        >
          <img
@@ -157,7 +157,7 @@ export default function PatientExperience() {
 
        {/* Image 6 */}
        <div
-          className={`relative mt-12 group ${activeImage === 6 ? "mob pe-60 justify-items-start" : " justify-items-center"} ${activeImage === 5 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative mt-12 group ${activeImage === 6 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 5 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
          onClick={() => handleImageChange(6)}
        >
          <img
@@ -183,7 +183,7 @@ export default function PatientExperience() {
 
                 <div>
                         <img src="./images/PatientExperience/p10.png" className="w-full hidden lg:block" alt="" />
-                        <img src="./images/PatientExperience/p10.png" className={` w-full block sm:block md:block lg:hidden ${activeImage === 6 ? " mtalign mt-56 sm:mt-80" : "mt-0"}`} alt="" />
+                        <img src="./images/PatientExperience/p10.png" className={` w-full block sm:block md:block lg:hidden ${activeImage === 6 ? " mtalign2 mt-56 sm:mt-80" : ""}`} alt="" />
                 </div>
 
             </section>

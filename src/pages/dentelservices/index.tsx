@@ -61,7 +61,11 @@ export default function Service() {
                             <img src="./images/services/s13.png" alt="" className="hidden lg:block absolute top-[-30px] right-36" />
                             <div >
                                 <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
-                                <img src="./images/services/s2.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 transition-transform duration-1000 hover:scale-[1.1] " />
+
+                                <div className="overflow-hidden rounded-2xl absolute bottom-[-32px] left-0 w-[83%] h-64 sm:h-96">
+                                <img src="./images/services/sn1.png" alt=" " className="  object-cover transition-transform duration-1000 hover:scale-[1.1] " />
+                                </div>
+                                
                             </div>
                             </div>
                             
@@ -79,7 +83,9 @@ export default function Service() {
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
                                 <div >
                                     <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
-                                    <img src="./images/services/s5.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0 transition-transform duration-1000 hover:scale-[1.1]" />
+                                    <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0">
+                                    <img src="./images/services/sn2.png" alt=" " className="  object-cover transition-transform duration-1000 hover:scale-[1.1]" />
+                                    </div>
                                 </div>
                             </div>
 
@@ -137,7 +143,9 @@ export default function Service() {
                             <img src="./images/services/s9.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <div >
                                 <img src="./images/services/s7.png" alt=" " className="w-full h-64 sm:h-96" />
-                                <img src="./images/services/s8.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 transition-transform duration-1000 hover:scale-[1.1]" />
+                                <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 ">
+                                <img src="./images/services/sn3.png" alt=" " className="object-cover transition-transform duration-1000 hover:scale-[1.1] " />
+                                </div>
                                 <img src="./images/services/s10.png" alt=" " className="absolute hidden lg:block bottom-36 -left-7" />
 
                             </div>
@@ -157,7 +165,9 @@ export default function Service() {
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
                                 <div >
                                     <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
-                                    <img src="./images/services/s11.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0 transition-transform duration-1000 hover:scale-[1.1]" />
+                                    <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0">
+                                    <img src="./images/services/sn4.png" alt=" " className="object-cover transition-transform duration-1000 hover:scale-[1.1]" />
+                                    </div>
                                 </div>
                             </div>
 
@@ -211,7 +221,9 @@ export default function Service() {
                             <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <div >
                                 <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
-                                <img src="./images/services/s12.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 transition-transform duration-1000 hover:scale-[1.1]" />
+                                <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0">
+                                <img src="./images/services/s12.png" alt=" " className="object-cover transition-transform duration-1000 hover:scale-[1.1]" />
+                                </div>
                             </div>
                             </div>
                         </div>
@@ -254,7 +266,9 @@ export default function Service() {
         <img src="./images/services/s13.png" alt="" className="hidden lg:block absolute top-[-30px] right-36" />
         <div >
             <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
-            <img src="./images/services/s2.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0" />
+           
+            <img src="./images/services/sn1.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 " />
+            
         </div>
         </div>
         
@@ -292,7 +306,7 @@ export default function Service() {
             <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
             <div >
                 <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
-                <img src="./images/services/s5.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
+                <img src="./images/services/sn2.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
             </div>
         </div>
 
@@ -329,7 +343,7 @@ export default function Service() {
         <img src="./images/services/s9.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
         <div >
             <img src="./images/services/s7.png" alt=" " className="w-full h-64 sm:h-96" />
-            <img src="./images/services/s8.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0" />
+            <img src="./images/services/sn3.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0" />
             <img src="./images/services/s10.png" alt=" " className="absolute hidden lg:block bottom-36 -left-7" />
 
         </div>
@@ -370,7 +384,7 @@ mb-5 lg:mb-24">
             <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
             <div >
                 <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
-                <img src="./images/services/s11.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
+                <img src="./images/services/sn4.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
             </div>
         </div>
 
