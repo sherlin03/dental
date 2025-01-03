@@ -81,7 +81,6 @@ circle {
 .services-description *{
   color: white !important;
 }
-
 .nav-active {
   font-weight: bold;
   color: #3B4FA2 !important;
@@ -99,3 +98,140 @@ circle {
       transform: rotateY(360deg);
   }
 }
+.rel{
+  position: relative;
+}
+@media (max-width: 490px) {
+  .mob {
+    padding-inline-end: 10rem  ;
+  }
+  .leftalign{
+    left:4rem !important;
+    top:7rem;
+  }
+  .mtalign {
+    margin-top: 15rem ;
+   }
+   .mtalign2 {
+    margin-top: 12rem !important;
+   }
+   
+   .widthmob{
+    width: 10rem;
+   }
+}
+@media (max-width: 390px) {
+  .mob {
+    padding-inline-end: 8rem !important ;
+  }
+}
+@media (max-width: 640px) {
+  .mtalign2 {
+    margin-top: 18rem;
+   }
+}
+/* happy  */
+@media (max-width: 490px) {
+      .imgheight{
+          height: 300px;
+      }
+      .girlheight{
+        height: 350px;
+        left:25%;
+      }
+      .hbox1{
+        width: 160px;
+        height: 85px;
+        left: 10%;
+        padding: 8px;
+      }
+      .hbox2{
+        width: 186px;
+        height: 108px;
+        left: 5%;
+        padding: 9px;
+        bottom: -10%;
+      }
+      .para{
+        font-size: 8px;
+      }
+      .twimg{
+        width: 20px;
+      }
+      .hbox3{
+        width: 155px;
+        height: 75px;
+        right: 5%;
+      }
+      .insta{
+          width: 15px;
+      }
+      .hbox4{
+        width: 140px;
+        height: 60px;
+        padding: 3px;
+        padding-left: 0px;
+        padding-top: 14px;
+        bottom: 0%;
+        right: 3%;
+      }
+
+}
+
+
+@media (max-width: 390px) {
+  .girlheight{
+    left:20%;
+  }
+  .mobw{
+    width: 2rem;
+  }
+  .para2{
+    font-size: small;
+  }
+  .hbox1{
+    width: 145px;
+    height: 75px;
+    left: 5%;
+    padding: 5px;
+  }
+  .hbox2{
+    width: 162px;
+    height: 95px;
+    left: 5%;
+    padding: 9px;
+    bottom: -10%;
+  }
+  .para{
+    font-size: 7px;
+  }
+  .para3{
+    font-size:8px;
+  }
+  .twimg{
+    width: 20px;
+  }
+  .hbox3{
+        width: 135px;
+        height: 73px;
+        right: 3%;
+        padding: 13px;
+  }
+  .insta{
+      width: 15px;
+  }
+  .hbox4{
+    width: 129px !important;
+    height: 51px;
+    padding: 2px;
+    padding-left: 0px;
+    padding-top: 14px;
+    bottom: 0%;
+    right: 3%;
+  }
+
+}
+
+
+
+

@@ -52,7 +52,7 @@ export default function PatientExperience() {
 
                     {/* desktopview  */}
 <div>
-            <div className="mt-20 mb-5 hidden md:block relative h-[365px] lg:h-[450px] 2xl:h-[]">
+            <div className="mt-20 mb-5 hidden md:block relative h-[365px] lg:h-[450px] ">
  
             <ImageGallery/>
             </div>
@@ -67,14 +67,14 @@ export default function PatientExperience() {
      <div className=" mt-24 mb-12  sm:block md:hidden ">
        {/* Image 1 */}
        <div
-          className={`relative rel group ${activeImage === 1 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"}`}
+          className={`relative rel group justify-items-center ${activeImage === 1 ? "mob  pe-64 sm:pe-72  justify-items-start" : " "}`}
          onClick={() => handleImageChange(1)}
        >
          <img
            src="./images/PatientExperience/p2.png"
            id="1"
            alt="Image 1"
-           className={`  mt-16  ${activeImage === 1 ? "w-56 sm:w-60 max-[490px]:w-32 " : "w-56 sm:w-96 max-[490px]:w-56"}`}
+           className={`  mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 1 ? "w-56 sm:w-60 max-[490px]:w-32" : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
@@ -85,14 +85,14 @@ export default function PatientExperience() {
 
        {/* Image 2 */}
        <div
-          className={`relative mt-12 group ${activeImage === 2 ? "mob  pe-64 sm:pe-72   justify-items-start" : " justify-items-center"} ${activeImage === 1 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative mt-12 group ${activeImage === 2 ? "mob  pe-64 sm:pe-72   justify-items-start" : " justify-items-center"} ${activeImage === 1 ? " mtalign mt-72 sm:mt-80 " : " "}`}
          onClick={() => handleImageChange(2)}
        >
          <img
            src="./images/PatientExperience/p4.png"
            id="2"
            alt="Image 3"
-           className={`mt-16  ${activeImage === 2 ? "w-56 sm:w-60 max-[490px]:w-32 widthmob" : "w-56 sm:w-96 max-[490px]:w-56"}`}
+           className={`mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 2 ? "w-56 sm:w-60 max-[490px]:w-32 widthmob" : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
@@ -103,14 +103,14 @@ export default function PatientExperience() {
 
        {/* Image 3 */}
        <div
-          className={`relative rel group ${activeImage === 3 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 2 ? " mtalign2 mt-56 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative rel group justify-items-center ${activeImage === 3 ? "mob  pe-64 sm:pe-72  justify-items-start" : " "} ${activeImage === 2 ? " mtalign2 mt-56 sm:mt-80" : " "}`}
          onClick={() => handleImageChange(3)}
        >
          <img
            src="./images/PatientExperience/p5.png"
            id="1"
            alt="Image 1"
-           className={`  mt-16  ${activeImage === 3 ? "w-56 sm:w-60 max-[490px]:w-32 " : "w-56 sm:w-96 max-[490px]:w-56"}`}
+           className={`  mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 3 ? "w-56 sm:w-60 max-[490px]:w-32 " : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
@@ -121,14 +121,14 @@ export default function PatientExperience() {
 
        {/* Image 4 */}
        <div
-          className={`relative rel group ${activeImage === 4 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 3 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative rel group justify-items-center ${activeImage === 4 ? "mob  pe-64 sm:pe-72  justify-items-start" : " "} ${activeImage === 3 ? " mtalign mt-72 sm:mt-80 " : " "}`}
          onClick={() => handleImageChange(4)}
        >
          <img
            src="./images/PatientExperience/p6.png"
            id="1"
            alt="Image 1"
-           className={`  mt-16  ${activeImage === 4 ? "w-56 sm:w-60 max-[490px]:w-32 " : "w-56 sm:w-96 max-[490px]:w-56"}`}
+           className={`  mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 4 ? "w-56 sm:w-60 max-[490px]:w-32 " : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
@@ -139,14 +139,14 @@ export default function PatientExperience() {
 
        {/* Image 5 */}
        <div
-          className={`relative rel group ${activeImage === 5 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 4 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative rel group justify-items-center ${activeImage === 5 ? "mob  pe-64 sm:pe-72  justify-items-start" : " "} ${activeImage === 4 ? " mtalign mt-72 sm:mt-80 " : " "}`}
          onClick={() => handleImageChange(5)}
        >
          <img
            src="./images/PatientExperience/p7.png"
            id="1"
            alt="Image 1"
-           className={`  mt-16  ${activeImage === 5 ? "w-56 sm:w-60 max-[490px]:w-32 " : "w-56 sm:w-96 max-[490px]:w-56"}`}
+           className={`  mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 5 ? "w-56 sm:w-60 max-[490px]:w-32 " : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
@@ -157,14 +157,14 @@ export default function PatientExperience() {
 
        {/* Image 6 */}
        <div
-          className={`relative mt-12 group ${activeImage === 6 ? "mob  pe-64 sm:pe-72  justify-items-start" : " justify-items-center"} ${activeImage === 5 ? " mtalign mt-72 sm:mt-80 justify-items-center" : " "}`}
+          className={`relative mt-12 justify-items-center group ${activeImage === 6 ? "mob  pe-64 sm:pe-72  justify-items-start" : " "} ${activeImage === 5 ? " mtalign mt-72 sm:mt-80 " : " "}`}
          onClick={() => handleImageChange(6)}
        >
          <img
            src="./images/PatientExperience/p8.png"
            id="2"
            alt="Image 3"
-           className={`mt-16  ${activeImage === 6 ? "w-56 sm:w-60 max-[490px]:w-32 widthmob" : "w-56 sm:w-96 max-[490px]:w-56"}`}
+           className={`mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 6 ? "w-56 sm:w-60 max-[490px]:w-32 widthmob" : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
@@ -182,7 +182,7 @@ export default function PatientExperience() {
                 </div>
 
                 <div>
-                        <img src="./images/PatientExperience/p10.png" className="w-full hidden lg:block" alt="" />
+                        <img src="./images/PatientExperience/p10.png" className="w-full mt-0 2xl:mt-32 hidden lg:block" alt="" />
                         <img src="./images/PatientExperience/p10.png" className={` w-full block sm:block md:block lg:hidden ${activeImage === 6 ? " mtalign2 mt-56 sm:mt-80" : ""}`} alt="" />
                 </div>
 

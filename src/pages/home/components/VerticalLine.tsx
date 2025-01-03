@@ -156,7 +156,7 @@ export default function VerticalLineWithExpertise() {
               <p className="text-base mt-4">{item.description}</p>
               <img
                 src={item.image}
-                className="h-48 mt-5"
+                className="h-48 mt-5 w-[100%] sm:w-[60%] lg:w-[80%] "
                 alt={item.title}
               />
             </div>
