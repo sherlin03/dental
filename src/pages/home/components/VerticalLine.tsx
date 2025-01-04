@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
 export default function VerticalLineWithExpertise() {
-  const buttonPositions = [0, 40, 80, 120, 170]; // Predefined positions for the mini line
+  const buttonPositions = [0,70,140,220,300]; // Predefined positions for the mini line
   const [position, setPosition] = useState(0); // Initial position of the mini line
 
   const content = [
@@ -88,36 +88,36 @@ export default function VerticalLineWithExpertise() {
       <div className="grid grid-cols-1 lg:grid-cols-8 gap-4 items-center">
         {/* Vertical Line Container */}
         <div
-          className="relative h-[200px] col-span-1 mt-5 lg:mt-0"
+          className="relative h-[350px] col-span-1 mt-11 lg:mt-28"
           
         >
           {/* Main Vertical Line */}
-          <div className="absolute left-1/2 -translate-x-1/2 h-full w-[5px] bg-gray-400"></div>
+          <div className="absolute left-1/2 -translate-x-1/2 h-full w-[5px] ml-0 sm:ml-7 xl:ml-14 bg-gray-400"></div>
 
           {/* Movable Mini Line */}
           <div
-            className="absolute left-1/2 -translate-x-1/2 w-[6px] h-[35px] bg-[rgba(65,185,129,1)] transition-all duration-300"
+            className="absolute left-1/2 -translate-x-1/2 w-[6px] h-[50px] ml-0 sm:ml-7 xl:ml-14 bg-[rgba(65,185,129,1)] transition-all duration-300"
             style={{ top: `${buttonPositions[position]}px` }}
           ></div>
         </div>
 
         {/* Expertise Items */}
         <div
-          className="flex flex-col space-y-4 col-span-2"
+          className="flex flex-col space-y-4 mr-0 sm:mr-28 lg:-mr-7 xl:mr-0 col-span-1 lg:col-span-2"
          
         >
           {content.map((item, index) => (
             <div
               key={index}
-              className="flex items-center space-x-4 cursor-pointer"
+              className="flex items-center space-x-4 cursor-pointer mt-16"
               onClick={() => scrollToContent(index)}
             >
               <p
-                className={`${
+                className={` ${
                   position === index
-                    ? "text-xl text-[rgba(59,79,162,1)]"
-                    : "text-xl"
-                }`}
+                    ? "text-xl sm:text-2xl text-[rgba(59,79,162,1)]"
+                    : "text-xl sm:text-2xl"
+                } mt-8`}
               >
                 {item.title}
               </p>

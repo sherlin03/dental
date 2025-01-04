@@ -33,7 +33,7 @@ export default function Service() {
 
                     {/* block 2 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
-                        <div className="relative mt-0 2xl:mt-8">
+                        <div className="relative mt-0 2xl:mt-8" data-aos="fade-right">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                                 General Dentistry
                             </p>
@@ -55,7 +55,7 @@ export default function Service() {
 
                         </div>
 
-                        <div className="mt-10 lg:mt-0 "  >
+                        <div className="mt-10 lg:mt-0 "  data-aos="fade-left">
                             <div className="relative">
                             <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <img src="./images/services/s13.png" alt="" className="hidden lg:block absolute top-[-30px] right-36" />
@@ -78,7 +78,7 @@ export default function Service() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 sm
                     mb-5 lg:mb-24"  >
-                        <div>
+                        <div data-aos="fade-right">
                             <div className="relative">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
                                 <div >
@@ -92,7 +92,7 @@ export default function Service() {
                         </div>
 
 
-                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8">
+                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" data-aos="fade-left">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                                 Cosmetic Dentistry
                             </p>
@@ -118,7 +118,7 @@ export default function Service() {
 
                     {/* block 4 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
-                        <div className="relative mt-0 2xl:mt-8" >
+                        <div className="relative mt-0 2xl:mt-8" data-aos="fade-right">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
                                 Restorative Dentistry:
                             </p>
@@ -137,7 +137,7 @@ export default function Service() {
 
                         </div>
 
-                        <div className="mt-10 lg:mt-0 " >
+                        <div className="mt-10 lg:mt-0 " data-aos="fade-left" >
                             <div className="relative">
 
                             <img src="./images/services/s9.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
@@ -160,7 +160,7 @@ export default function Service() {
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 sm
                     mb-5 lg:mb-24" >
-                        <div>
+                        <div data-aos="fade-right"> 
                             <div className="relative">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
                                 <div >
@@ -174,7 +174,7 @@ export default function Service() {
                         </div>
 
 
-                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" >
+                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" data-aos="fade-left" >
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                             Orthodontics
                             </p>
@@ -198,7 +198,7 @@ export default function Service() {
 
                      {/* block 6 start  */}
                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
-                        <div className="relative mt-0 2xl:mt-8">
+                        <div className="relative mt-0 2xl:mt-8" data-aos="fade-right">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
                               Oral Surgery
                             </p>
@@ -216,7 +216,7 @@ export default function Service() {
                           </ul>
                         </div>
 
-                        <div className="mt-10 lg:mt-0 "  >
+                        <div className="mt-10 lg:mt-0 "  data-aos="fade-left">
                             <div className="relative">
                             <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <div >

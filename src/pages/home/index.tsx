@@ -98,7 +98,7 @@ export default function Home() {
 
         {/* Happy Customers start */}
      
-        <section className="relative mt-24" >
+        <section className="relative mt-12 lg:mt-24" >
              <div className="relative">
                 <img src="./images/home/s11.png" className=" w-full imgheight h-[500px] realative" alt="" />
 
@@ -108,7 +108,7 @@ export default function Home() {
                             sm:top-[-3rem] md:top-[-3rem] lg:top-[-3rem] px-6" alt="" />
                 {/* <img src="./images/home/Group 104.png" className=" absolute max-[490px]:w-24 w-48 max-[490px]:h-16 h-32 bottom-[30%] max-[490px]:left-[25%] left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2] hidden " /> */}
 
-                <div className="bg-white shadow-lg rounded-2xl p-4  absolute hbox1 w-48 h-32 bottom-[30%]  left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2] ">
+                <div className="bg-white shadow-[0px_5px_5px_rgba(0,0,0,1),0px_-2px_6px_rgba(0,0,0,0.3),0px_0px_1px_1px_rgba(255,255,255,1)] rounded-2xl p-4  absolute hbox1 w-48 h-32 bottom-[30%]  left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2] ">
                   <img src="./images/home/twitter.svg" alt="" className="w-8 p-1 twimg" />
                  <p className="text-black text-justify text-[9px] sm:text-[10px] para3">
                  The implants look and feel like real teeth. My confidence is back, thankKamalashankar
@@ -119,21 +119,23 @@ export default function Home() {
                </div>
 
 
-                <div className="bg-white shadow-lg rounded-2xl p-4 absolute  w-56  h-36 bottom-[-5%]  left-[5%] md:left-[10%] lg:left-[24%] xl:left-[26%]  transition-transform duration-1000 hover:scale-[1.2] hbox2 ">
+                <div className="bg-white shadow-[0px_5px_5px_rgba(0,0,0,1),0px_-2px_6px_rgba(0,0,0,0.3),0px_0px_1px_1px_rgba(255,255,255,1)] rounded-2xl p-4 absolute  w-56  h-36 bottom-[-5%]  left-[5%] md:left-[10%] lg:left-[24%] xl:left-[30%]  transition-transform duration-1000 hover:scale-[1.2] hbox2 ">
                   <div className="relative">
                     <img src="./images/home/h1.svg" alt="" className="absolute top-0 -left-2 w-4"/>
                 <p className="text-black text-justify text-[9px] ps-5 sm:text-[9px] para ">
                 Great with Kids!"<br />
                 “My 7-year-old daughter was terrified of the dentist until we found SUBHA DENTAL CLINIC Dr.Vijayabharathi, 
                   was patient, kind, and made the entire visit fun for her. Now she looks forward to her checkups!” <br />
-                —  Sara M.
+
+                —  Sara M. 
                 </p>
+                <img src="./images/home/h2.svg" className="w-auto h-auto absolute bottom-0 right-1" alt="" />
                 </div>
 
                 </div>
 
 
-                <div className="bg-white shadow-lg rounded-2xl p-4 absolute w-40 max-[490px]:w-20 max-[490px]:h-12 h-24  bottom-[28%] max-[490px]:right-[15%] right-[10%] sm:right-[18%] md:right-[22%] lg:right-[25%] xl:right-[31%] 2xl:right-[39%]  transition-transform duration-1000 hover:scale-[1.2] hbox3">
+                <div className="bg-white shadow-[0px_5px_5px_rgba(0,0,0,1),0px_-2px_6px_rgba(0,0,0,0.3),0px_0px_1px_1px_rgba(255,255,255,1)] rounded-2xl p-4 absolute w-40 max-[490px]:w-20 max-[490px]:h-12 h-24  bottom-[28%] max-[490px]:right-[15%] right-[10%] sm:right-[18%] md:right-[22%] lg:right-[25%] xl:right-[31%] 2xl:right-[39%]  transition-transform duration-1000 hover:scale-[1.2] hbox3">
                 <div className="relative">
                     <img src="./images/home/h3.svg" alt="" className="absolute top-4 -left-2 w-4 insta"/>
 
@@ -144,7 +146,7 @@ export default function Home() {
                 </div>
                 </div>
 
-                <div  className="bg-white shadow-lg rounded-2xl p-4  absolute max-[490px]:w-20 w-40 max-[490px]:h-8 h-16 bottom-[3%] max-[490px]:right-[12%]  right-[10%] sm:right-[20%] md:right-[23%] lg:right-[24%] xl:right-[32%] 2xl:right-[40%] transition-transform duration-1000 hover:scale-[1.2] hbox4">
+                <div  className="bg-white shadow-[0px_5px_5px_rgba(0,0,0,1),0px_-2px_6px_rgba(0,0,0,0.3),0px_0px_1px_1px_rgba(255,255,255,1)]  rounded-2xl p-4  absolute max-[490px]:w-20 w-44 max-[490px]:h-8 h-16 bottom-[3%] max-[490px]:right-[12%]  right-[10%] sm:right-[10%] md:right-[20%] lg:right-[23%] xl:right-[30%] 2xl:right-[38%] transition-transform duration-1000 hover:scale-[1.2] hbox4">
 
                 <p className="text-black text-[9px] ps-5 sm:text-[9px] para ">
                 Customer Happiness Rating <br />

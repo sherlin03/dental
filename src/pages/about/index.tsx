@@ -11,8 +11,8 @@ export default function About() {
 
                 <div className="mt-12 mb-12 container mx-auto">
                     {/* block 1 start  */}
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        <div className="relative mt-0 2xl:mt-8" >
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 " >
+                        <div className="relative mt-0 2xl:mt-8" data-aos="fade-right" >
                             <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg">
                                 <span className="bg-[rgba(249,247,247,1)] px-5 py-2">About</span>
                             </p>
@@ -26,7 +26,7 @@ export default function About() {
                             <img src="./images/about/a3.png" className="absolute bottom-0 right-24 hidden lg:block" alt="" />
                         </div>
 
-                        <div className="mt-12 lg:mt-0 relative"   >
+                        <div className="mt-12 lg:mt-0 relative"  data-aos="fade-left" >
                             <img src="./images/about/a7.png" alt=" " className="w-full hidden sm:block" />
                             <img src="./images/about/a9.png" alt=" " className="hidden sm:block absolute w-52 sm:w-64 md:w-80 lg:w-60 xl:w-72 2xl:w-80 h-[265px] sm:h-[310px] md:h-[380px] lg:h-[250px] xl:h-[320px] 2xl:h-[370px] bottom-[10%] xl:bottom-[10%] 2xl:bottom-[14%] right-[5%] xl:right-[5%] z-10 transition-transform duration-1000 hover:scale-[1.1]" />
                             {/* <img src="./images/about/a8.png" alt=" " className="hidden sm:block absolute w-48 sm:w-56 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[210px] sm:h-[240px] md:h-[320px] lg:h-[220px] xl:h-[280px] 2xl:h-[330px] bottom-[28%] xl:bottom-[28%] left-[15%] md:left-[10%] lg:left-[5%] xl:left-[5%] 2xl:left-[10%] transition-transform duration-1000 hover:scale-[1.1] " /> */}
@@ -51,7 +51,7 @@ export default function About() {
                     <div className="hidden lg:block ">
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-12 ">
-                            <div className="relative" >
+                            <div className="relative" data-aos="fade-right">
                             <img src="./images/about/a12.png" alt="" className="hidden sm:block  w-full lg:w-5/6 2xl:w-5/6 h-auto lg:h-[85%] transition-transform duration-1000 hover:scale-[1.1] " />
                         <img src="./images/about/a11.png" alt="" className="hidden sm:block absolute right-[0%]  lg:right-[16%] 2xl:right-[16%] top-0 2xl:top-0 w-[35%] lg:w-[29%] xl:w-[180px] 2xl:w-[215px] h-[30%] lg:h-[24%] xl:h-[100px] 2xl:h-[120px] transition-transform duration-1000 hover:scale-[1.1] " />
                         <img src="./images/about/a13.png" alt="" className="hidden sm:block absolute left-[0%] bottom-0 lg:bottom-[12%]   w-[37%]   lg:w-[30%] xl:w-[185px] 2xl:w-[225px] h-[28%] lg:h-[27%] xl:h-[110px] 2xl:h-[135px]  transition-transform duration-1000 hover:scale-[1.1]" />
@@ -60,7 +60,7 @@ export default function About() {
                                 <img src="./images/about/a1.png" alt="" className="block sm:hidden w-full  lg:w-5/6 h-auto lg:h-[85%] " />
 
                             </div>
-                            <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" >
+                            <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" data-aos="fade-left">
                                 <p className="text-xl 2xl:text-2xl text-justify font-semibold text-[rgba(55,83,188,1)]">
                                     Dr. Vijayabharathi, Clinical Director, Subha Multi-Speciality Dental Clinic & Implant Center
                                 </p>
@@ -84,7 +84,7 @@ export default function About() {
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  mb-12 ">
 
-                            <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" >
+                            <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" data-aos="fade-right">
                                 <p className="text-xl 2xl:text-2xl text-justify font-semibold text-[rgba(55,83,188,1)]">
                                     Dr. Vijayabharathi, Clinical Director, Subha Multi-Speciality Dental Clinic & Implant Center
                                 </p>
@@ -100,7 +100,7 @@ export default function About() {
                                 <img src="./images/about/a4.png" className="absolute bottom-[-40px] right-24 hidden lg:block" alt="" />
                             </div>
 
-                            <div className="relative mt-12" >
+                            <div className="relative mt-12" data-aos="fade-left">
 
                                 <img src="./images/about/a12.png" alt="" className="hidden sm:block  w-full lg:w-5/6 2xl:w-5/6 h-auto lg:h-[85%] transition-transform duration-1000 hover:scale-[1.1] " />
 
@@ -124,7 +124,7 @@ export default function About() {
                     {/* block 3 end */}
                     {/* block 4 start */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-12 mb-12 ">
-                        <div >
+                        <div data-aos="fade-right">
                             <div className="overflow-hidden  rounded-2xl">
                             <img src="./images/about/a5.png" alt="" className="h-auto lg:h-72 w-full xl:h-80 2xl:h-80 object-cover transition-transform duration-1000 hover:scale-[1.1]" />
                             </div>
@@ -143,7 +143,7 @@ export default function About() {
 
                         </div>
 
-                        <div  >
+                        <div data-aos="fade-left" >
                             <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 w-full lg:w-1/2">
                                 <p className="text-white text-center text-lg 2xl:text-xl  ">
                                     <span className="font-[Risque]">Dental Implants with</span>  <br />

@@ -10,11 +10,11 @@ const year= new Date();
     <footer className="py-5 bg-[#E5E3E3] max-[768px]:pr-6 max-[768px]:pl-6">
       <div className="mx-auto md:container">
 
-      <div className="w-full  py-2 bg-[#E5E3E3] lg:px-5 sm:px-4 sm:flex sm:items-center sm:justify-between">
+      <div className="w-full  py-2 bg-[#E5E3E3] lg:px-5 mt-8 sm:mt-10 sm:px-4 sm:flex sm:items-center sm:justify-between">
             <div >
             <img src="./dentallogo.png" className="h-20" alt="" />
             </div>
-          <div className="flex mt-4 space-x-2 list-none sm:mt-0 text-stone-950 sm:justify-center">
+          <div className="flex -mt-12 space-x-2 list-none sm:mt-0 text-stone-950 sm:justify-center mr-10 sm:mr-0">
             <div className="mx-auto text-xs text-gray-300">
             </div>
             <div className="mx-auto text-xs text-gray-300">
@@ -33,7 +33,7 @@ const year= new Date();
           </div>
         </div>
 
-        <div className="grid w-full gap-8 p-4 pb-2 py-8 lg:px-8 lg:grid-cols-4 md:px-6 md:grid-cols-4">
+        <div className="grid w-full gap-8 p-4 pb-2 py-8 lg:px-8 mt-8 sm:mt-0 lg:grid-cols-4 md:px-6 md:grid-cols-4">
           <div >
             <h2 className="font-semibold">Dental Care</h2>
             <p className="text-sm mt-4">

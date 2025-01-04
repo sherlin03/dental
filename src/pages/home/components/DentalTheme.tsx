@@ -7,7 +7,7 @@ export default function DentalTheme() {
 
     return (
         <>
-            <div className="relative h-[35vh] lg:h-[50vh] xl:h-[70vh] 2xl:h-[70vh]  mt-24 mb-5 xl:mb-24 hidden md:block" >
+            <div className="relative h-[35vh] lg:h-[50vh] xl:h-[70vh] 2xl:h-[70vh]  mt-12 mb-5 xl:mb-24 hidden md:block" >
                 <div className="grid w-full gap-2 p-4 pb-2 py-8 lg:px-8 grid-cols-1 md:px-6  relative">
                     <div className="">
                         <div className="">
@@ -37,7 +37,7 @@ export default function DentalTheme() {
 
                             {/* <img src="./images/home/d5.png" alt="" className="h-4 lg:h-6 xl:h-8 2xl:h-12 w-[65px] lg:w-[100px] xl:w-[150px] 2xl:w-[200px] absolute top-3 lg:top-4 xl:top-4  2xl:top-0 left-[35%] lg:left-[35%] xl:left-[35%]  2xl:left-[35%] z-10" /> */}
 
-                            <img src="./images/home/d5.png" alt="" className="h-4 lg:h-6 xl:h-8 2xl:h-12 w-[65px] lg:w-[100px] xl:w-[150px] 2xl:w-[200px] absolute top-[30%] lg:top-[27%] xl:top-[27%]  2xl:top-[20%] left-[39%] lg:left-[35%] xl:left-[35%]  2xl:left-[34%] z-10" />
+                            <img src="./images/home/d5.png" alt="" className="h-4 lg:h-6 xl:h-8 2xl:h-12 w-[65px] lg:w-[100px] xl:w-[150px] 2xl:w-[200px] absolute top-[30%] lg:top-[27%] xl:top-[27%]  2xl:top-[20%] left-[39%] lg:left-[35%] xl:left-[34%]  2xl:left-[34%] z-10" />
 
 
                             <img src="./images/home/d6.png" alt="" className="h-[240px] lg:h-[280px] xl:h-[350px] 2xl:h-[450px] w-[300px] lg:w-[400px] xl:w-[500px] 2xl:w-[600px] absolute top-[18%] lg:top-[18%] xl:top-[17%] 2xl:top-[10%] right-[5%] lg:right-[5%] xl:right-[10%] 2xl:right-[5%] z-10" />
@@ -62,7 +62,7 @@ export default function DentalTheme() {
                             <img src="./images/home/s9.png" alt="" className="h-4 lg:h-6 w-10 xl:w-16 2xl:w-20  absolute bottom-[-50px] lg:bottom-[-75px] xl:bottom-[-85px] right-[9%] lg:right-[15%] xl:right-[13%] 2xl:right-[15%] z-10" />
 
                             
-                            <img src="./images/home/d8.gif" className="w-[68%]  lg:w-[68%] xl:w-[68%] 2xl:w-[70%] h-[130px] lg:h-[170px] xl:h-[250px] 2xl:h-[300px] absolute bottom-[-23%] lg:bottom-[-26%] xl:bottom-[-30%] 2xl:bottom-[-30%] right-[0%] 2xl:right-[6%] " alt="" />
+                            <img src="./images/home/d8.gif" className="w-[68%]  lg:w-[68%] xl:w-[68%] 2xl:w-[70%] h-[130px] lg:h-[170px] xl:h-[250px] 2xl:h-[300px] absolute bottom-[-23%] lg:bottom-[-26%] xl:bottom-[-30%] 2xl:bottom-[-30%] right-[3%] lg:right-[7%] xl:right-[6%] 2xl:right-[6%] " alt="" />
 
                         </div>
                         <img src="./images/home/d2.png" alt="" className="absolute bottom-4 left-0 w-full " />
