@@ -150,7 +150,7 @@ circle {
         height: 108px;
         left: 5%;
         padding: 9px;
-        bottom: -10%;
+        bottom: 10%;
       }
       .para{
         font-size: 8px;
@@ -172,8 +172,15 @@ circle {
         padding: 3px;
         padding-left: 0px;
         padding-top: 14px;
-        bottom: 0%;
+        bottom: 10%;
         right: 3%;
+      }
+      .hbox5{
+        width: 135px;
+        height: 85px;
+        padding: 13px;
+        left: 21%;
+        bottom: 30%;
       }
 
 }
@@ -181,7 +188,7 @@ circle {
 
 @media (max-width: 390px) {
   .girlheight{
-    left:20%;
+    left:15%;
   }
   .mobw{
     width: 2rem;
@@ -200,7 +207,7 @@ circle {
     height: 95px;
     left: 5%;
     padding: 9px;
-    bottom: -10%;
+    bottom: 10%;
   }
   .para{
     font-size: 7px;
@@ -226,8 +233,16 @@ circle {
     padding: 2px;
     padding-left: 0px;
     padding-top: 14px;
-    bottom: 0%;
+    bottom: 5%;
     right: 3%;
+  }
+
+  .hbox5{
+    width: 135px;
+    height: 73px;
+    padding: 13px;
+    bottom:25%;
+    left: 5%;
   }
 
 }

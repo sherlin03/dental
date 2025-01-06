@@ -36,12 +36,12 @@ export default function Header() {
         theme={navTheme}
         fluid
         rounded
-        className="sticky backdrop-blur-2xl z-50 dark:border-[#3B4FA2] dark:bg-[#3B4FA2] sm:px-4 rounded container mx-auto top-2 px-8 py-2"
+        className="sticky backdrop-blur-2xl z-50 dark:border-[#3B4FA2] dark:bg-[#3B4FA2] sm:px-4 rounded container mx-auto top-2 px-2 py-2"
       >
         <Navbar.Brand href="/">
           <img
-            src="images/logo/dentallogo.png"
-            className="w-16 sm:w-36 h-10 sm:h-16"
+            src="images/logo/dentallogo.svg"
+            className="w-32 sm:w-36 h-16 sm:h-16"
             alt="Dental Hospital"
           />
         </Navbar.Brand>
@@ -71,7 +71,7 @@ export default function Header() {
               pathname: "/contact",
             }}
           >
-            <Button className="bg-[#3B4FA2] ms-4">Make Appointment</Button>
+            <Button className="bg-[#3B4FA2] ms-2">Make Appointment</Button>
           </Link>
 
           <Navbar.Toggle
