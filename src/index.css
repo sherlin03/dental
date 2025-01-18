@@ -250,3 +250,142 @@ circle {
 
 
 
+/* test animation  */
+
+/* .review-image {
+  position: absolute;
+  transition: transform 5s ease-in-out;
+  cursor: pointer;
+  width: 16rem;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.review-image.active {
+  opacity: 1;
+  z-index: 10;
+}
+
+.review-image.inactive {
+  opacity: 0.7;
+  z-index: 5;
+} */
+
+/* .transition-moving {
+  transform: translateX(100%);
+  transition: transform 5s ease-in-out;
+  
+}
+.transition-transform {
+  transition: transform 5s linear, opacity 5s linear;
+  
+} */
+
+.transition-moving {
+  transition: transform 3s ease-in-out, opacity 5s ease-in-out;
+  transform: translateY(-100px);
+  opacity: 1;
+}
+/* Add slide left-to-right transition effect */
+.transition-slide {
+  animation: slide-right 2s ease-in-out;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* service animation  */
+
+@keyframes moveToLast {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes moveToPosition {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.move-to-last {
+  animation: moveToLast 4s ease-in-out;
+}
+
+.move-to-0 {
+  animation: moveToPosition 3s ease-in-out;
+}
+
+.move-to-1 {
+  animation: moveToPosition 2s ease-in-out;
+}
+
+.move-to-2 {
+  animation: moveToPosition 1s ease-in-out;
+}
+
+.move-to-3 {
+  animation: moveToPosition 0s ease-in-out;
+}
+
+
+
+
+
+
+
+.wh{
+  width:100%;
+}
+
+/* slider   */
+
+.slick-slider .slick-dots li button:before {
+  font-size: 8px !important; /* Ensure the dot has the correct size */
+  color: #3B4FA2 !important; /* Set the blue color */
+  opacity: 1 !important; /* Fully visible dots */
+  margin-top: 40px !important;
+}
+
+.slick-slider .slick-dots li.slick-active button:before {
+  color: #41B981 !important; /* Blue color for active dot */
+  opacity: 1 !important;
+  margin-top: 40px !important;
+}
+
+
+
+/* img {
+  transition: transform 5s ease-in-out;
+} */
+
+
+/* Base styles for animation */
+.animate-move img {
+  transform: translateX(100%); /* Move right */
+  transition: transform 5s ease-in-out;
+}
+
+.animate-move img:last-child {
+  transform: translateX(-100%); /* Move left */
+}
+
+.image {
+  transition: transform 4s ease;
+}

@@ -1,8 +1,11 @@
+import { useEffect } from "react";
 
 export default function About() {
 
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top
+      }, []);
 
     return (
         <>
@@ -31,19 +34,28 @@ export default function About() {
                             <img src="./images/about/a9.png" alt=" " className="hidden sm:block absolute w-52 sm:w-64 md:w-80 lg:w-60 xl:w-72 2xl:w-80 h-[265px] sm:h-[310px] md:h-[380px] lg:h-[250px] xl:h-[320px] 2xl:h-[370px] bottom-[10%] xl:bottom-[10%] 2xl:bottom-[14%] right-[5%] xl:right-[5%] z-10 transition-transform duration-1000 hover:scale-[1.1]" />
                             {/* <img src="./images/about/a8.png" alt=" " className="hidden sm:block absolute w-48 sm:w-56 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[210px] sm:h-[240px] md:h-[320px] lg:h-[220px] xl:h-[280px] 2xl:h-[330px] bottom-[28%] xl:bottom-[28%] left-[15%] md:left-[10%] lg:left-[5%] xl:left-[5%] 2xl:left-[10%] transition-transform duration-1000 hover:scale-[1.1] " /> */}
 
-                            <div className="absolute hidden sm:block bottom-[28%] xl:bottom-[28%] left-[15%] md:left-[10%] lg:left-[5%] xl:left-[8%] 2xl:left-[10%] overflow-hidden  rounded-t-[50px]">
+                            <div className="absolute hidden sm:block bottom-[20%] xl:bottom-[28%] left-[15%] md:left-[10%] lg:left-[5%] xl:left-[8%] 2xl:left-[10%] overflow-hidden  rounded-t-[50px]">
                                 <img
                                     src="./images/about/a8.png"
                                     alt="Zoom Effect"
-                                    className="w-48 sm:w-56 md:w-72 lg:w-52 xl:w-60 2xl:w-80 h-[210px] sm:h-[240px] md:h-[320px] lg:h-[220px] xl:h-[250px] 2xl:h-[330px] object-cover transition-transform duration-1000 hover:scale-[1.2]"
+                                    className="w-48 sm:w-56 md:w-80 lg:w-52 xl:w-60 2xl:w-80 h-[210px] sm:h-[240px] md:h-[320px] lg:h-[220px] xl:h-[250px] 2xl:h-[330px] object-cover transition-transform duration-1000 hover:scale-[1.2]"
                                 />
                             </div>
-                            <div className="hidden sm:block absolute bottom-[9%] md:bottom-[8%] xl:bottom-[8%] 2xl:bottom-[13%] left-[18%] md:left-[15%] lg:left-[8%] xl:left-[10%] 2xl:left-[13%] overflow-hidden z-20  ">
-                                <img src="./images/about/a10.png" alt=" " className=" w-48  sm:w-56 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[100px] md:h-[130px] lg:h-[100px] xl:h-[130px] 2xl:h-[150px]   object-cover transition-transform duration-1000 hover:scale-[1.1] " />
+                            <div className="hidden sm:block absolute bottom-[9%] md:bottom-[8%] lg:bottom-[8%] xl:bottom-[10%] 2xl:bottom-[14%] left-[18%] md:left-[15%] lg:left-[8%] xl:left-[10%] 2xl:left-[13%] overflow-hidden z-20  ">
+                                <img src="./images/about/a10.svg" alt=" " className=" w-48  sm:w-60 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[140px] md:h-[170px] lg:h-[125px] xl:h-[140px] 2xl:h-[160px]   object-cover transition-transform duration-1000 hover:scale-[1.1] " />
+
+
+                                {/* <p className="font-[Risque] bg-[rgba(65,185,129,1)] px-5 py-2 text-white w-48  sm:w-56 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[100px] md:h-[130px] lg:h-[130px] xl:h-[130px] 2xl:h-[150px]   object-cover transition-transform duration-1000 hover:scale-[1.1] text-center font-thin text-lg xl:text-xl shadow-2xl">
+                                Inhouse <span className="text-2xl xl:text-3xl">3D</span> <br />
+                                    imaging <br />
+                                    first of its kind in <br />
+                                south tamilnadu 
+                                </p> */}
+                            
                             </div>
 
                         </div>
-                        <img src="./images/about/a2.png" className="w-full h-auto block sm:hidden" alt="" />
+                        <img src="./images/about/a2.svg" className="w-full h-auto block sm:hidden" alt="" />
                     </div>
                     {/* block 1 end  */}
                     {/* block 2 start  */}
@@ -146,9 +158,8 @@ export default function About() {
                         <div data-aos="fade-left" >
                             <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 w-full lg:w-1/2">
                                 <p className="text-white text-center text-lg 2xl:text-xl  ">
-                                    <span className="font-[Risque]">Dental Implants with</span>  <br />
-                                    <span className="font-bold">Dr. P. Kamalashankar MDS,</span><br />
-                                    <span className="font-[Risque]">DICOI(USA)</span>
+                                    <span className="font-[Risque]">Dr. Kamalashankar’s trained cmc vellore, and he is former senior house officer.</span>  <br />
+                                  
                                 </p>
 
                             </div>
@@ -167,8 +178,14 @@ export default function About() {
 
                     {/* block 4 end */}
 
+                    {/* last block  */}
 
-
+                        <div className=" ">
+                            <p className="text-justify sm:text-center px-8 sm:px-20 xl:px-40">
+                            Gots operates in all over the state and also internationally for implants most for consultation. 
+                            Advance digital imaging with 3d technology and introvoral scanning with digital smile designing
+                            </p>
+                       </div>                                            
 
 
                 </div>

@@ -1,5 +1,5 @@
 import ImageGallery from "./components/ImageHoverComponent";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 // import MobImageGallery from "./components/MobImageGallery";
 
 export default function PatientExperience() {
@@ -8,7 +8,9 @@ export default function PatientExperience() {
   const handleImageChange = (id: number) => {
     setActiveImage(id);
   };
-
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
 
 
     return (
@@ -19,7 +21,7 @@ export default function PatientExperience() {
                 <div className=" mt-0 lg:mt-12  mb-12 container mx-auto">
                     {/* block 1 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-                        <div className="relative" >
+                        <div className="relative" data-aos="fade-right">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-16">
                                 <span className="bg-[rgba(249,247,247,1)] px-5 py-2">Patience Experience</span>
                             </p>
@@ -42,7 +44,7 @@ export default function PatientExperience() {
                             </button>
                             
                         </div>
-                        <div className="mt-10 lg:mt-0"  >
+                        <div className="mt-10 lg:mt-0"  data-aos="fade-left">
                             <img src="./images/PatientExperience/p1.png" alt=" " className="w-full h-auto " />
                         </div>
 
@@ -52,7 +54,7 @@ export default function PatientExperience() {
 
                     {/* desktopview  */}
 <div>
-            <div className="mt-20 mb-5 hidden md:block relative h-[365px] lg:h-[450px] ">
+            <div className="mt-20 mb-5 hidden md:block relative h-[365px] lg:h-[450px] " data-aos="fade-left">
  
             <ImageGallery/>
             </div>
@@ -85,19 +87,19 @@ export default function PatientExperience() {
 
        {/* Image 2 */}
        <div
-          className={`relative mt-12 group ${activeImage === 2 ? "mob  pe-64 sm:pe-72   justify-items-start" : " justify-items-center"} ${activeImage === 1 ? " mtalign mt-72 sm:mt-80 " : " "}`}
+          className={`relative mt-12 group justify-items-center ${activeImage === 2 ? "mob  pe-64 sm:pe-72   justify-items-start" : " "} ${activeImage === 1 ? " mtalign mt-72 sm:mt-80 " : " "}`}
          onClick={() => handleImageChange(2)}
        >
          <img
            src="./images/PatientExperience/p4.png"
            id="2"
            alt="Image 3"
-           className={`mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 2 ? "w-56 sm:w-60 max-[490px]:w-32 widthmob" : ""}`}
+           className={`  mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 2 ? "w-56 sm:w-60 max-[490px]:w-32" : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
            alt="New Image 3"
-           className={`absolute max-[490px]:top-10 top-44 leftalign left-28 max-[550px]:w-[75%]  w-[80%] sm:w-[25rem]  opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10  ${activeImage === 2 ? "opacity-100" : "opacity-0"}`}
+           className={`absolute max-[490px]:top-10 top-28 leftalign left-28 max-[550px]:w-[75%] w-[80%] sm:w-[25rem]  opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10  ${activeImage === 2 ? "opacity-100" : "opacity-0"}`}
          />
        </div>
 
@@ -157,19 +159,19 @@ export default function PatientExperience() {
 
        {/* Image 6 */}
        <div
-          className={`relative mt-12 justify-items-center group ${activeImage === 6 ? "mob  pe-64 sm:pe-72  justify-items-start" : " "} ${activeImage === 5 ? " mtalign mt-72 sm:mt-80 " : " "}`}
+          className={`relative mt-12 group justify-items-center ${activeImage === 6 ? "mob  pe-64 sm:pe-72   justify-items-start" : " "} ${activeImage === 5 ? " mtalign mt-72 sm:mt-80 " : " "}`}
          onClick={() => handleImageChange(6)}
        >
          <img
            src="./images/PatientExperience/p8.png"
            id="2"
            alt="Image 3"
-           className={`mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 6 ? "w-56 sm:w-60 max-[490px]:w-32 widthmob" : ""}`}
+           className={`  mt-16 w-56 sm:w-96 max-[490px]:w-56  ${activeImage === 6 ? "w-56 sm:w-60 max-[490px]:w-32" : ""}`}
          />
          <img
            src="./images/PatientExperience/p3.png"
            alt="New Image 3"
-           className={`absolute max-[490px]:top-10 top-44 leftalign left-28 max-[550px]:w-[75%]  w-[80%] sm:w-[25rem]  opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10  ${activeImage === 6 ? "opacity-100" : "opacity-0"}`}
+           className={`absolute max-[490px]:top-10 top-28 leftalign left-28 max-[550px]:w-[75%] w-[80%] sm:w-[25rem]  opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10  ${activeImage === 6 ? "opacity-100" : "opacity-0"}`}
          />
        </div>
      </div>

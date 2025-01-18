@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css"; // Import AOS styles
+import  { useState} from "react";
+import VerticalText from "./VerticalText";
+// import "./App.css"; // Import custom styles
 
 // Sample data with 5 images and content
 const reviews = [
@@ -73,43 +73,38 @@ const reviews = [
 
 const App: React.FC = () => {
   const [orderedImages, setOrderedImages] = useState(reviews);
-
-  // Initialize AOS animations
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      easing: "ease-in-out", // Animation easing
-      once: true, // Whether animation should run only once
-    });
-  }, []);
+  const [transitioning, setTransitioning] = useState(false);
 
   // Handle image click: Rearrange images
   const handleImageClick = (index: number) => {
-    // If the clicked image is already the 5th, do nothing.
     if (index === orderedImages.length - 1) return;
 
-    const clickedImage = orderedImages[index]; // Selected image
-    const nextImages = orderedImages.slice(index + 1); // Images after the selected one
-    const previousImages = orderedImages.slice(0, index); // Images before the selected one
+    const clickedImage = orderedImages[index];
+    const nextImages = orderedImages.slice(index + 1);
+    const previousImages = orderedImages.slice(0, index);
 
-    // Rearrange the order: next images -> previous images -> clicked image
     const reorderedImages = [...nextImages, ...previousImages, clickedImage];
 
-    setOrderedImages(reorderedImages);
+    // Trigger transition
+    setTransitioning(true);
+
+    setTimeout(() => {
+      // Update the order after the transition
+      setOrderedImages(reorderedImages);
+      setTransitioning(false);
+    }, 5000); // Match the CSS transition duration
   };
 
   return (
-    <div className="relative mt-24">
+    <div className="relative mt-24 hidden lg:block">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 p-0 sm:p-6">
-        {/* Images Container */}
         <div className="flex flex-wrap w-full justify-evenly col-span-7 2xl:col-span-6 gap-1 mb-6 items-end relative">
-          {/* Background Image */}
-          <img
-            src="./images/home/s18.png"
-            alt=""
-            className="absolute -top-4 right-28 max-[390px]:right-24 max-[490px]:right-32 xl:right-40 w-12 sm:w-20 md:w-20 lg:w-20 h-40 sm:h-32 md:h-32 lg:h-48"
-           
-          />
+        <div className="absolute top-8 right-44 xl:right-48 2xl:right-52  ">
+            <div className="relative">
+              <VerticalText/>
+            <img src="./images/home/s19.png" alt="" className="absolute  -bottom-3 -right-6 " />
+            </div>
+          </div>
 
           {/* Review Images */}
           {orderedImages.map((review, index) => (
@@ -117,19 +112,19 @@ const App: React.FC = () => {
               key={review.id}
               src={review.image}
               alt={`User ${review.id}`}
-              className={`cursor-pointer rounded-lg object-cover transition-all duration-1000 ease-in-out ${
+              className={`cursor-pointer rounded-lg object-cover ${
+                transitioning ? "transition-moving" : ""
+              } ${
                 index === orderedImages.length - 1
-                  ? "w-16 max-[450px]:w-12 max-[390px]:w-20 sm:w-28 md:w-28 lg:w-32  max-[490px]:h-[350px] h-[490px]  sm:h-80 md:h-[490px] lg:h-[500px]"
-                  : "w-16  !max-[390px]:w-12 max-[450px]:w-16 sm:w-24 md:w-24 lg:w-24 max-[490px]:h-[200px] h-48  sm:h-48  md:h-48 lg:h-[60%] opacity-70"
+                  ? "w-16 sm:w-28 md:w-28 lg:w-28 h-[490px] sm:h-80 md:h-[490px] lg:h-[500px]"
+                  : "w-16 sm:w-24 md:w-24 lg:w-20 h-48 sm:h-48 md:h-48 lg:h-[60%] opacity-70"
               }`}
               onClick={() => handleImageClick(index)}
-              data-aos={index === orderedImages.length - 1 ? "zoom-in" : "zoom-in"}
             />
           ))}
         </div>
 
-        {/* Content Section */}
-        <div className=" text-left md:text-left ps-0 lg:ps-6 col-span-5 2xl:col-span-6">
+        <div className="text-left md:text-left ps-0 lg:ps-6 col-span-5 2xl:col-span-6">
           <p className="text-3xl sm:text-3xl font-semibold mt-6 md:mt-12">
             {orderedImages[orderedImages.length - 1].title}
           </p>
@@ -139,9 +134,7 @@ const App: React.FC = () => {
           <ul className="mt-4 space-y-2 sm:space-y-3 list-disc list-inside text-sm sm:text-base">
             {orderedImages[orderedImages.length - 1].listItems.map(
               (item, idx) => (
-                <li key={idx} data-aos="fade-up">
-                  {item}
-                </li>
+                <li key={idx}>{item}</li>
               )
             )}
           </ul>

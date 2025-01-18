@@ -1,6 +1,9 @@
+import { useEffect } from "react";
 
 export default function Contact() {
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top
+  }, []);
 
   return (
 
@@ -111,8 +114,8 @@ export default function Contact() {
         {/* block 2 start  */}
         <div className="container mx-auto relative mt-12 mb-0 lg:mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  ">
-            <div >
-              <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-16">
+            <div data-aos="fade-right">
+              <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-0 lg:mt-10">
                 <span className="bg-[rgba(249,247,247,1)] px-4 py-2">Contact Us</span>
               </p>
               <p className="text-4xl font-bold mt-8 justify-items-start">
@@ -161,8 +164,8 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="flex  justify-center h-[auto] lg:h-[85vh] "  >
-              <div className="bg-white shadow-2xl h-fit rounded-[20px] p-6 mt-16 mb-16 w-full max-w-lg">
+            <div className="flex  justify-center h-[auto] lg:h-[85vh] " data-aos="fade-left" >
+              <div className="bg-white shadow-2xl h-fit rounded-[20px] p-6 mt-5 lg:mt-16 mb-16 w-full max-w-lg">
                 {/* Header Section */}
                 <div className=" mb-6 justify-items-center">
                   <img src="./images/contact/c6.png" alt="" />
@@ -334,7 +337,7 @@ export default function Contact() {
         </div>
         {/* block 2 End  */}
         {/* block 3 Start  */}
-        <div className="w-full mt-5 lg:mt-28" >
+        <div className="w-full pt-16 lg:mt-0" >
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.6635874444887!2d77.86449257366554!3d8.336185399451606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b047ff2ae30e983%3A0xd2ddb4e57965b313!2sSubha%20Dental%20Clinic%20Thisaiyanvilai!5e0!3m2!1sen!2sin!4v1732184675639!5m2!1sen!2sin"

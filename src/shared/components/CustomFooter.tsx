@@ -36,26 +36,26 @@ const year= new Date();
         <div className="grid w-full gap-8 p-4 pb-2 py-8 lg:px-8 mt-8 sm:mt-0 lg:grid-cols-4 md:px-6 md:grid-cols-4">
           <div >
             <h2 className="font-semibold">Dental Care</h2>
-            <p className="text-sm mt-4">
+            <p className="text-sm text-justify mt-4">
             Your trusted partner in oral health.
              Offering expert dental services with personalized care in a comfortable, welcoming environment.
             </p>
           </div>
           <div className="text-stone-950 ">
             <h2 className="font-semibold">Contact Us</h2>
-            <p className="text-sm mt-4">
+            <p className="text-sm text-justify md:text-start mt-4 ">
             25G/1,Nazareth road near new 
-            bus stand, <br />
-            Thuthukodi district,<br />
-            sathankulam-628704. <br />
+            bus stand, <br/>
+            Thuthukodi district,
+            sathankulam-628704. <br/> 
             Phone No:9443750377 
             </p>
-            <p className="text-sm mt-2">
+            <p className="text-sm text-justify md:text-start mt-2 ">
             230C, Kanagasabapathy Complex ,<br />
-            Opp to manaraja Kovil near new bus stand,<br />
+            Opp to manaraja Kovil near new bus stand,
             Udangudi Road,  <br />
-            Thirunalveli District,<br />
-            Tisayanvilai-627657. <br />
+            Thirunalveli District,
+            Tisayanvilai-627657. <br /> 
             Phone No:9443750377
             </p>
           </div>
@@ -72,10 +72,10 @@ const year= new Date();
 
             <ul className="list-disc list-inside ml-4 mt-4">
             <li><Link to="/" className="text-sm">Home</Link></li>
-            <li><Link to="/about" className="text-sm">About</Link></li>
-            <li><Link to="/service" className="text-sm">Service</Link></li>
-            <li><Link to="/patientExperience" className="text-sm">Patient Experience</Link></li>
-            <li><Link to="/contact" className="text-sm">Contact Us</Link></li>
+            <li><Link to="about" className="text-sm">About</Link></li>
+            <li><Link to="service" className="text-sm">Service</Link></li>
+            <li><Link to="patientExperience" className="text-sm">Patient Experience</Link></li>
+            <li><Link to="contact" className="text-sm">Contact Us</Link></li>
         </ul>
           </div>
         </div>

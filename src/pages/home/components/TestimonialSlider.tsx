@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 const reviews = [
   {
     id: 1,
-    
+    image: "./images/home/st13.png",
     content: "Professionals in their craft! All products were super amazing.",
     title: "General Dentistry",
     description:
@@ -21,7 +21,7 @@ const reviews = [
   },
   {
     id: 2,
-    
+    image: "./images/home/st14.png",
     content: "Outstanding service and attention to detail!",
     title: "Cosmetic Dentistry",
     description:
@@ -36,7 +36,7 @@ const reviews = [
   },
   {
     id: 3,
-    
+    image: "./images/home/st15.png",
     content: "Exceptional quality and a team that truly cares.",
     title: "Orthodontics",
     description:
@@ -51,7 +51,7 @@ const reviews = [
   },
   {
     id: 4,
-    
+    image: "./images/home/st16.png",
     content: "A wonderful experience from start to finish.",
     title: "Pediatric Dentistry",
     description:
@@ -66,7 +66,7 @@ const reviews = [
   },
   {
     id: 5,
-    
+    image: "./images/home/st17.png",
     content: "Highly recommend for any project, big or small!",
     title: "Periodontics",
     description:
@@ -82,43 +82,61 @@ const reviews = [
 ];
 
 const TestimonialSlider: React.FC = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: false,
+      autoplaySpeed: 5000,
+    };
+  
+    return (
+      <div className="mx-auto block lg:hidden w-full max-w-5xl " >
+        <div className="relative ">
+        <h2 className="text-4xl font-bold text-start mb-10 ml-10">Services</h2>
+            <img src="./images/home/s9.png" alt="" className="absolute -bottom-5 left-10" />
+        </div>
+        <Slider {...settings}>
+  {reviews.map((review) => (
+    <div
+      key={review.id}
+      className="relative flex flex-col items-center text-center"
+    >
+      <div className="relative z-10 wh">
+        {/* Background Image with Opacity */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(${review.image})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.1,
+          }}
+        ></div>
 
-  return (
-    <div className="mx-auto block lg:hidden w-full max-w-5xl px-4 py-8  ">
-      <h2 className="text-2xl font-bold text-center mb-8">Our Services</h2>
-      <Slider {...settings}>
-        {reviews.map((review) => (
-          <div
-            key={review.id}
-            className="flex flex-col items-center text-center  p-6"
-          >
-          
-            <h3 className="text-3xl font-semibold text-gray-800">
-              {review.title}
-            </h3>
-            <p className="text-gray-600 text-sm text-justify mt-2">{review.description}</p>
-            <ul className="text-sm text-gray-500 mt-4 space-y-1">
-              {review.listItems.map((item, index) => (
-                <li key={index} className="list-disc list-inside">
-                  {item}
-                </li>
-              ))}
-            </ul>
-           
-          </div>
-        ))}
-      </Slider>
+        {/* Content */}
+        <div className="relative z-10">
+          <h3 className="text-3xl font-bold text-start opacity-100 pt-5 ps-10 text-[#3B4FA2] ">{review.title}</h3>
+          <p className="text-sm text-justify ml-10 mr-10 mt-5 opacity-100">
+            {review.description}
+          </p>
+          <ul className="text-sm mt-4 space-y-1 pl-10 sm:pl-16  justify-items-start opacity-100 pb-10">
+            {review.listItems.map((item, index) => (
+              <li key={index} className="list-disc list-inside">
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
-  );
-};
+  ))}
+</Slider>
 
-export default TestimonialSlider;
+      </div>
+    );
+  };
+  
+  export default TestimonialSlider;

@@ -5,14 +5,25 @@ import AOS from "aos";
 import GenServices from "./components/GenServices";
 import TypingEffectHead from "./components/TypingEffectHead";
 import DentalTheme from "./components/DentalTheme";
+import TestimonialSlider from "./components/TestimonialSlider";
 
 
 export default function Home() {
 
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 3000,
+  //   });
+  // }, []);
+
   useEffect(() => {
+    window.scrollTo(0, 0);
+
     AOS.init({
-      duration: 3000,
+      duration: 3000, 
     });
+
+    AOS.refresh();
   }, []);
  
   
@@ -20,19 +31,16 @@ export default function Home() {
     return (
         <>
         <div className="block lg:hidden">
-                <div className="grid w-full gap-2 p-4 pb-2 py-8 lg:px-8 grid-cols-3 md:px-6 mb-8">
-                    <div className="grid justify-items-start lg:justify-items-end ">
-                        <img src="./images/home/s1.png" className="h-52  sm:h-56 md:h-96 transition-transform duration-1000 hover:scale-[1.1]"
-      data-aos="zoom-in-up"  data-aos-duration="3000" alt="" />
+                <div className="grid w-full gap-10 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6 mb-8">
+                    <div className="grid justify-items-end  ">
+                        <img src="./images/home/s1.png" className="w-full h-[100%]  !sm:h-auto !md:h-auto transition-transform duration-1000 hover:scale-[1.1]"
+      data-aos="zoom-in-up"  data-aos-duration="2000" alt="" />
                     </div>
-                    <div className="justify-items-center">
-                        <img src="./images/home/s2.png" className="h-52 sm:h-56 md:h-96 transition-transform duration-1000 hover:scale-[1.1]"
-      data-aos="zoom-in-up" data-aos-duration="3000" alt="" />
+                    <div className="justify-items-start">
+                        <img src="./images/home/s2.png" className="w-full h-[100%]  sm:h-auto md:h-auto transition-transform duration-1000 hover:scale-[1.1]"
+      data-aos="zoom-in-up" data-aos-duration="2000" alt="" />
                     </div>
-                    <div className="justify-items-end lg:justify-items-start ">
-                        <img src="./images/home/s12.png" className="h-52 sm:h-56 md:h-96 transition-transform duration-1000 hover:scale-[1.1]"
-      data-aos="zoom-in-up" data-aos-duration="3000" alt="" />
-                    </div>
+                  
                 </div>
             </div>
         
@@ -48,19 +56,16 @@ export default function Home() {
             {/* first block start  */}
            
             <div className="hidden lg:block">
-                <div className="grid w-full gap-2 p-4 pb-2 py-8 lg:px-8 grid-cols-3 md:px-6 mb-8">
-                    <div className="grid justify-items-start lg:justify-items-end ">
-                        <img src="./images/home/s1.png" className="h-44 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 hover:scale-[1.1]"
-      data-aos="zoom-in-up"  data-aos-duration="3000" alt="" />
+                <div className="grid w-full gap-10 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6 mb-8">
+                    <div className="grid justify-items-end lg:justify-items-end ">
+                        <img src="./images/home/s1.png" className="h-52 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 hover:scale-[1.1]"
+      data-aos="zoom-in-up"  data-aos-duration="1000" alt="" />
                     </div>
-                    <div className="justify-items-center">
-                        <img src="./images/home/s2.png" className="h-44 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 hover:scale-[1.1]"
-      data-aos="zoom-in-up" data-aos-duration="3000" alt="" />
+                    <div className="justify-items-start">
+                        <img src="./images/home/s2.png" className="h-52 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 hover:scale-[1.1]"
+      data-aos="zoom-in-up" data-aos-duration="1000" alt="" />
                     </div>
-                    <div className="justify-items-end lg:justify-items-start ">
-                        <img src="./images/home/s12.png" className="h-44 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 hover:scale-[1.1]"
-      data-aos="zoom-in-up" data-aos-duration="3000" alt="" />
-                    </div>
+                   
                 </div>
             </div>
           
@@ -68,9 +73,10 @@ export default function Home() {
             {/* intro words start */}
             <div className="justify-items-center mb-8 " data-aos="zoom-in-down" data-aos-duration="1500">
 
-            <p className="text-2xl font-bold  text-justify lg:text-center"><span className="bg-[rgba(88,215,155,1)] rounded pl-1 pr-0 shadow shadow-[#333635]">Subha Dent</span>al care, Where Your Smile Matters Most</p>
-            <p className= "text-justify lg:text-center text-sm mt-4">
-            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. Whether you're here for a routine check-up or a complete smile makeover, we are committed to helping you achieve and maintain a healthy, beautiful smile.
+            <p className="text-2xl font-bold  text-left lg:text-center">
+            <span className="bg-[rgba(88,215,155,1)] rounded pl-1 pr-0 shadow shadow-[#333635] tracking-tight ">Subha Dental Multi Speciality Clinic </span> &nbsp;,  Where Your Smile Matters Most!</p>
+            <p className= "text-justify lg:text-center text-sm mt-4 w-full lg:w-[80%] ">
+            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold text-justify lg:text-center text-base text-[rgba(59,79,162,1)] "> One of the leading implantalogist in whole state tamilnadu.</span>
                </p>
             </div>
             </section>
@@ -78,6 +84,10 @@ export default function Home() {
             {/* Services  start */}
             <section className="container w-[95%] lg:w-[90%] relative mx-auto">
               <GenServices/>
+              
+            </section>
+            <section className="w-full">
+            <TestimonialSlider/>
             </section>
             {/* Services  end */}
 
@@ -89,8 +99,10 @@ export default function Home() {
             {/* dental image end */}
 
             {/* why us start */}
-            <section className="container w-[95%] lg:w-[90%] relative mx-auto">
+            <section className="container w-[95%] lg:w-[90%] mx-auto  relative ">
+              <div >
                 <VerticalLineWithExpertise/>
+              </div>
             </section>
             {/* why us End */}
             
@@ -103,7 +115,7 @@ export default function Home() {
                 <img src="./images/home/s11.png" className=" w-full imgheight h-[500px] realative" alt="" />
 
                 <img src="./images/home/Mask group.png" className="  absolute 
-                          girlheight h-[550px] 
+                          girlheight h-[555px] 
                             top-[-3rem]  left-[15%] sm:left-[20%] md:left-1/4 lg:left-[35%] 
                             sm:top-[-3rem] md:top-[-3rem] lg:top-[-3rem] px-6" alt="" />
                 {/* <img src="./images/home/Group 104.png" className=" absolute max-[490px]:w-24 w-48 max-[490px]:h-16 h-32 bottom-[30%] max-[490px]:left-[25%] left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2] hidden " /> */}
@@ -183,7 +195,7 @@ export default function Home() {
 
              </div>
 
-           
+         
 
         </section>
          {/* Happy Customers end */}
