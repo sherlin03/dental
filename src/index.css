@@ -119,8 +119,23 @@ circle {
    .widthmob{
     width: 10rem;
    }
+   .bgspace{
+    height: 120vh;
+   }
+   .bgspace1{
+    height: 120vh;
+   }
+   .pspace{
+    height: 220vh;
+   }
 }
 @media (max-width: 390px) {
+  .bgspace{
+    height: 140vh;
+   }
+  .bgspace1{
+    height: 130vh;
+   }
   .mob {
     padding-inline-end: 8rem !important ;
   }
@@ -136,8 +151,9 @@ circle {
           height: 300px;
       }
       .girlheight{
-        height: 350px;
+        height: 400px;
         left:25%;
+        top:-96px;
       }
       .hbox1{
         width: 160px;
@@ -388,4 +404,21 @@ circle {
 
 .image {
   transition: transform 4s ease;
+}
+
+
+
+/* why section  */
+
+.whyposition{
+  position: sticky !important;
+  top:0;
+}
+
+@media (max-width:490px){
+
+.banspace{
+  text-align: left !important;
+}
+
 }

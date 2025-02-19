@@ -93,7 +93,8 @@ const TestimonialSlider: React.FC = () => {
     };
   
     return (
-      <div className="mx-auto block lg:hidden w-full max-w-5xl " >
+      //home page service mobile view  
+      <div className="mx-auto block lg:hidden w-full max-w-5xl mb-24 " >
         <div className="relative ">
         <h2 className="text-4xl font-bold text-start mb-10 ml-10">Services</h2>
             <img src="./images/home/s9.png" alt="" className="absolute -bottom-5 left-10" />
@@ -118,7 +119,7 @@ const TestimonialSlider: React.FC = () => {
 
         {/* Content */}
         <div className="relative z-10">
-          <h3 className="text-3xl font-bold text-start opacity-100 pt-5 ps-10 text-[#3B4FA2] ">{review.title}</h3>
+          <h3 className="text-2xl font-bold text-start opacity-100 pt-5 ps-10 text-[#3B4FA2] ">{review.title}</h3>
           <p className="text-sm text-justify ml-10 mr-10 mt-5 opacity-100">
             {review.description}
           </p>

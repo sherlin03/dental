@@ -9,7 +9,7 @@ function ImageGallery() {
 
   return (
     <>
-    <div className="mt-20  hidden md:block relative h-[365px] lg:h-[580px]">
+    <div className="mt-20 pt-10 container mx-auto  hidden md:block relative  ">
       {/* Image 1 */}
       <div
         className="relative group"
@@ -127,7 +127,7 @@ function ImageGallery() {
           src="./images/PatientExperience/p9.png"
           id="7"
           alt="Image 8"
-          className="absolute top-0 right-1/2 "
+          className="absolute top-10 xl:top-20 right-1/2 "
         />
       </div>
      </div>

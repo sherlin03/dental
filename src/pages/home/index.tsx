@@ -46,7 +46,7 @@ export default function Home() {
         
     <section className="container w-[90%] mx-auto relative ">
         {/* <img src="./images/home/s5.png" className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-28 absolute top-24 hidden md:block md:-right-20 lg:-right-28" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" alt="" /> */}
-          <div className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-16 lg:w-20  absolute top-24 hidden lg:block md:-right-20 lg:-right-12">
+          <div className="h-60 sm:h-[550px] md:h-[600px] lg:h-[700px] w-28 lg:w-28  absolute top-24 hidden lg:block md:-right-20 lg:-right-12">
          
           <TypingEffectHead/>
           </div>
@@ -76,7 +76,7 @@ export default function Home() {
             <p className="text-2xl font-bold  text-left lg:text-center">
             <span className="bg-[rgba(88,215,155,1)] rounded pl-1 pr-0 shadow shadow-[#333635] tracking-tight ">Subha Dental Multi Speciality Clinic </span> &nbsp;,  Where Your Smile Matters Most!</p>
             <p className= "text-justify lg:text-center text-sm mt-4 w-full lg:w-[80%] ">
-            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold text-justify lg:text-center text-base text-[rgba(59,79,162,1)] "> One of the leading implantalogist in whole state tamilnadu.</span>
+            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold banspace text-start lg:text-center text-base text-[rgba(59,79,162,1)] "> One of the leading implantalogist in whole state tamilnadu.</span>
                </p>
             </div>
             </section>
@@ -93,13 +93,13 @@ export default function Home() {
 
             {/* dental image start */}
        
-           
+           <section className=" hidden md:block ">
             <DentalTheme/>
-       
+            </section>
             {/* dental image end */}
 
             {/* why us start */}
-            <section className="container w-[95%] lg:w-[90%] mx-auto  relative ">
+            <section className="container w-[95%] lg:w-[90%] mx-auto my-auto  ">
               <div >
                 <VerticalLineWithExpertise/>
               </div>
@@ -110,14 +110,14 @@ export default function Home() {
 
         {/* Happy Customers start */}
      
-        <section className="relative mt-12 lg:mt-24" >
+        <section className="relative mt-20 sm:mt-28  lg:mt-32" >
              <div className="relative">
                 <img src="./images/home/s11.png" className=" w-full imgheight h-[500px] realative" alt="" />
 
                 <img src="./images/home/Mask group.png" className="  absolute 
-                          girlheight h-[555px] 
-                            top-[-3rem]  left-[15%] sm:left-[20%] md:left-1/4 lg:left-[35%] 
-                            sm:top-[-3rem] md:top-[-3rem] lg:top-[-3rem] px-6" alt="" />
+                          girlheight h-[650px] 
+                            top-[-9rem]  left-[7%] sm:left-[20%] md:left-1/4 lg:left-[35%] 
+                            sm:top-[-9rem] md:top-[-9rem] lg:top-[-9rem] px-6" alt="" />
                 {/* <img src="./images/home/Group 104.png" className=" absolute max-[490px]:w-24 w-48 max-[490px]:h-16 h-32 bottom-[30%] max-[490px]:left-[25%] left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2] hidden " /> */}
 
                 <div className="bg-white shadow-[0px_5px_5px_rgba(0,0,0,1),0px_-2px_6px_rgba(0,0,0,0.3),0px_0px_1px_1px_rgba(255,255,255,1)] rounded-2xl p-4  absolute hbox1 w-48 h-32 bottom-[30%]  left-[15%] md:left-[17%] lg:left-[30%] xl:left-[32%] transition-transform duration-1000 hover:scale-[1.2] hidden sm:block ">

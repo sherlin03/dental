@@ -78,7 +78,7 @@ export default function VerticalLineWithExpertise() {
 
   return (
     <>
-      <div className="justify-items-start mt-24 lg:mt-36">
+      <div className="justify-items-start mt-12 lg:mt-20 !sticky top-0">
         <p className="text-3xl font-bold " >
           Why Us
         </p>
@@ -90,7 +90,7 @@ export default function VerticalLineWithExpertise() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-8 -mt-12 gap-4 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-8 -mt-12 gap-4 items-center relative">
         {/* left side  */}
         {/* Vertical Line Container */}
         <div
@@ -105,6 +105,10 @@ export default function VerticalLineWithExpertise() {
             className="absolute left-1/2 -translate-x-1/2 w-[6px] h-[50px] ml-0 sm:ml-7 xl:ml-14 bg-[rgba(65,185,129,1)] transition-all duration-300"
             style={{ top: `${buttonPositions[position]}px` }}
           ></div>
+
+
+
+          
         </div>
 
         {/* Expertise Items */}
@@ -133,7 +137,7 @@ export default function VerticalLineWithExpertise() {
 {/* right side  */}
         {/* Scrollable Content Section */}
         <div
-          className="col-span-4 -ml-5 lg:ml-16 xl:ml-0 2xl:ml-0 justify-items-start w-full lg:w-[100%] max-[390px]:h-[480px] h-[425px] sm:h-[390px]  mt-12 lg:mt-20 "
+          className="col-span-4  lg:ml-16 xl:ml-0 2xl:ml-0 justify-items-start w-full lg:w-[100%] max-[390px]:h-[480px] h-[425px] sm:h-[390px]  mt-12 lg:mt-20 "
           id="why1"
           ref={scrollContainerRef}
           onScroll={handleScroll}
@@ -141,7 +145,8 @@ export default function VerticalLineWithExpertise() {
            
             overflowY: "auto", // Enable vertical scrolling
             overflowX: "hidden", // Hide horizontal scrollbar
-            padding: "20px", // Inner padding for spacing
+            padding: "20px",
+            paddingRight:"50px",
           }}
         >
           {content.map((item, index) => (
@@ -156,7 +161,7 @@ export default function VerticalLineWithExpertise() {
                 marginBottom: "10px", // Space between content sections
               }}
             >
-              <p  className={`text-3xl font-bold text-[rgba(59,79,162,1)] ${
+              <p  className={`text-2xl font-bold text-[rgba(59,79,162,1)] ${
     index === 0 ? "mt-0" : "mt-16"
   }`}>
                 {item.title}
@@ -182,6 +187,7 @@ export default function VerticalLineWithExpertise() {
           </div>
         </div>
       </div>
+      
     </>
   );
 }

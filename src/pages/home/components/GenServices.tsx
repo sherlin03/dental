@@ -1,4 +1,4 @@
-import  { useState} from "react";
+import { useState } from "react";
 import VerticalText from "./VerticalText";
 // import "./App.css"; // Import custom styles
 
@@ -86,13 +86,13 @@ const App: React.FC = () => {
     const reorderedImages = [...nextImages, ...previousImages, clickedImage];
 
     // Trigger transition
-    setTransitioning(true);
+    setTransitioning(false);
 
     setTimeout(() => {
       // Update the order after the transition
       setOrderedImages(reorderedImages);
       setTransitioning(false);
-    }, 5000); // Match the CSS transition duration
+    }, 1000); // Match the CSS transition duration
   };
 
   return (
@@ -113,10 +113,10 @@ const App: React.FC = () => {
               src={review.image}
               alt={`User ${review.id}`}
               className={`cursor-pointer rounded-lg object-cover ${
-                transitioning ? "transition-moving" : ""
+                transitioning ? "" : ""
               } ${
                 index === orderedImages.length - 1
-                  ? "w-16 sm:w-28 md:w-28 lg:w-28 h-[490px] sm:h-80 md:h-[490px] lg:h-[500px]"
+                  ? "w-16 sm:w-28 md:w-28 lg:w-32 h-[490px] sm:h-80 md:h-[490px] lg:h-[500px]"
                   : "w-16 sm:w-24 md:w-24 lg:w-20 h-48 sm:h-48 md:h-48 lg:h-[60%] opacity-70"
               }`}
               onClick={() => handleImageClick(index)}
@@ -124,8 +124,8 @@ const App: React.FC = () => {
           ))}
         </div>
 
-        <div className="text-left md:text-left ps-0 lg:ps-6 col-span-5 2xl:col-span-6">
-          <p className="text-3xl sm:text-3xl font-semibold mt-6 md:mt-12">
+        <div className="text-left md:text-left ps-0 lg:ps-6 col-span-5 2xl:col-span-6 content-center">
+          <p className="text-3xl sm:text-3xl font-semibold ">
             {orderedImages[orderedImages.length - 1].title}
           </p>
           <p className="mt-3 sm:mt-5 text-sm sm:text-base">

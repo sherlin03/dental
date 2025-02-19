@@ -1,19 +1,20 @@
-import  { useState } from "react";
-import {  CustomFlowbiteTheme, Navbar } from "flowbite-react";
+import { CustomFlowbiteTheme, Navbar } from "flowbite-react";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { menuItems } from "./data/MenuItems";
 import { MenuItem } from "./types/MenuItems";
-import { Link, useLocation } from "react-router-dom";
-import { motion } from "framer-motion";
 
 export default function Header() {
   const location = useLocation();
   const currentPath = location.pathname || "/";
   const [isCollapsed, setIsCollapsed] = useState(false); // State to control collapse
+  
 
   const navTheme: CustomFlowbiteTheme["navbar"] = {
     collapse: {
-      base: "w-full md:block md:w-auto absolute md:relative bg-white top-20 md:top-0 right-0 transition-all transition-transform duration-1000 ",
-      list: "mt-4 flex flex-col md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium ",
+      base: "w-full md:block md:w-auto absolute !hover:text-[#3B4FA2] md:relative bg-white top-20 md:top-0 right-0 transition-all transition-transform duration-1000 ",
+      list: "mt-4 flex flex-col !hover:text-[#3B4FA2] md:mt-0 md:flex-row md:space-x-8 md:text-sm md:font-medium ",
       hidden: {
         on: "hidden",
         off: "",
@@ -31,22 +32,24 @@ export default function Header() {
   };
 
   return (
-    <div className="border-b-4">
+    // <div className="border-b-4">
+    <div className="shadow-[0px_4px_10px_rgba(0,0,0,0.2)] sticky top-0 lg:top-2 z-[9999]">
       <Navbar
         theme={navTheme}
         fluid
         rounded
-        className="sticky backdrop-blur-2xl z-50 dark:border-[#3B4FA2] dark:bg-[#3B4FA2] sm:px-4 rounded  mx-auto top-2 px-2 py-2 "
+        className="sticky backdrop-blur-2xl z-50 !hover:text-[#3B4FA2] dark:border-[#3B4FA2] dark:bg-[#3B4FA2] sm:px-4 rounded  mx-auto top-2 px-2 py-2 "
       >
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" >
           <img
             src="./images/logo/dentallogo.svg"
             className="w-32 sm:w-36 h-16 sm:h-16"
             alt="Dental Hospital"
           />
+         
         </Navbar.Brand>
 
-        <div className="flex md:order-2 ml-0 md:-ml-12 lg:ml-0">
+        <div className="flex md:order-2 ml-0 md:-ml-12 !hover:text-[#3B4FA2] lg:ml-0">
           <Navbar.Collapse
             className={`mt-3 ml-3 ${isCollapsed ? "block " : "hidden"} md:block`}
           >
@@ -55,7 +58,7 @@ export default function Header() {
                 <motion.div key={menu.path}>
                   <Navbar.Link
                     href={`${menu.path}`}
-                    className="text-bold hover:text-[#3B4FA2]"
+                    className="text-bold dark:text-[#3B4FA2] hover:text-[#3B4FA2] md:hover:text-[#3B4FA2]"
                     active={menu.path == currentPath}
                     onClick={handleLinkClick} // Call handleLinkClick on click
                   >

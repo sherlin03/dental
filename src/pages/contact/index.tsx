@@ -1,20 +1,20 @@
 import { useEffect } from "react";
 
 export default function Contact() {
-  useEffect(() => {
+
+ useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top
   }, []);
-
   return (
 
     <>
       {/* contact us  */}
       <section>
         {/* block 1 start  */}
-        <div className="container mx-auto">
+        <div className="">
           <div className="
                 w-full 
-                bg-[rgba(252,250,250,1)] 
+                bg-[rgba(88,215,155,0.12)] 
                 max-h-fit
                 mt-12 
                 mb-12
@@ -114,21 +114,21 @@ export default function Contact() {
         {/* block 2 start  */}
         <div className="container mx-auto relative mt-12 mb-0 lg:mb-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  ">
-            <div data-aos="fade-right">
+            <div className="mt-20">
               <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-0 lg:mt-10">
-                <span className="bg-[rgba(249,247,247,1)] px-4 py-2">Contact Us</span>
+                <span className="bg-[rgba(249,247,247,1)] px-4 py-2"># Contact Us</span>
               </p>
-              <p className="text-4xl font-bold mt-8 justify-items-start">
+              {/* <p className="text-4xl font-bold mt-8 justify-items-start">
                 Get in Touch
-              </p>
-              <p className="justify-items-start w-5/6 mt-4 ">
+              </p> */}
+              <p className="text-justify lg:text-left w-full mt-4 ">
                 Contact us today to schedule your consultation and discover
                 how we can help you achieve a radiant, confident smile.
               </p>
               <p className="text-3xl font-bold mt-4">
                 Visit Us During These Hours:
               </p>
-              <p className="justify-items-start w-5/6 mt-4 flex flex-row">
+              <p className="text-justify lg:text-left w-full mt-4 flex flex-row">
                 <span>
                   <img src="./images/contact/c2.png" className="inline-block pr-3" alt="" />
                 </span>
@@ -141,10 +141,11 @@ export default function Contact() {
                 </span>
                 Our Office
               </p>
-              <p className="mt-4">
+              <p className="mt-4 relative">
                 +91-9487325401 <br />
                 Mail us :drkamalimplant79@gmail.com <br />
                 Sathankulam.
+                <img src="./images/contact/c4.png" className="absolute top-0 right-20 hidden lg:block" alt="" />
               </p>
 
               <p className="  mt-4 text-3xl font-bold">
@@ -156,6 +157,7 @@ export default function Contact() {
               <p className="justify-items-start w-5/6 mt-4">
                 25G/1,Nazareth road near new bus stand | sathankulam-628704
                 -Thuthukodi district | Ph.no :6369812048, 9443750377
+                
               </p>
               <p className="justify-items-start w-5/6 mt-4">
                 230C,Kanagasabapathy complex | opp to manaraja Kovil near
@@ -164,7 +166,7 @@ export default function Contact() {
               </p>
             </div>
 
-            <div className="flex  justify-center h-[auto] lg:h-[85vh] " data-aos="fade-left" >
+            <div className="flex  justify-center h-[auto] lg:h-[85vh] "  >
               <div className="bg-white shadow-2xl h-fit rounded-[20px] p-6 mt-5 lg:mt-16 mb-16 w-full max-w-lg">
                 {/* Header Section */}
                 <div className=" mb-6 justify-items-center">
