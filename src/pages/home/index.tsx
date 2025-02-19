@@ -1,11 +1,11 @@
 
-import VerticalLineWithExpertise from "./components/VerticalLine";
-import  { useEffect } from "react";
 import AOS from "aos";
-import GenServices from "./components/GenServices";
-import TypingEffectHead from "./components/TypingEffectHead";
+import { useEffect } from "react";
 import DentalTheme from "./components/DentalTheme";
+import GenServices from "./components/GenServices";
 import TestimonialSlider from "./components/TestimonialSlider";
+import TypingEffectHead from "./components/TypingEffectHead";
+import VerticalLineWithExpertise from "./components/VerticalLine";
 
 
 export default function Home() {
@@ -31,7 +31,7 @@ export default function Home() {
     return (
         <>
         <div className="block lg:hidden">
-                <div className="grid w-full gap-10 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6 mb-8">
+                {/* <div className="grid w-full gap-10 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6 mb-8">
                     <div className="grid justify-items-end  ">
                         <img src="./images/home/s1.png" className="w-full h-[100%]  !sm:h-auto !md:h-auto transition-transform duration-1000 hover:scale-[1.1]"
       data-aos="zoom-in-up"  data-aos-duration="2000" alt="" />
@@ -41,22 +41,22 @@ export default function Home() {
       data-aos="zoom-in-up" data-aos-duration="2000" alt="" />
                     </div>
                   
-                </div>
+                </div> */}
+
+<img src="./images/home/right/dental_banner.png" className="w-full h-auto"
+                data-aos="zoom-in-up" data-aos-duration="1000" alt="" />
             </div>
         
-    <section className="container w-[90%] mx-auto relative ">
+    <section className=" w-full mx-auto relative ">
         {/* <img src="./images/home/s5.png" className="h-60 sm:h-[550px] md:h-[600px] lg:h-[650px] w-28 absolute top-24 hidden md:block md:-right-20 lg:-right-28" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" alt="" /> */}
-          <div className="h-60 sm:h-[550px] md:h-[600px] lg:h-[700px] w-28 lg:w-28  absolute top-24 hidden lg:block md:-right-20 lg:-right-12">
-         
-          <TypingEffectHead/>
-          </div>
-
+          
+          
 
 
             {/* first block start  */}
            
             <div className="hidden lg:block">
-                <div className="grid w-full gap-10 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6 mb-8">
+                {/* <div className="grid w-full gap-10 p-4 pb-2 py-8 lg:px-8 grid-cols-2 md:px-6 mb-8">
                     <div className="grid justify-items-end lg:justify-items-end ">
                         <img src="./images/home/s1.png" className="h-52 sm:h-56 md:h-80 lg:h-96 transition-transform duration-1000 hover:scale-[1.1]"
       data-aos="zoom-in-up"  data-aos-duration="1000" alt="" />
@@ -66,12 +66,21 @@ export default function Home() {
       data-aos="zoom-in-up" data-aos-duration="1000" alt="" />
                     </div>
                    
+                </div> */}
+
+                <div>
+                <img src="./images/home/right/dental_banner.png" className="w-full h-[65%] xl:h-auto"
+                data-aos="zoom-in-up" data-aos-duration="1000" alt="" />
                 </div>
+
+
             </div>
           
             {/* first block End  */}
+            
+            </section>
             {/* intro words start */}
-            <div className="justify-items-center mb-8 " data-aos="zoom-in-down" data-aos-duration="1500">
+            <div className="container w-full justify-items-center mb-8 mt-10 " data-aos="zoom-in-down" data-aos-duration="1500">
 
             <p className="text-2xl font-bold  text-left lg:text-center">
             <span className="bg-[rgba(88,215,155,1)] rounded pl-1 pr-0 shadow shadow-[#333635] tracking-tight ">Subha Dental Multi Speciality Clinic </span> &nbsp;,  Where Your Smile Matters Most!</p>
@@ -79,7 +88,16 @@ export default function Home() {
             We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold banspace text-start lg:text-center text-base text-[rgba(59,79,162,1)] "> One of the leading implantalogist in whole state tamilnadu.</span>
                </p>
             </div>
-            </section>
+
+            <div className="container w-full">
+                <div className="h-auto z-[99]  w-20 lg:w-24 xl:w-28 2xl:w-32  absolute top-20 lg:top-24 xl:top-28 2xl:top-36 hidden lg:block right-5">
+         
+                  <TypingEffectHead/>
+                </div>
+          </div>
+
+
+
             {/* intro words end */}
             {/* Services  start */}
             <section className="container w-[95%] lg:w-[90%] relative mx-auto">
