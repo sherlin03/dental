@@ -15,7 +15,7 @@ const year= new Date();
 
       <div className="w-full  py-2 bg-[#E5E3E3] lg:px-5 mt-8 sm:mt-10 sm:px-4 sm:flex sm:items-center sm:justify-between">
             <div >
-            <img src="./dentallogo.png" className="h-24" alt="" />
+            <img src="./dentallogo.svg" className="h-24" alt="" />
             </div>
           <div className="flex -mt-12 space-x-2 list-none sm:mt-0 text-stone-950 sm:justify-center mr-10 sm:mr-0">
             <div className="mx-auto text-xs text-gray-300">
@@ -37,7 +37,7 @@ const year= new Date();
         </div>
 
         <div className="grid w-full gap-2  pb-2  pl-5 pr-5  mt-8 sm:mt-0 grid-cols-1 lg:grid-cols-12  ">
-          <div className="pl-0 lg:pl-4 col-span-2 lg:col-span-4" >
+          <div className="pl-0 lg:pl-4 col-span-2 lg:col-span-5" >
             <h2 className="font-semibold">Dental Care</h2>
             <p className="text-sm text-justify mt-4">
             Your trusted partner in oral health.
@@ -45,31 +45,24 @@ const year= new Date();
             </p>
           </div>
 
-          <div className="text-stone-950 pl-0 lg:pl-4 col-span-2 lg:col-span-4">
+          <div className="text-stone-950 pl-0 lg:pl-4 col-span-2 lg:col-span-3">
             <h2 className="font-semibold">Contact Us</h2>
             <p className="text-sm text-justify md:text-start mt-4 ">
             25G/1,Nazareth road near new 
             bus stand, <br/>
-            Thuthukodi district,
-            sathankulam-628704. <br/> 
-            Phone No:9443750377 
+            Tuticorin District,
+            Sathankulam-628704. <br/> 
+            Phone No:+91 9443750377. 
             </p>
-            <p className="text-sm text-justify md:text-start mt-2 ">
-            230C, Kanagasabapathy Complex ,<br />
-            Opp to manaraja Kovil near new bus stand,
-            Udangudi Road,  <br />
-            Thirunalveli District,
-            Tisayanvilai-627657. <br /> 
-            Phone No:9443750377
-            </p>
+            
           </div>
 
-          <div className="pl-0 lg:pl-4 col-span-2">
-            <h2 className="font-semibold">Office Hours</h2>
+          <div className="pl-0 lg:pl-2 col-span-2">
+            <h2 className="font-semibold">Clinic Timings</h2>
             <p className="text-sm mt-4">
-            Mon-Fri: 9.00 AM - 6.00 PM <br />
-            Sat: 10.00 AM - 4.00 PM <br />
-            Sun: Closed
+            Mon-Sat: 9.00AM - 8.30PM <br />
+            Sun: 10.00 AM - 3.00 PM <br />
+           
             </p>
           </div>
 
@@ -100,7 +93,7 @@ const year= new Date();
     sm:justify-between
 
   ">
-            <div className="text-sm font-semibold text-stone-950 justify-self-center md:justify-self-start">
+            <div className="text-sm  text-stone-950 justify-self-center md:justify-self-start">
            &copy; Subhadentalcare {year.getFullYear()}. All rights reserved
             </div>
           

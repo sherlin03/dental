@@ -132,14 +132,14 @@ export default function Contact() {
                 <span>
                   <img src="./images/contact/c2.png" className="inline-block pr-3" alt="" />
                 </span>
-                Monday to Friday: 8:00 AM - 5:00 PM | Saturday: 9:00 AM - 1:00  PM |
-                Sunday: Closed
+                Monday to Saturday: 9:00 AM - 5:00 PM | Sunday: 9:00 AM - 3:00  PM 
+                
               </p>
               <p className="  mt-4 text-3xl font-bold">
                 <span>
                   <img src="./images/contact/c3.png" className="inline-block pr-3" alt="" />
                 </span>
-                Our Office
+                Our Clinic
               </p>
               <p className="mt-4 relative">
                 +91-9487325401 <br />
@@ -154,16 +154,12 @@ export default function Contact() {
                 </span>
                 Clinics
               </p>
-              <p className="justify-items-start w-5/6 mt-4">
-                25G/1,Nazareth road near new bus stand | sathankulam-628704
-                -Thuthukodi district | Ph.no :6369812048, 9443750377
+              <p className="justify-items-start w-5/6 mt-4 mb-20">
+                25G/1,Nazareth road near new bus stand |<br /> Sathankulam-628704 <br />
+                Tuticorin District | Ph.no :6369812048, 9443750377
                 
               </p>
-              <p className="justify-items-start w-5/6 mt-4">
-                230C,Kanagasabapathy complex | opp to manaraja Kovil near
-                new bus stand udangudi road Tisayanvilai-627657 |
-                Thirunalveli district | Ph.no :9360433113
-              </p>
+              
             </div>
 
             <div className="flex  justify-center h-[auto] lg:h-[85vh] "  >

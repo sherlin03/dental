@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import { Link} from "react-router-dom";
+
 
 export default function About() {
 
@@ -15,17 +17,19 @@ export default function About() {
                 <div className="mt-12 mb-12 container mx-auto">
                     {/* block 1 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 " >
-                        <div className="relative mt-0 2xl:mt-8" data-aos="fade-right" >
+                        <div className="relative mt-10  2xl:mt-10" data-aos="fade-right" >
                             <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg">
                                 <span className="bg-[rgba(249,247,247,1)] px-5 py-2"># About</span>
                             </p>
                             <p className="text-base 2xl:text-lg mt-6 text-justify justify-items-start">
                                 At Subha Dental Clinic, we are dedicated to offering comprehensive dental services that surpass the ordinary. From routine check-ups to cosmetic enhancements and advanced restorative treatments, we are focused on enhancing your dental health and overall well-being. Join us
-                                today on the journey to a brighter, healthier smile.We utilize advanced dental technology such as digital X-rays, intraoral cameras, and laser dentistry for precise diagnoses and comfortable treatments.
+                                today on the journey to a brighter, healthier smile.We utilize advanced dental technology such as digital X-rays, intraoral cameras, and laser dentistry for precise diagnosis and comfortable treatments.
                             </p>
-                            <button className="bg-blue-800 text-white font-semibold py-3 mt-4 px-4 rounded-lg hover:bg-blue-700">
+                            <Link to="/contact">
+                            <button className="bg-blue-800 text-white font-semibold py-3 mt-6 px-4 rounded-lg hover:bg-blue-700">
                                 Get In Touch
                             </button>
+                            </Link>
                             <img src="./images/about/a3.png" className="absolute bottom-0 right-24 hidden lg:block" alt="" />
                         </div>
 
@@ -46,10 +50,10 @@ export default function About() {
 
 
                                 <p className="font-[Risque] bg-[rgba(65,185,129,1)] p-3 text-white w-48  sm:w-56 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[100px] md:h-[130px] lg:h-[130px] xl:h-[145px] 2xl:h-[150px]    text-center font-thin text-lg xl:text-xl ">
-                                    Inhouse <span className="text-2xl xl:text-3xl">3D </span> <br />
+                                    In-house <span className="text-2xl xl:text-3xl">3D </span> <br />
                                     imaging <br />
                                     first of its kind in <br />
-                                    south tamilnadu 
+                                    South Tamil Nadu 
                                 </p>
                             
                             </div>
@@ -79,15 +83,16 @@ export default function About() {
                         <p  className="hidden py-[10px] xl:py-4 px-2 text-white  2xl:p-4 bg-[#41B981] text-left text-[11px] xl:text-sm 2xl:text-lg  sm:block absolute left-[0%] bottom-0 lg:bottom-[12%]   w-[37%]   lg:w-[28%] xl:w-[172px] 2xl:w-[210px] h-[28%] lg:h-[27%] xl:h-[110px] 2xl:h-[135px]  rounded-tl-[20px] rounded-tr-[43px] xl:rounded-tr-[53px] rounded-br-[20px] rounded-bl-[20px] ">
                         Assistant Civil Dental <br />
                         Surgeon at Government <br />
-                        Community Health <br />
+                        Primary Health <br />
                         Centre.
+
                         </p>
 
 
                         {/* <img src="./images/about/a13.png" alt="" className="hidden sm:block absolute left-[0%] bottom-0 lg:bottom-[12%]   w-[37%]   lg:w-[30%] xl:w-[185px] 2xl:w-[225px] h-[28%] lg:h-[27%] xl:h-[110px] 2xl:h-[135px]  transition-transform duration-1000 hover:scale-[1.1]" /> */}
 
 
-                                <img src="./images/about/a1.png" alt="" className="block sm:hidden w-full  lg:w-5/6 h-auto lg:h-[85%] " />
+                                {/* <img src="./images/about/a1.svg" alt="" className="block sm:hidden w-full  lg:w-5/6 h-auto lg:h-[85%] " /> */}
 
                             </div>
                             <div className="py-1 relative mt-10 lg:mt-0 2xl:mt-8" data-aos="fade-left">
@@ -141,7 +146,7 @@ export default function About() {
 
 
 
-                                <img src="./images/about/a1.png" alt="" className="block sm:hidden w-full  lg:w-5/6 h-auto lg:h-[85%] " />
+                                <img src="./images/about/a1.svg" alt="" className="block sm:hidden w-full  lg:w-5/6 h-auto lg:h-[85%] " />
 
                             </div>
                         </div>
@@ -152,7 +157,7 @@ export default function About() {
                     {/* block 2 end */}
                     {/* block 3 start */}
                     <p className="text-justify lg:text-center text-base 2xl:text-lg  my-12 lg:indent-12 container mx-auto "  >
-                        <span className="text-3xl 2xl:text-5xl text-[rgba(55,83,188,1)]">Journey</span> For over 15 years, Dr. Vijayabharathi has actively participated in dental awareness initiatives, conducting camps in schools, colleges, and urban centers to educate rural communities about oral health. Dr. Vijayabharathi is committed to lifelong learning and professional development. She has recently participated in the CDE Programme on the Art of Anterior Veneers hosted by the IDA Thoothukudi Branch and held at Kovilpatti. Additionally, she attended the Myofunctional Orthodontics Seminar, which included 8 hours of training with hands-on practical activities, presented by i3 International Academy for Advanced Dentistry.
+                        <span className="text-3xl 2xl:text-5xl text-[rgba(55,83,188,1)]">Journey</span> For over 15 years, Dr. Vijayabharathi has actively participated in dental awareness initiatives, conducting camps in schools, colleges, and urban centers to educate rural communities about oral health. Dr. Vijayabharathi is committed to lifelong learning and professional development. She has recently participated in the CDE Programme on the Art of Anterior Veneers hosted by the IDA Tuticorin Branch and held at Kovilpatti. Additionally, she attended the Myofunctional Orthodontics Seminar, which included 8 hours of training with hands-on practical activities, presented by i3 International Academy for Advanced Dentistry.
                     </p>
                     {/* block 3 end */}
                     {/* block 4 start */}
@@ -161,7 +166,7 @@ export default function About() {
                             <div className="overflow-hidden  rounded-2xl">
                             <img src="./images/about/a5.png" alt="" className="h-auto lg:h-72 w-full xl:h-80 2xl:h-80 object-cover transition-transform duration-1000 hover:scale-[1.1]" />
                             </div>
-                            <div className="bg-[rgba(65,185,129,1)] rounded-2xl p-5 mt-4">
+                            <div className="bg-[rgba(65,185,129,1)] rounded-2xl p-5 mt-2">
                                 <p className="text-white text-justify text-sm 2xl:textr-base">
                                     <span className="text-base 2xl:text-lg font-semibold">Dr.Kamalashankar’s</span> credentials extend beyond basic expertise. He holds certifications and diplomas from renowned institutions worldwide, including
                                 </p>
@@ -177,19 +182,19 @@ export default function About() {
                         </div>
 
                         <div data-aos="fade-left" >
-                            <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 w-full lg:w-1/2">
+                            <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 w-full ">
                                 <p className="text-white text-center text-lg 2xl:text-xl  ">
-                                    <span className="font-[Risque]">Dr. Kamalashankar’s trained cmc vellore, and he is former senior house officer.</span>  <br />
+                                    <span className="font-[Risque]">Dr. P. Kamalashankar, a former Senior House Officer (SHO) at CMC Vellore, has received specialized training in the Oral Surgery Unit at CMC.</span>  <br />
                                   
                                 </p>
 
                             </div>
-                            <div className="mt-4 overflow-hidden  rounded-2xl">
+                            <div className="mt-6 overflow-hidden  rounded-2xl">
                                 <img src="./images/about/a6.png" className=" h-auto lg:h-72 xl:h-80 2xl:h-[355px] w-full object-cover transition-transform duration-1000 hover:scale-[1.1]  " alt="" />
                             </div>
-                            <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 mt-4">
+                            <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 mt-6">
                                 <p className="text-white text-justify text-sm 2xl:text-base">
-                                    As a director in <span className="text-lg 2xl:text-xl font-semibold">15 Dental and Implant Xperts</span> (Hosur, Tirunelveli ,and Chennai) and Xperts Dento Facial Imaging Pvt Ltd (Tirunelveli, Namakal,Chennai,Tangore), Dr. Kamalashankar leads with a commitment to innovation and patient-centered care.
+                                    As a director in <span className="text-lg 2xl:text-xl font-semibold">i5 Dental and Implant Xperts</span> (Hosur, Tirunelveli and Chennai) and Xperts Dento Facial Imaging Pvt Ltd (Tirunelveli, Namakal,Chennai,Thanjavur), Dr. Kamalashankar leads with a commitment to innovation and patient-centered care.
                                 </p>
                             </div>
 
@@ -203,8 +208,7 @@ export default function About() {
 
                         <div className="container mx-auto  ">
                             <p className="text-justify sm:text-center py-10 px-8 sm:px-20 xl:px-40">
-                            Gots operates in all over the state and also internationally for implants most for consultation. 
-                            Advance digital imaging with 3d technology and introvoral scanning with digital smile designing
+                            He practices across the states and the Middle East and is a certified digital specialist with expertise in advanced digital imaging, including 3D technology, intraoral scanning, digital smile designing, and guided surgery.
                             </p>
                        </div>                                            
 

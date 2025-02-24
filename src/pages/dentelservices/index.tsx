@@ -37,7 +37,7 @@ export default function Service() {
                     {/* block 2 start  */}
 
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 container mx-auto">
-                        <div className="relative mt-0 2xl:mt-8" >
+                        <div className="relative mt-0 2xl:mt-8"   data-aos="fade-down-right" data-aos-duration="1000">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                                 General Dentistry
                             </p>
@@ -59,7 +59,7 @@ export default function Service() {
 
                         </div>
 
-                        <div className="mt-10 lg:mt-0 "  >
+                        <div className="mt-10 lg:mt-0 "  data-aos="fade-down-left" data-aos-duration="1000">
                             <div className="relative">
                             <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <img src="./images/services/s13.png" alt="" className="hidden lg:block absolute top-[-30px] right-36" />
@@ -81,7 +81,7 @@ export default function Service() {
                     {/* block 3 start  */}
                 <div className="bg-[rgba(88,215,155,0.12)] mt-40  mx-auto my-auto pb-10 pt-10 mb-10 ">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12 sm
-                    mb-5 lg:mb-24 container mx-auto"  >
+                    mb-5 lg:mb-24 container mx-auto" data-aos="zoom-in-right" data-aos-duration="1000" >
                         <div >
                             <div className="relative">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
@@ -96,7 +96,7 @@ export default function Service() {
                         </div>
 
 
-                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" >
+                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="1000">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                                 Cosmetic Dentistry
                             </p>
@@ -122,7 +122,7 @@ export default function Service() {
 
                     {/* block 4 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 container mx-auto">
-                        <div className="relative mt-0 2xl:mt-8" >
+                        <div className="relative mt-0 2xl:mt-8" data-aos="zoom-out-right" data-aos-duration="1000">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
                                 Restorative Dentistry:
                             </p>
@@ -141,7 +141,7 @@ export default function Service() {
 
                         </div>
 
-                        <div className="mt-10 lg:mt-0 " >
+                        <div className="mt-10 lg:mt-0 " data-aos="zoom-out-left" data-aos-duration="1000">
                             <div className="relative">
 
                             <img src="./images/services/s9.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
@@ -165,7 +165,9 @@ export default function Service() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 
                     mb-5 lg:mb-24 container mx-auto" >
                         <div > 
-                            <div className="relative">
+                            <div className="relative" data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
                                 <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
                                 <div >
                                     <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
@@ -178,7 +180,9 @@ export default function Service() {
                         </div>
 
 
-                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8"  >
+                        <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" >
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
                             Orthodontics
                             </p>
@@ -197,12 +201,12 @@ export default function Service() {
                             
                         </div>
                     </div>
-</div>
+                    </div>
                     {/* block 5 end */}
 
                      {/* block 6 start  */}
                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 container mx-auto">
-                        <div className="relative mt-0 2xl:mt-8" >
+                        <div className="relative mt-0 2xl:mt-8"  data-aos="zoom-in-right" data-aos-duration="1000">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
                               Oral Surgery
                             </p>
@@ -220,7 +224,7 @@ export default function Service() {
                           </ul>
                         </div>
 
-                        <div className="mt-10 lg:mt-0 "  >
+                        <div className="mt-10 lg:mt-0 "  data-aos="zoom-in-left" data-aos-duration="1000">
                             <div className="relative">
                             <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
                             <div >

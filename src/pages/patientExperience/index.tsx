@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import ImageGallery from "./components/ImageHoverComponent";
+import { motion } from "framer-motion";
+import { Link} from "react-router-dom";
 
 export default function PatientExperience() {
  const [activeImage, setActiveImage] = useState<number>(1);
@@ -38,10 +40,11 @@ export default function PatientExperience() {
                             <p className="text-base mt-2 justify-items-start">
                             Ph.No:+91 9487325401
                             </p>
-                       
+                            <Link to="/contact">
                             <button className="bg-blue-800 text-white font-semibold py-3 mt-4 px-4 rounded-lg hover:bg-blue-700">
                             Shedule Now
                             </button>
+                            </Link>
                             
                         </div>
                      
@@ -51,13 +54,30 @@ export default function PatientExperience() {
                             <img src="./images/PatientExperience/arrowimg.gif" alt=" " className="absolute top-16 xl:top-4  2xl:-top-40 left-5 xl:left-32 2xl:left-40 w-[28%] xl:w-[23%] 2xl:w-[23%] h-auto  " />
                             <img src="./images/PatientExperience/p1.png" alt=" " className="absolute bottom-0 right-0 w-[75%] xl:w-[60%] h-auto  " />
                           
-                            <div className="absolute bottom-8 xl:bottom-8 2xl:bottom-12 left-0 xl:left-24">
+
+                            <motion.p
+                                className="absolute bottom-8 xl:bottom-5 2xl:bottom-10 left-0 xl:left-24   text-white p-5  2xl:p-5 bg-[#00559A] text-left text-base xl:text-xl 2xl:text-2xl   w-[160%]   lg:w-[150px] xl:w-[180px] 2xl:w-[210px] h-[28%] lg:h-[120px] xl:h-[135px] 2xl:h-[150px]  rounded-tl-[20px] rounded-tr-[43px] xl:rounded-tr-[53px] rounded-br-[20px] rounded-bl-[20px] "
+                                animate={{
+                                y: [0, -15, 0], // Wave motion: up, then down
+                                }}
+                                transition={{
+                                duration: 2.0, // Total time for one wave cycle
+                                repeat: Infinity, // Infinite animation
+                                ease: "easeInOut", // Smooth easing
+                                }}
+                            >
+                               100+ satisfied <br /> Customers
+                               <img src="./images/PatientExperience/star.png" className="mt-3 xl:mt-5" alt="" />
+                        </motion.p>
+
+
+                            {/* <div className="absolute bottom-8 xl:bottom-8 2xl:bottom-12 left-0 xl:left-24">
                             <p  className="  text-white p-5  2xl:p-5 bg-[#00559A] text-left text-base xl:text-xl 2xl:text-2xl   w-[160%]   lg:w-[150px] xl:w-[180px] 2xl:w-[210px] h-[28%] lg:h-[120px] xl:h-[135px] 2xl:h-[150px]  rounded-tl-[20px] rounded-tr-[43px] xl:rounded-tr-[53px] rounded-br-[20px] rounded-bl-[20px] ">
                             100+ satisfied <br /> Customers
                             <img src="./images/PatientExperience/star.png" className="mt-3 xl:mt-5" alt="" />
 
                             </p>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>
