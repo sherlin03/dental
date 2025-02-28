@@ -82,7 +82,7 @@ export default function VerticalLineWithExpertise() {
         <p className="text-3xl font-bold " >
           Why Us
         </p>
-        <p className="text-lg text-justify mt-5 mb-5 " >
+        <p className="text-lg text-justify mt-5 mb-5 " data-aos="fade-up-left" >
           At Subha Dental care, we stand out for our commitment to excellence
           and patient-centered care. Led by Dr. P. Kamalashankar, a
           distinguished expert with over 20 years of dedicated experience, we
@@ -90,12 +90,12 @@ export default function VerticalLineWithExpertise() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-8 -mt-12 gap-4 items-center relative">
+      <div className="grid grid-cols-1 lg:grid-cols-8 -mt-12 gap-4 items-center relative" data-aos="fade-up-left">
         {/* left side  */}
         {/* Vertical Line Container */}
         <div
           className="relative h-[310px] col-span-1 mt-24 lg:mt-28"
-          
+         
         >
           {/* Main Vertical Line */}
           <div className="absolute left-1/2 -translate-x-1/2 h-full w-[5px] ml-0 sm:ml-7 xl:ml-14 bg-gray-400"></div>
@@ -139,6 +139,7 @@ export default function VerticalLineWithExpertise() {
         <div
           className="col-span-4  lg:ml-16 xl:ml-0 2xl:ml-0 justify-items-start w-full lg:w-[100%] max-[390px]:h-[480px] h-[425px] sm:h-[390px]  mt-12 lg:mt-20 "
           id="why1"
+         
           ref={scrollContainerRef}
           onScroll={handleScroll}
           style={{

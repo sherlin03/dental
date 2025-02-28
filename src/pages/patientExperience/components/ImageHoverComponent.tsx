@@ -26,7 +26,7 @@ function ImageGallery() {
                             <motion.p
                                 
                                
-                                className={`absolute bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-20 left-20 lg:left-28 2xl:left-28 w-44 lg:w-52 xl:w-52 2xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ${activeImage === 1 ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-20 left-20 lg:left-28 2xl:left-28 w-44 lg:w-52 xl:w-52 2xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-justify z-10 ${activeImage === 1 ? "opacity-100" : "opacity-0"}`}
                                 animate={{
                                     y: [0, -20, 0], // Wave motion: up, then down
                                 }}
@@ -37,7 +37,8 @@ function ImageGallery() {
                                 }}
                                   
                             >
-                              Dental Implants – Exceptional care and precision! My implants feel just like natural teeth—couldn’t be happier.
+                              Root Canal – Painless and smooth! My tooth feels as good as new.
+
                               <br />
                               <img src="./images/PatientExperience/star.png" className="mt-3 xl:mt-5" alt="" />
 
@@ -64,7 +65,7 @@ function ImageGallery() {
         />
                             <motion.p
                                
-                                className={`absolute bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-40 lg:top-48 2xl:top-36 left-60 lg:left-96 2xl:left-[480px] w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ${activeImage === 2 ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute text-justify bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-40 lg:top-48 2xl:top-64 left-60 lg:left-96 2xl:left-[480px] w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ${activeImage === 2 ? "opacity-100" : "opacity-0"}`}
                                 animate={{
                                     y: [0, -20, 0], // Wave motion: up, then down
                                 }}
@@ -74,7 +75,8 @@ function ImageGallery() {
                                     ease: "easeInOut", // Smooth easing
                                 }}
                             >
-                                Root Canal – Painless and smooth experience! The dentist saved my tooth, and now it feels as good as new.
+                               Dental Implants – Exceptional care and precision! My implants feel just like natural teeth—couldn’t be happier.
+
                                 <br />
                                 <img src="./images/PatientExperience/star.png" className="mt-3 xl:mt-5" alt="" />
                               </motion.p>
@@ -99,7 +101,7 @@ function ImageGallery() {
 
                             <motion.p
                                
-                                className={`absolute bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-60 lg:top-72 xl:top-72 2xl:top-80 right-[150px] lg:right-[230px] xl:right-[350px] w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ${activeImage === 3 ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute text-justify bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-60 lg:top-72 xl:top-72 2xl:top-80 right-[150px] lg:right-[230px] xl:right-[350px] w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ${activeImage === 3 ? "opacity-100" : "opacity-0"}`}
                                 animate={{
                                     y: [0, -20, 0], // Wave motion: up, then down
                                 }}
@@ -138,7 +140,7 @@ function ImageGallery() {
 
 <motion.p
                                
-                                className={`absolute bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-16 lg:top-16 xl:top-12 right-72 lg:right-[320px] xl:right-[400px] 2xl:right-[450px] w-44 lg:w-52 xl:w-56 2xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ${activeImage === 4 ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute text-justify bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-16 lg:top-16 xl:top-24 right-72 lg:right-[320px] xl:right-[400px] 2xl:right-[450px] w-44 lg:w-52 xl:w-56 2xl:w-56 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 ${activeImage === 4 ? "opacity-100" : "opacity-0"}`}
                                 animate={{
                                     y: [0, -20, 0], // Wave motion: up, then down
                                 }}
@@ -148,7 +150,8 @@ function ImageGallery() {
                                     ease: "easeInOut", // Smooth easing
                                 }}
                             >
-                             Child’s Dental Filling – My kid was so comfortable, and the filling was done quickly. A stress-free experience for both of us!
+                           Braces treatment – Perfect alignment with expert guidance!
+
 
 
 <br />
@@ -176,7 +179,7 @@ function ImageGallery() {
 
                             <motion.p
                                 
-          className={`absolute  bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-60 lg:top-80 xl:top-[350px] 2xl:top-[400px] -right-8 lg:right-0 xl:right-10 2xl:right-8 w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${activeImage === 5 ? "opacity-100" : "opacity-0"}`}
+          className={`absolute text-justify bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-60 lg:top-80 xl:top-[350px] 2xl:top-[400px] -right-8 lg:right-0 xl:right-10 2xl:right-8 w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${activeImage === 5 ? "opacity-100" : "opacity-0"}`}
                                 animate={{
                                     y: [0, -20, 0], // Wave motion: up, then down
                                 }}
@@ -186,7 +189,7 @@ function ImageGallery() {
                                     ease: "easeInOut", // Smooth easing
                                 }}
                                 >
-                               Braces Treatment – The transformation is incredible! Perfect alignment, and the orthodontist guided me every step of the way.
+                               Dental Implant Full Arch – Life-changing! I can eat and smile with confidence—truly worth it
 
   
   <br />
@@ -214,7 +217,7 @@ function ImageGallery() {
 
 <motion.p
                                
-                                className={`absolute  bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-24 right-28 w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${activeImage === 6 ? "opacity-100" : "opacity-0"}`}
+                                className={`absolute text-justify  bg-[rgba(65,185,129,1)] text-white px-4 py-2 rounded-b-3xl top-28 xl:top-36 right-28 w-44 lg:w-52 xl:w-56 2xl:w-64 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${activeImage === 6 ? "opacity-100" : "opacity-0"}`}
                                 animate={{
                                     y: [0, -20, 0], // Wave motion: up, then down
                                 }}
@@ -224,7 +227,7 @@ function ImageGallery() {
                                     ease: "easeInOut", // Smooth easing
                                 }}
                                 >
-                              Dental Implant Full Arch – Life-changing results! I can finally eat and smile with confidence—truly worth it.
+                              Child’s Dental Filling – Quick, comfortable, and stress-free for both of us!
   
   <br />
   <img src="./images/PatientExperience/star.png" className="mt-3 xl:mt-5" alt="" />

@@ -34,11 +34,12 @@ const reviews = [
       "Orthodontics addresses the diagnosis, prevention, management, and correction of mal-positioned teeth and jaws, as well as misaligned bite patterns, to improve the appearance of your smile. In addition to cosmetic benefits, orthodontics enhances chewing function and promotes better oral health. Proper alignment can also alleviate issues such as jaw pain, speech difficulties, and excessive wear on teeth. ",
     listItems: [
      
-         	"Traditional metal braces",
+  "Traditional metal, self-ligating, and tooth-colored braces",
 	"Clear aligners (e.g., Invisalign)",
 	"Retainers and orthodontic appliances",
-	"Treatment for malocclusions (overbites, underbites)",
+	"Treatment for malocclusions (overbites, openbites)",
 	"Jaw alignment and bite correction",
+  "Myo braces for pediatric patients",
 
     ],
   },
@@ -46,15 +47,16 @@ const reviews = [
     id: 3,
     image: "./images/home/s15.svg",
     content: "Exceptional quality and a team that truly cares.",
-    title: "Restorative Dentistry",
+    title: "Implant Dentistry",
     description:
-      "Restorative dentistry involves the comprehensive process of repairing damaged or missing teeth, encompassing all modern dental disciplines. By integrating an interdisciplinary approach, we achieve optimal dental function and aesthetics for our patients. This includes restoring the function, integrity, and morphology of tooth structures affected by caries or external trauma, as well as replacing missing teeth with dental implants.",
+      "Restoring smiles with advanced dental implant solutions, ensuring long-term functionality, aesthetics, and confidence. Offering full-mouth rehabilitation, immediate teeth replacement, and specialized implants for complex cases, providing patients with a seamless and lasting solution.",
     listItems: [
-      	"Dental crowns (porcelain, ceramic, metal)",
-      	"Dental bridges to replace missing teeth",
-      	"Dental implants (placement and restoration)",
-      	"Dentures (full and partial)",
-      	"Inlays and onlays for larger cavities or damaged teeth",
+      "Full mouth rehabilitation with immediate temporization",
+      "Pterygoid & zygoma implant placement for severe bone loss",
+      "Single-day implants with immediate teeth replacement",
+      "Minimally invasive techniques for faster recovery",
+      "Digital workflow and guided implant surgery for precision",
+      "Custom prosthetics for natural aesthetics and durability",
       
     ],
   },
@@ -62,16 +64,17 @@ const reviews = [
     id: 4,
     image: "./images/home/s16.svg",
     content: "A wonderful experience from start to finish.",
-    title: "Cosmetic Dentistry",
+    title: " Restorative & Cosmetic",
     description:
-      "Enhancing the aesthetic appearance of your smile and overall oral health, cosmetic dentistry goes beyond aesthetics to strengthen teeth, making them more resistant to damage, and improve oral hygiene by aligning teeth for easier cleaning. Each treatment is meticulously tailored to individual needs, ensuring personalized solutions that yield enduring results and comprehensive smile makeovers.",
+    "Restoring dental function while enhancing aesthetics through advanced treatments, ensuring long-term durability, confidence, and a beautiful smile. By integrating modern techniques, we repair damaged or missing teeth and provide personalized cosmetic enhancements for a natural, healthy look.",
+
     listItems: [
-      	"Teeth whitening (in-office and take-home options)",
-	"Dental veneers (porcelain or composite)",
-	"Dental bonding for minor cosmetic corrections",
-	"Tooth-colored fillings and restorations",
-	"Clear aligner therapy (e.g., Invisalign)",
-	"Porcelain crowns and bridges for aesthetic improvements",
+      "Dental crowns (porcelain, ceramic, metal) for strength and protection",
+      "Dental bridges to replace missing teeth and restore function",
+      "Teeth whitening (in-office and take-home) for a brighter smile",
+      "Dental veneers (porcelain or composite) for a flawless appearance",
+      "Tooth-colored fillings for seamless cavity restoration",
+      "Clear aligner therapy (e.g., Invisalign) for discreet teeth straightening",
 
     ],
   },
@@ -84,9 +87,9 @@ const reviews = [
       "Safeguarding oral health through proactive prevention, early diagnosis, and effective treatment, guiding patients toward a healthy and attractive smile, and serving as the first line of defense with seamless specialist referrals when required.",
     listItems: [
       	"Routine dental check-ups and examinations",
-      	"Professional teeth cleaning and oral hygiene instructions",
-      	"Dental X-rays and diagnostic imaging",
-      	"Fillings (composite, amalgam)",
+      	"Teeth cleaning and oral hygiene instructions",
+      	"Dental X-rays and diagnostic imaging Such us digital imaging such as CBCT (cone beam computed tomography), OPG(ORTHOPANTOMOGRAM), LATERAL CEPHALOGRAM",
+      	"Composite filling (tooth-colored)",
       	"Root canal therapy for infected teeth",
       	"Tooth extractions (including wisdom teeth)",
       	"Oral cancer screenings",
@@ -123,7 +126,7 @@ const App: React.FC = () => {
     <div className="relative mt-24 hidden lg:block">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 p-0 sm:p-6">
         <div className="flex flex-wrap w-full justify-evenly col-span-7 2xl:col-span-6 gap-1 mb-6 items-end relative">
-        <div className="absolute top-8 right-44 xl:right-48 2xl:right-52  ">
+        <div className="absolute top-16 xl:top-8 right-44 xl:right-48 2xl:right-52  ">
             <div className="relative">
               <VerticalText/>
             <img src="./images/home/s19.png" alt="" className="absolute  -bottom-3 -right-6 " />
@@ -136,12 +139,12 @@ const App: React.FC = () => {
               key={review.id}
               src={review.image}
               alt={`User ${review.id}`}
-              className={`cursor-pointer rounded-lg object-cover ${
+              className={`cursor-pointer  object-cover ${
                 transitioning ? "" : ""
               } ${
                 index === orderedImages.length - 1
-                  ? "w-16 sm:w-28 md:w-28 lg:w-32 h-[490px] sm:h-80 md:h-[490px] lg:h-[500px]"
-                  : "w-16 sm:w-24 md:w-24 lg:w-20 h-48 sm:h-48 md:h-48 lg:h-[60%] opacity-70"
+                  ? "w-16 sm:w-28 md:w-28 xl:w-32 h-[490px] sm:h-80 md:h-[490px] lg:h-[550px]"
+                  : "w-16 sm:w-24 md:w-24 lg:w-20 h-48 sm:h-48 md:h-48 lg:h-[60%] "
               }`}
               onClick={() => handleImageClick(index)}
             />

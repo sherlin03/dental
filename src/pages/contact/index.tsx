@@ -1,10 +1,78 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
 
  useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top
   }, []);
+
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+    reasons: [] as string[],
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { value, checked } = e.target;
+    setFormData((prevState) => ({
+      ...prevState,
+      reasons: checked
+        ? [...prevState.reasons, value]
+        : prevState.reasons.filter((reason) => reason !== value),
+    }));
+  };
+
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+
+  //   const response = await fetch("http://localhost/dental_email/send_mail.php", {
+  //     method: "POST",
+  //     headers: { "Content-Type": "application/json" },
+  //     body: JSON.stringify(formData),
+  //   });
+
+  //   const result = await response.json();
+  //   alert(result.message);
+  // };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+  
+    const response = await fetch("http://localhost/dental_email/send_mail.php", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+  
+    const result = await response.json();
+  
+    if (result.success) {
+      alert("Mail sent successfully!");
+      
+      // Clear the form after successful submission
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+        reasons: [],
+      });
+    } else {
+      alert("Error: " + result.error);
+    }
+  };
+
+
+
   return (
 
     <>
@@ -16,7 +84,7 @@ export default function Contact() {
                 w-full 
                 bg-[rgba(88,215,155,0.12)] 
                 max-h-fit
-                mt-12 
+                mt-0
                 mb-12
                 pb-12
                 justify-items-center
@@ -52,7 +120,7 @@ export default function Contact() {
             >
               <p
                 className="
-      bg-[rgba(229,225,225,1)] 
+                outline outline-offset-2 outline-[rgba(229,225,225,1)] rounded
       px-3 
       py-3 
       text-sm 
@@ -66,11 +134,11 @@ export default function Contact() {
                 <span>
                   <img src="./images/contact/c2.png" className="inline-block pr-3" alt="" />
                 </span>
-                24/7 assistance
+                24*7 assistance
               </p>
               <p
                 className="
-      bg-[rgba(229,225,225,1)] 
+      outline outline-offset-2 outline-[rgba(229,225,225,1)] rounded
       px-3 
       py-3 
       text-sm 
@@ -84,11 +152,11 @@ export default function Contact() {
                 <span>
                   <img src="./images/contact/c2.png" className="inline-block pr-3" alt="" />
                 </span>
-                24/7 assistance
+                24*7 assistance
               </p>
               <p
                 className="
-      bg-[rgba(229,225,225,1)] 
+      outline outline-offset-2 outline-[rgba(229,225,225,1)] rounded
       px-3 
       py-3 
       text-sm 
@@ -102,7 +170,7 @@ export default function Contact() {
                 <span>
                   <img src="./images/contact/c2.png" className="inline-block pr-3" alt="" />
                 </span>
-                24/7 assistance
+                24*7 assistance
               </p>
             </div>
 
@@ -112,9 +180,9 @@ export default function Contact() {
         </div>
         {/* block 1 End  */}
         {/* block 2 start  */}
-        <div className="container mx-auto relative mt-12 mb-0 lg:mb-12">
+        <div className="container mx-auto relative mt-10  mb-0 ">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8  ">
-            <div className="mt-20">
+            <div className="mt-5 ">
               <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg mt-0 lg:mt-10">
                 <span className="bg-[rgba(249,247,247,1)] px-4 py-2"># Contact Us</span>
               </p>
@@ -135,42 +203,58 @@ export default function Contact() {
                 Monday to Saturday: 9:00 AM - 5:00 PM | Sunday: 9:00 AM - 3:00  PM 
                 
               </p>
-              <p className="  mt-4 text-3xl font-bold">
+              <p className="  mt-5 text-3xl font-bold">
                 <span>
                   <img src="./images/contact/c3.png" className="inline-block pr-3" alt="" />
                 </span>
                 Our Clinic
               </p>
               <p className="mt-4 relative">
-                +91-9487325401 <br />
-                Mail us :drkamalimplant79@gmail.com <br />
+                +91 94873 25401 <br />
+                Mail us : drkamalimplant79@gmail.com <br />
                 Sathankulam.
                 <img src="./images/contact/c4.png" className="absolute top-0 right-20 hidden lg:block" alt="" />
               </p>
 
-              <p className="  mt-4 text-3xl font-bold">
+              <p className="  mt-4  text-3xl font-bold">
                 <span>
-                  <img src="./images/contact/c5.png" className="inline-block pr-3" alt="" />
+                  <img src="./images/contact/c5.png" className="inline-block pr-3 -mt-3" alt="" />
                 </span>
                 Clinics
               </p>
-              <p className="justify-items-start w-5/6 mt-4 mb-20">
-                25G/1,Nazareth road near new bus stand |<br /> Sathankulam-628704 <br />
-                Tuticorin District | Ph.no :6369812048, 9443750377
+              <p className=" hidden xl:block  justify-items-center lg:justify-items-start  mt-4 mb-5">
+                25G/1,Nazareth road near new bus stand | <br />Sathankulam-628704 
+                Tuticorin District |<br /> Ph.no : +91 63698 12048, +91 94437 50377
                 
               </p>
+              <p className=" hidden sm:block lg:hidden  justify-items-center lg:justify-items-start  mt-4 mb-5">
+                25G/1,Nazareth road near new bus stand | Sathankulam-628704 
+                Tuticorin District |<br /> Ph.no : +91 63698 12048, +91 94437 50377
+                
+              </p>
+              <p className=" hidden lg:block xl:hidden  justify-items-center lg:justify-items-start  mt-4 mb-5">
+                25G/1,Nazareth road near new bus stand | Sathankulam-628704 
+                Tuticorin District |<br /> Ph.no : +91 63698 12048, +91 94437 50377
+                
+              </p>
+              <p className=" block sm:hidden  justify-items-center lg:justify-items-start mt-4 mb-5">
+                25G/1,Nazareth road near new bus stand |<br /> Sathankulam-628704 <br />
+                Tuticorin District |<br /> Ph.no : +91 63698 12048,<br /> +91 94437 50377
+                
+              </p>
+
               
             </div>
 
-            <div className="flex  justify-center h-[auto] lg:h-[85vh] "  >
-              <div className="bg-white shadow-2xl h-fit rounded-[20px] p-6 mt-5 lg:mt-16 mb-16 w-full max-w-lg">
+            <div className="flex  justify-center   "  >
+              <div className="bg-white shadow-2xl h-fit rounded-[20px] p-6  mb-16 w-full max-w-lg">
                 {/* Header Section */}
                 <div className=" mb-6 justify-items-center">
                   <img src="./images/contact/c6.png" alt="" />
                 </div>
 
                 {/* Form Section */}
-                <form >
+                <form onSubmit={handleSubmit}>
                   <div className="grid grid-cols-2 gap-4">
                     {/* First Name */}
                     <div>
@@ -180,7 +264,9 @@ export default function Contact() {
                         name="firstName"
                         type="text"
                         placeholder="First Name"
-                        className="mt-1 block w-full  bg-gray-300 border-gray-300 shadow-sm placeholder:text-sm sm:placeholder:text-base placeholder-[rgba(59,79,162,1)]"
+                        value={formData.firstName} 
+                        onChange={handleChange}
+                        className="mt-1 block w-full border-none  bg-[rgba(246,244,244,1)]  shadow-sm placeholder:text-sm sm:placeholder:text-base placeholder-[rgba(59,79,162,1)]"
                         required
                       />
                     </div>
@@ -193,7 +279,9 @@ export default function Contact() {
                         name="lastName"
                         type="text"
                         placeholder="Last Name"
-                        className="mt-1 block w-full  bg-gray-300 border-gray-300 shadow-sm placeholder-[rgba(59,79,162,1)] placeholder:text-sm sm:placeholder:text-base"
+                        value={formData.lastName} 
+                        onChange={handleChange}
+                        className="mt-1 block w-full border-none  bg-[rgba(246,244,244,1)] shadow-sm placeholder-[rgba(59,79,162,1)] placeholder:text-sm sm:placeholder:text-base"
                         required
                       />
                     </div>
@@ -208,7 +296,9 @@ export default function Contact() {
                         name="email"
                         type="email"
                         placeholder="Email"
-                        className="mt-1 block w-full  bg-gray-300 border-gray-300 shadow-sm placeholder-[rgba(59,79,162,1)] placeholder:text-sm sm:placeholder:text-base"
+                        value={formData.email} 
+                        onChange={handleChange}
+                        className="mt-1 block w-full border-none  bg-[rgba(246,244,244,1)]  shadow-sm placeholder-[rgba(59,79,162,1)] placeholder:text-sm sm:placeholder:text-base"
                         required
                       />
                     </div>
@@ -218,83 +308,28 @@ export default function Contact() {
                         id="phone"
                         name="phone"
                         type="tel"
-                        placeholder="Ph:No"
-                        className="mt-1 block w-full  bg-gray-300 border-gray-300 shadow-sm placeholder-[rgba(59,79,162,1)] placeholder:text-sm sm:placeholder:text-base"
+                        value={formData.phone} 
+                        onChange={handleChange}
+                        placeholder="Phone Number"
+                        className="mt-1 block w-full border-none  bg-[rgba(246,244,244,1)]  shadow-sm placeholder-[rgba(59,79,162,1)] placeholder:text-sm sm:placeholder:text-base"
                         required
                       />
                     </div>
                   </div>
 
                   {/* Checkbox Options */}
-                  <div className="mt-4  bg-gray-300 border-gray-300 px-5 py-5">
+                  <div className="mt-4 text-indigo-600 border-gray-300 bg-[rgba(246,244,244,1)]   px-5 py-5">
                     <label className="block text-[rgba(59,79,162,1)] font-medium">Why are you Contacting us</label>
                     <div className="mt-4  gap-4">
-
-                      <div className="flex flex-row justify-items-center">
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="h-4 w-4 text-indigo-600 border-gray-300 bg-gray-400  focus:ring-gray-300 "
-                          />
-                          <label className="ml-2 text-[#504d4d]">
-                            Implant
-                          </label>
-                        </div>
-
-                        <div className="pl-4 sm:pl-16">
-                          <input
-                            type="checkbox"
-                            className="h-4 w-4 text-indigo-600 border-gray-300 bg-gray-400  focus:ring-gray-300"
-                          />
-                          <label className="ml-2 text-[#504d4d]">
-                            Implant
-                          </label>
-                        </div>
-
-                        <div className="pl-4 sm:pl-16">
-                          <input
-                            type="checkbox"
-                            className="h-4 w-4 text-indigo-600 border-gray-300 bg-gray-400  focus:ring-gray-300"
-                          />
-                          <label className="ml-2 text-[#504d4d]">
-                            Implant
-                          </label>
-                        </div>
-
-                      </div>
-
-                      <div className="flex flex-row justify-items-center mt-5">
-                        <div>
-                          <input
-                            type="checkbox"
-                            className="h-4 w-4 text-indigo-600 border-gray-300 bg-gray-400  focus:ring-gray-300"
-                          />
-                          <label className="ml-2 text-[#504d4d]">
-                            Implant
-                          </label>
-                        </div>
-
-                        <div className="pl-4 sm:pl-16">
-                          <input
-                            type="checkbox"
-                            className="h-4 w-4 text-indigo-600 border-gray-300 bg-gray-400  focus:ring-gray-300"
-                          />
-                          <label className="ml-2 text-[#504d4d]">
-                            Implant
-                          </label>
-                        </div>
-
-                        <div className="pl-4 sm:pl-16">
-                          <input
-                            type="checkbox"
-                            className="h-4 w-4 text-indigo-600 border-gray-300 bg-gray-400  focus:ring-gray-300"
-                          />
-                          <label className="ml-2 text-[#504d4d]">
-                            Implant
-                          </label>
-                        </div>
-
-                      </div>
+                    <div className="grid grid-cols-3 gap-4 mt-2">
+          {["Implant", "Braces", "Oral Surgery", "Root Canal", "Oral hygiene", "Other"].map((reason) => (
+            <label key={reason} className="flex items-center text-sm sm:text-base space-x-2 text-[#504d4d]">
+              <input type="checkbox" value={reason} onChange={handleCheckboxChange} className="h-4 w-4 text-indigo-600 bg-[rgba(246,244,244,1)]  bg-gray-400  focus:ring-gray-300 " />
+              <span>{reason}</span>
+            </label>
+          ))}
+        </div>
+                    
 
                     </div>
                   </div>
@@ -307,7 +342,9 @@ export default function Contact() {
                       name="message"
                       rows={4}
                       placeholder="Message"
-                      className="mt-1 block w-full  border-gray-300 bg-gray-300 shadow-sm placeholder-[rgba(59,79,162,1)]"
+                      value={formData.message} 
+                      onChange={handleChange}
+                      className="mt-1 block w-full  border-none bg-[rgba(246,244,244,1)] shadow-sm placeholder-[rgba(59,79,162,1)]"
                     ></textarea>
                   </div>
 
@@ -315,6 +352,7 @@ export default function Contact() {
                   <div className="mt-6 relative">
                     <button
                       type="submit"
+
                       className="w-full bg-indigo-600 text-white font-medium py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     >
                       Submit
@@ -323,6 +361,7 @@ export default function Contact() {
                     <img src="./images/contact/c8.png" alt="" className="hidden sm:block lg:hidden xl:block absolute  bottom-5 -right-48 xl:-right-36 w-60 h-64 " />
                   </div>
                 </form>
+
               </div>
             </div>
             {/* <div>
@@ -335,11 +374,11 @@ export default function Contact() {
         </div>
         {/* block 2 End  */}
         {/* block 3 Start  */}
-        <div className="w-full pt-16 lg:mt-0" >
+        <div className="w-full  pt-5 " >
 
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.6635874444887!2d77.86449257366554!3d8.336185399451606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b047ff2ae30e983%3A0xd2ddb4e57965b313!2sSubha%20Dental%20Clinic%20Thisaiyanvilai!5e0!3m2!1sen!2sin!4v1732184675639!5m2!1sen!2sin"
-            className="w-full h-[450px] block"
+            className="w-full h-[450px] "
             style={{ border: 0 }}
             allowFullScreen
             loading="lazy"

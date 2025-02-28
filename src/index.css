@@ -110,10 +110,10 @@ circle {
     top:7rem;
   }
   .mtalign {
-    margin-top: 15rem ;
+    margin-top: 10rem ;
    }
    .mtalign2 {
-    margin-top: 12rem !important;
+    margin-top: 8rem !important;
    }
    
    .widthmob{
@@ -421,4 +421,10 @@ circle {
   text-align: left !important;
 }
 
+}
+
+@media (min-width: 1750px) {
+    .sidebanner{
+      top:0 !important;
+    }
 }

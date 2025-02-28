@@ -12,17 +12,17 @@ export default function Service() {
             {/* Services page  */}
             <section>
 
-                <div className="mt-12 mb-0 lg:mb-12 container mx-auto">
+                <div className="mt-10 mb-0 lg:mb-12 container mx-auto">
 
                      {/* block 1 start */}
                      <p className="justify-items-start text-[rgba(59,79,162,1)] text-lg">
                                 <span className="bg-[rgba(249,247,247,1)] px-5 py-2"># Services</span>
                      </p>
-                     <div className=" mb-12 justify-items-center">
+                     <div className=" mb-5 justify-items-center">
                      
 
                      <p className=" text-base 2xl:text-lg text-justify lg:text-center my-8 "  >
-                     Comprehensive Dental Care at <span className="text-[rgba(55,83,188,1)] font-bold" >“SHUBHA’s DENTAL CARE”</span> at Shuba Dental Care, we offer a comprehensive range of dental treatments and procedures to ensure the optimal health and beauty of your smile. Our experienced team of dentists is dedicated to providing personalized care in a serene environment.
+                     Comprehensive Dental Care at <span className="text-[rgba(55,83,188,1)] font-bold" >“SUBHA MULTISPECIALITY DENTAL CLINIC”</span> at Shuba Dental Care, we offer a comprehensive range of dental treatments and procedures to ensure the optimal health and beauty of your smile. Our experienced team of dentists is dedicated to providing personalized care in a serene environment.
                     </p>
                     {/* <button className="bg-blue-800 text-center text-white font-semibold py-3 mt-2 px-4 rounded-lg hover:bg-blue-700"  >
                     Book Now
@@ -45,7 +45,7 @@ export default function Service() {
                             Safeguarding oral health through proactive prevention, early diagnosis, and effective treatment, guiding patients toward a healthy and attractive smile, and serving as the first line of defense with seamless specialist referrals when required.
                             </p>
                             
-                          <ul className="list-disc list-inside ml-4 mt-4">
+                          <ul className="list-disc list-inside mt-4">
                             <li>Routine dental check-ups and examinations</li>
                             <li>Professional teeth cleaning and oral hygiene instructions</li>
                             <li>Dental X-rays and diagnostic imaging</li>
@@ -54,8 +54,6 @@ export default function Service() {
                             <li>Tooth extractions (including wisdom teeth)</li>
                             <li>Oral cancer screenings</li>
                           </ul>
-
-                          
 
                         </div>
 
@@ -67,7 +65,7 @@ export default function Service() {
                                 <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
 
                                 <div className="overflow-hidden rounded-2xl absolute bottom-[-32px] left-0 w-[83%] h-64 sm:h-96">
-                                <img src="./images/services/sn1.png" alt=" " className="  object-cover transition-transform duration-1000 hover:scale-[1.1] " />
+                                <img src="./images/services/sn1.png" alt=" " className="w-full rounded-2xl object-cover transition-transform duration-1000 hover:scale-[1.1] " />
                                 </div>
                                 
                             </div>
@@ -88,7 +86,7 @@ export default function Service() {
                                 <div >
                                     <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
                                     <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0">
-                                    <img src="./images/services/sn2.png" alt=" " className="  object-cover transition-transform duration-1000 hover:scale-[1.1]" />
+                                    <img src="./images/services/sn2.png" alt=" " className=" w-full object-cover transition-transform duration-1000 hover:scale-[1.1]" />
                                     </div>
                                 </div>
                             </div>
@@ -98,20 +96,19 @@ export default function Service() {
 
                         <div className="py-1 relative mt-16 sm:mt-16 lg:mt-0 2xl:mt-8" data-aos="zoom-in-left" data-aos-duration="1000">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
-                                Cosmetic Dentistry
+                            Implant Dentistry
                             </p>
                             <p className="text-base text-justify 2xl:text-lg mt-6 justify-items-start">
-                            Enhancing the aesthetic appearance of your smile and overall oral health, cosmetic dentistry goes beyond aesthetics to strengthen teeth, making them more resistant to damage, and improve oral hygiene by aligning teeth for easier cleaning. Each treatment is meticulously tailored to individual needs, ensuring personalized solutions that yield enduring results and comprehensive smile makeovers.
+                            Implant dentistry offers a permanent and natural-looking solution for missing teeth, restoring both function and aesthetics. Dental implants provide stability, durability, and comfort, mimicking the structure of natural teeth while preserving jawbone health. This advanced treatment improves chewing ability, speech, and overall confidence with a long-lasting solution.
 
                             </p>
                             
-                            <ul className="list-disc list-inside ml-4 mt-4">
-                                <li>Teeth whitening (in-office and take-home options)</li>
-                                <li>Dental veneers (porcelain or composite)</li>
-                                <li>Dental bonding for minor cosmetic corrections</li>
-                                <li>Tooth-colored fillings and restorations</li>
-                                <li>Clear aligner therapy (e.g., Invisalign)</li>
-                                <li>Porcelain crowns and bridges for aesthetic improvements</li>
+                            <ul className="list-disc list-inside  mt-4">
+                                <li>Single and multiple dental implants for permanent tooth replacement</li>
+                                <li>Implant-supported crowns and bridges for enhanced stability</li>
+                                <li>Full-arch restorations with implant-supported dentures</li>
+                                <li>Bone grafting and sinus lifts to improve implant success</li>
+                                <li>Advanced digital planning for precise implant placement</li>
                             </ul>
                             
                         </div>
@@ -124,18 +121,18 @@ export default function Service() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 container mx-auto">
                         <div className="relative mt-0 2xl:mt-8" data-aos="zoom-out-right" data-aos-duration="1000">
                             <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
-                                Restorative Dentistry:
+                            Restorative & Cosmetic
                             </p>
                             <p className="text-base text-justify 2xl:text-lg mt-6 justify-items-start">
-                                Restorative dentistry involves the comprehensive process of repairing damaged or missing teeth, encompassing all modern dental disciplines. By integrating an interdisciplinary approach, we achieve optimal dental function and aesthetics for our patients. This includes restoring the function, integrity, and morphology of tooth structures affected by caries or external trauma, as well as replacing missing teeth with dental implants.
+                            Restorative and cosmetic dentistry combine to improve both the function and aesthetics of your smile. By utilizing advanced techniques, we restore damaged or missing teeth while enhancing their appearance, ensuring long-lasting and natural results. Our comprehensive treatments not only strengthen teeth but also promote better oral health and confidence.
                             </p>
                             
-                          <ul className="list-disc list-inside ml-4 mt-4">
-                            <li>Dental crowns (porcelain, ceramic, metal)</li>
-                            <li>Dental bridges to replace missing teeth</li>
-                            <li>Dental implants (placement and restoration)</li>
-                            <li>Dentures (full and partial)</li>
-                            <li>Inlays and onlays for larger cavities or damaged teeth</li>
+                          <ul className="list-disc list-inside  mt-4">
+                          <li>Dental crowns and bridges to restore damaged or missing teeth</li>
+        <li>Dental implants for permanent tooth replacement</li>
+        <li>Dental implants (placement and restoration)</li>
+        <li>Teeth whitening and veneers for a brighter, more uniform smile</li>
+        <li>Clear aligners and bonding to correct alignment and minor imperfections</li>
                             
                           </ul>
 
@@ -148,7 +145,7 @@ export default function Service() {
                             <div >
                                 <img src="./images/services/s7.png" alt=" " className="w-full h-64 sm:h-96" />
                                 <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 ">
-                                <img src="./images/services/sn3.png" alt=" " className="object-cover transition-transform duration-1000 hover:scale-[1.1] " />
+                                <img src="./images/services/sn3.png" alt=" " className="w-full object-cover transition-transform duration-1000 hover:scale-[1.1] " />
                                 </div>
                                 <img src="./images/services/s10.png" alt=" " className="absolute hidden lg:block bottom-36 -left-7" />
 
@@ -172,7 +169,7 @@ export default function Service() {
                                 <div >
                                     <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
                                     <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0">
-                                    <img src="./images/services/sn4.png" alt=" " className="object-cover transition-transform duration-1000 hover:scale-[1.1]" />
+                                    <img src="./images/services/sn4.png" alt=" " className="w-full object-cover transition-transform duration-1000 hover:scale-[1.1]" />
                                     </div>
                                 </div>
                             </div>
@@ -191,7 +188,7 @@ export default function Service() {
 
                             </p>
                             
-                            <ul className="list-disc list-inside ml-4 mt-4">
+                            <ul className="list-disc list-inside  mt-4">
                                 <li>Traditional metal braces</li>
                                 <li>Clear aligners (e.g., Invisalign)</li>
                                 <li>Retainers and orthodontic appliances</li>
@@ -215,7 +212,7 @@ export default function Service() {
 
                             </p>
                             
-                          <ul className="list-disc list-inside ml-4 mt-4">
+                          <ul className="list-disc list-inside  mt-4">
                             <li>Wisdom teeth extraction</li>
                             <li>Dental implant surgery (placement and restoration)</li>
                             <li>Treatment of facial trauma and oral injuries</li>
@@ -230,7 +227,7 @@ export default function Service() {
                             <div >
                                 <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
                                 <div className="overflow-hidden rounded-2xl w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0">
-                                <img src="./images/services/s12.png" alt=" " className="object-cover transition-transform duration-1000 hover:scale-[1.1]" />
+                                <img src="./images/services/s12.png" alt=" " className="w-full object-cover transition-transform duration-1000 hover:scale-[1.1]" />
                                 </div>
                             </div>
                             </div>
@@ -251,7 +248,7 @@ export default function Service() {
 {/* block 2 start  */}
 
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12 container mx-auto">
-    <div className="relative mt-0" >
+    <div className="relative mt-0" data-aos="fade-up-right" >
         <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
         General Dentistry
         </p>
@@ -259,7 +256,7 @@ export default function Service() {
         Safeguarding oral health through proactive prevention, early diagnosis, and effective treatment, guiding patients toward a healthy and attractive smile, and serving as the first line of defense with seamless specialist referrals when required.
         </p>
         
-      <ul className="list-disc list-inside ml-4 mt-4">
+      <ul className="list-disc list-inside  mt-4">
         <li>Routine dental check-ups and examinations</li>
         <li>Professional teeth cleaning and oral hygiene instructions</li>
         <li>Dental X-rays and diagnostic imaging</li>
@@ -273,14 +270,14 @@ export default function Service() {
 
     </div>
 
-    <div >
+    <div  data-aos="fade-up-left">
         <div className="relative">
         <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
         <img src="./images/services/s13.png" alt="" className="hidden lg:block absolute top-[-30px] right-36" />
         <div >
             <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
            
-            <img src="./images/services/sn1.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 " />
+            <img src="./images/services/sn1.png" alt=" " className="w-[83%] rounded-2xl h-64 sm:h-96 absolute bottom-[-32px] left-0 " />
             
         </div>
         </div>
@@ -295,32 +292,31 @@ export default function Service() {
 <div className="bg-[rgba(88,215,155,0.12)] mt-40  mx-auto my-auto pb-40 pt-10 mb-10 ">
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 container mx-auto" >
  
-    <div className="py-1 relative ">
+    <div className="py-1 relative " data-aos="fade-up-right">
         <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
-            Cosmetic Dentistry
+        Implant Dentistry
         </p>
         <p className="text-base text-justify 2xl:text-lg mt-6 justify-items-start">
-        Enhancing the aesthetic appearance of your smile and overall oral health, cosmetic dentistry goes beyond aesthetics to strengthen teeth, making them more resistant to damage, and improve oral hygiene by aligning teeth for easier cleaning. Each treatment is meticulously tailored to individual needs, ensuring personalized solutions that yield enduring results and comprehensive smile makeovers.
+        Implant dentistry offers a permanent and natural-looking solution for missing teeth, restoring both function and aesthetics. Dental implants provide stability, durability, and comfort, mimicking the structure of natural teeth while preserving jawbone health. This advanced treatment improves chewing ability, speech, and overall confidence with a long-lasting solution.
 
         </p>
         
-        <ul className="list-disc list-inside ml-4 mt-4">
-            <li>Teeth whitening (in-office and take-home options)</li>
-            <li>Dental veneers (porcelain or composite)</li>
-            <li>Dental bonding for minor cosmetic corrections</li>
-            <li>Tooth-colored fillings and restorations</li>
-            <li>Clear aligner therapy (e.g., Invisalign)</li>
-            <li>Porcelain crowns and bridges for aesthetic improvements</li>
+        <ul className="list-disc list-inside  mt-4">
+                                <li>Single and multiple dental implants for permanent tooth replacement</li>
+                                <li>Implant-supported crowns and bridges for enhanced stability</li>
+                                <li>Full-arch restorations with implant-supported dentures</li>
+                                <li>Bone grafting and sinus lifts to improve implant success</li>
+                                <li>Advanced digital planning for precise implant placement</li>
         </ul>
         
     </div>
 
-    <div className="mt-2" >
+    <div className="mt-2" data-aos="fade-up-left">
         <div className="relative">
             <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
             <div >
                 <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
-                <img src="./images/services/sn2.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
+                <img src="./images/services/sn2.png" alt=" " className="w-[83%]  rounded-2xl h-64 sm:h-96 absolute bottom-[-32px] right-0" />
             </div>
         </div>
 
@@ -332,32 +328,32 @@ export default function Service() {
 
 {/* block 4 start  */}
 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-20 sm:mt-40 container mx-auto ">
-    <div className="relative mt-0 2xl:mt-8" >
+    <div className="relative mt-0 2xl:mt-8" data-aos="fade-up-right">
         <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
-            Restorative Dentistry:
+            Restorative Cosmetic
         </p>
         <p className="text-base text-justify 2xl:text-lg mt-6 justify-items-start">
-            Restorative dentistry involves the comprehensive process of repairing damaged or missing teeth, encompassing all modern dental disciplines. By integrating an interdisciplinary approach, we achieve optimal dental function and aesthetics for our patients. This includes restoring the function, integrity, and morphology of tooth structures affected by caries or external trauma, as well as replacing missing teeth with dental implants.
+        Restorative and cosmetic dentistry combine to improve both the function and aesthetics of your smile. By utilizing advanced techniques, we restore damaged or missing teeth while enhancing their appearance, ensuring long-lasting and natural results. Our comprehensive treatments not only strengthen teeth but also promote better oral health and confidence.
         </p>
         
-      <ul className="list-disc list-inside ml-4 mt-4">
-        <li>Dental crowns (porcelain, ceramic, metal)</li>
-        <li>Dental bridges to replace missing teeth</li>
+      <ul className="list-disc list-inside  mt-4">
+        <li>Dental crowns and bridges to restore damaged or missing teeth</li>
+        <li>Dental implants for permanent tooth replacement</li>
         <li>Dental implants (placement and restoration)</li>
-        <li>Dentures (full and partial)</li>
-        <li>Inlays and onlays for larger cavities or damaged teeth</li>
+        <li>Teeth whitening and veneers for a brighter, more uniform smile</li>
+        <li>Clear aligners and bonding to correct alignment and minor imperfections</li>
         
       </ul>
 
     </div>
 
-    <div  >
+    <div data-aos="fade-up-left" >
         <div className="relative">
 
         <img src="./images/services/s9.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
         <div >
             <img src="./images/services/s7.png" alt=" " className="w-full h-64 sm:h-96" />
-            <img src="./images/services/sn3.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0" />
+            <img src="./images/services/sn3.png" alt=" " className="w-[83%]  rounded-2xl h-64 sm:h-96 absolute bottom-[-32px] left-0" />
             <img src="./images/services/s10.png" alt=" " className="absolute hidden lg:block bottom-36 -left-7" />
 
         </div>
@@ -374,7 +370,7 @@ export default function Service() {
 mb-5  container mx-auto">
     
 
-    <div className="py-1 relative " >
+    <div className="py-1 relative " data-aos="fade-up-right">
         <p className="justify-items-start text-[rgba(59,79,162,1)] mt-8 text-3xl font-bold">
         Orthodontics
         </p>
@@ -383,7 +379,7 @@ mb-5  container mx-auto">
 
         </p>
         
-        <ul className="list-disc list-inside ml-4 mt-4">
+        <ul className="list-disc list-inside  mt-4">
             <li>Traditional metal braces</li>
             <li>Clear aligners (e.g., Invisalign)</li>
             <li>Retainers and orthodontic appliances</li>
@@ -393,12 +389,12 @@ mb-5  container mx-auto">
         
     </div>
 
-    <div >
+    <div data-aos="fade-up-left">
         <div className="relative">
             <img src="./images/services/s6.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] left-0" />
             <div >
                 <img src="./images/services/s4.png" alt=" " className="w-full h-64 sm:h-96" />
-                <img src="./images/services/sn4.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] right-0" />
+                <img src="./images/services/sn4.png" alt=" " className="w-[83%] rounded-2xl h-64 sm:h-96 absolute bottom-[-32px] right-0" />
             </div>
         </div>
 
@@ -411,7 +407,7 @@ mb-5  container mx-auto">
 
  {/* block 6 start  */}
  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-40 mt-20 container mx-auto">
-    <div className="relative mt-0 2xl:mt-8" >
+    <div className="relative mt-0 2xl:mt-8" data-aos="fade-up-right">
         <p className="justify-items-start text-[rgba(59,79,162,1)] mt-0 lg:mt-8 text-3xl font-bold">
           Oral Surgery
         </p>
@@ -420,7 +416,7 @@ mb-5  container mx-auto">
 
         </p>
         
-      <ul className="list-disc list-inside ml-4 mt-4">
+      <ul className="list-disc list-inside  mt-4">
         <li>Wisdom teeth extraction</li>
         <li>Dental implant surgery (placement and restoration)</li>
         <li>Treatment of facial trauma and oral injuries</li>
@@ -429,12 +425,12 @@ mb-5  container mx-auto">
       </ul>
     </div>
 
-    <div >
+    <div data-aos="fade-up-left">
         <div className="relative" >
         <img src="./images/services/s3.png" alt=" " className="w-[60%] h-40 absolute bottom-[-80px] right-0" />
         <div >
             <img src="./images/services/s1.png" alt=" " className="w-full h-64 sm:h-96" />
-            <img src="./images/services/s12.png" alt=" " className="w-[83%] h-64 sm:h-96 absolute bottom-[-32px] left-0 transition-transform duration-1000 hover:scale-[1.1]" />
+            <img src="./images/services/s12.png" alt=" " className="w-[83%] rounded-2xl h-64 sm:h-96 absolute bottom-[-32px] left-0 transition-transform duration-1000 hover:scale-[1.1]" />
         </div>
         </div>
     </div>

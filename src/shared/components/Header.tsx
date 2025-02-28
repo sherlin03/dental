@@ -40,7 +40,7 @@ export default function Header() {
         rounded
         className="sticky backdrop-blur-2xl z-50 !hover:text-[#3B4FA2] dark:border-[#3B4FA2] dark:bg-[#3B4FA2] sm:px-3 rounded  mx-auto top-2 px-2 py-0 "
       >
-        <Navbar.Brand href="/" >
+        <Navbar.Brand href="#/" >
           <img
             src="./images/logo/dentallogo.svg"
             className="w-40  sm:w-56 md:w-36 lg:w-56 h-20 sm:h-24  ml-2 sm:ml-10 md:ml-0 lg:ml-0  max-490:h-16  max-490:w-32 "

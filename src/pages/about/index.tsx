@@ -14,7 +14,7 @@ export default function About() {
             {/* about us page  */}
             <section>
 
-                <div className="mt-12 mb-12 container mx-auto">
+                <div className="mt-5 mb-12 container mx-auto">
                     {/* block 1 start  */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 " >
                         <div className="relative mt-10  2xl:mt-10" data-aos="fade-right" >
@@ -45,12 +45,12 @@ export default function About() {
                                     className="w-48 sm:w-56 md:w-80 lg:w-52 xl:w-60 2xl:w-80 h-[210px] sm:h-[240px] md:h-[320px] lg:h-[220px] xl:h-[250px] 2xl:h-[330px] object-cover transition-transform duration-1000 hover:scale-[1.2]"
                                 />
                             </div>
-                            <div className="hidden sm:block absolute bottom-[9%] md:bottom-[10%] lg:bottom-[10%] xl:bottom-[10%] 2xl:bottom-[14%] left-[18%] md:left-[15%] lg:left-[8%] xl:left-[10%] 2xl:left-[13%] overflow-hidden z-20 shadow-[0px_4px_10px_rgba(0,0,0,0.5)] ">
+                            <div className="hidden sm:block absolute bottom-[10%] md:bottom-[10%] lg:bottom-[10%] xl:bottom-[10%] 2xl:bottom-[14%] left-[18%] md:left-[15%] lg:left-[8%] xl:left-[10%] 2xl:left-[13%] overflow-hidden z-20 shadow-[0px_4px_10px_rgba(0,0,0,0.5)] ">
                                 {/* <img src="./images/about/a10.svg" alt=" " className=" w-48  sm:w-60 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[140px] md:h-[170px] lg:h-[125px] xl:h-[140px] 2xl:h-[160px]   object-cover transition-transform duration-1000 hover:scale-[1.1] " /> */}
 
 
-                                <p className="font-[Risque] bg-[rgba(65,185,129,1)] p-3 text-white w-48  sm:w-56 md:w-72 lg:w-52 xl:w-64 2xl:w-80 h-[100px] md:h-[130px] lg:h-[130px] xl:h-[145px] 2xl:h-[150px]    text-center font-thin text-lg xl:text-xl ">
-                                    In-house <span className="text-2xl xl:text-3xl">3D </span> <br />
+                                <p className="font-[Risque] bg-[rgba(65,185,129,1)] pt-1 lg:pt-2 text-white w-48  sm:w-56 md:w-64 lg:w-52 xl:w-64 2xl:w-72 h-[120px] md:h-[130px] lg:h-[130px] xl:h-[145px] 2xl:h-[150px]    text-center font-thin text-lg md:text-xl lg:text-xl xl:text-2xl ">
+                                    In-house <span className="text-xl md:text-3xl xl:text-4xl">3D </span> <br />
                                     imaging <br />
                                     first of its kind in <br />
                                     South Tamil Nadu 
@@ -67,7 +67,7 @@ export default function About() {
 
                     <div className="hidden lg:block ">
                         <div className="bg-[rgba(88,215,155,0.12)] ">
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-10 pb-10 mt-12 mb-12 container mx-auto ">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 pt-10 pb-10 xl:pb-0 mt-12 mb-12 container mx-auto ">
                             <div className="relative" data-aos="fade-right">
                             <img src="./images/about/a12.png" alt="" className="hidden sm:block  w-full lg:w-5/6 2xl:w-5/6 h-auto lg:h-[85%] transition-transform duration-1000 hover:scale-[1.1] " />
 
@@ -80,7 +80,14 @@ export default function About() {
                         </p>
 
 
-                        <p  className="hidden py-[10px] xl:py-4 px-2 text-white  2xl:p-4 bg-[#41B981] text-left text-[11px] xl:text-sm 2xl:text-lg  sm:block absolute left-[0%] bottom-0 lg:bottom-[12%]   w-[37%]   lg:w-[28%] xl:w-[172px] 2xl:w-[210px] h-[28%] lg:h-[27%] xl:h-[110px] 2xl:h-[135px]  rounded-tl-[20px] rounded-tr-[43px] xl:rounded-tr-[53px] rounded-br-[20px] rounded-bl-[20px] ">
+                        <p  className="hidden sm:block lg:hidden py-[10px] xl:py-4 px-2 text-white  2xl:p-4 bg-[#41B981] text-left text-[11px] xl:text-sm 2xl:text-lg   absolute left-[0%] bottom-0 lg:bottom-[12%]   w-[37%]   lg:w-[28%] xl:w-[172px] 2xl:w-[210px] h-[28%] lg:h-[27%] xl:h-[110px] 2xl:h-[135px]  rounded-tl-[20px] rounded-tr-[43px] xl:rounded-tr-[53px] rounded-br-[20px] rounded-bl-[20px] ">
+                        Assistant Civil Dental <br />
+                        Surgeon at Government <br />
+                        Primary Health <br />
+                        Centre.
+
+                        </p>
+                        <p  className="hidden lg:block py-[10px] xl:py-4 px-2 text-white  2xl:p-4 bg-[#41B981] text-left text-[11px] xl:text-sm 2xl:text-base  absolute left-[0%] bottom-0 lg:bottom-[12%]   w-[37%]   lg:w-[28%] xl:w-[172px] 2xl:w-[210px] h-[28%] lg:h-[27%] xl:h-[110px] 2xl:h-[135px]  rounded-tl-[20px] rounded-tr-[43px] xl:rounded-tr-[53px] rounded-br-[20px] rounded-bl-[20px] ">
                         Assistant Civil Dental <br />
                         Surgeon at Government <br />
                         Primary Health <br />
@@ -116,7 +123,7 @@ export default function About() {
 
                     {/* mob view  */}
 
-                    <div className="block lg:hidden ">
+                    <div className="block lg:hidden "  data-aos="fade-up-right">
                     <div className="bg-[rgba(88,215,155,0.12)] ">
 
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4  pt-10 pb-20 mb-12 container mx-auto">
@@ -137,7 +144,7 @@ export default function About() {
                                 <img src="./images/about/a4.png" className="absolute bottom-[-40px] right-24 hidden lg:block" alt="" />
                             </div>
 
-                            <div className="relative mt-12" data-aos="fade-left">
+                            <div className="relative mt-12"  data-aos="fade-up-left">
 
                                 <img src="./images/about/a12.png" alt="" className="hidden sm:block  w-full lg:w-5/6 2xl:w-5/6 h-auto lg:h-[85%] transition-transform duration-1000 hover:scale-[1.1] " />
 
@@ -194,7 +201,7 @@ export default function About() {
                             </div>
                             <div className="bg-[rgba(55,83,188,1)] rounded-2xl p-5 mt-6">
                                 <p className="text-white text-justify text-sm 2xl:text-base">
-                                    As a director in <span className="text-lg 2xl:text-xl font-semibold">i5 Dental and Implant Xperts</span> (Hosur, Tirunelveli and Chennai) and Xperts Dento Facial Imaging Pvt Ltd (Tirunelveli, Namakal,Chennai,Thanjavur), Dr. Kamalashankar leads with a commitment to innovation and patient-centered care.
+                                    As a director in <span className="text-lg 2xl:text-xl font-semibold">i5 Dental and Implant Xperts</span> (Hosur, Tirunelveli and Chennai) and Xperts Dento Facial Imaging Pvt Ltd (Tirunelveli, Namakal,Chennai,Thanjavur),<br />Dr. Kamalashankar leads with a commitment to innovation and patient-centered care.
                                 </p>
                             </div>
 
@@ -206,8 +213,8 @@ export default function About() {
 
                     {/* last block  */}
 
-                        <div className="container mx-auto  ">
-                            <p className="text-justify sm:text-center py-10 px-8 sm:px-20 xl:px-40">
+                        <div className="container mx-auto mb-10  ">
+                            <p className="text-justify sm:text-center py-2 px-0 sm:px-20 xl:px-40">
                             He practices across the states and the Middle East and is a certified digital specialist with expertise in advanced digital imaging, including 3D technology, intraoral scanning, digital smile designing, and guided surgery.
                             </p>
                        </div>                                            

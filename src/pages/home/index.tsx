@@ -59,25 +59,28 @@ export default function Home() {
                 {/* <img src="./images/home/banner/banner3.png" className="w-12 lg:w-16  absolute top-5 lg:top-8 left-[30%]"
                  data-aos-duration="1000" alt="" /> */}
 
-                <p className="text-white  font-bold text-2xl lg:text-4xl xl:text-6xl absolute !leading-[2rem] lg:!leading-[3rem] xl:!leading-[3.5rem] top-[20%] left-10 lg:left-20 " >
-                   <span className="" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }}>Experience</span>  
-                   <span className="text-[rgba(22,50,156,1)] text-2xl lg:text-3xl xl:text-5xl ml-3 " 
-                     style={{ textShadow: "0 4px 7px rgba(255,255,255,0.8)" }}
+                <p className="text-white  font-bold text-3xl lg:text-4xl xl:text-8xl absolute !leading-[3rem] lg:!leading-[3rem] xl:!leading-[3.5rem] top-[20%] left-10 lg:left-20 " >
+                   <span className="" style={{ textShadow: "0 10px 10px rgba(0, 0, 0, 0.9)" }}>Experience</span>  
+                   <span className="text-[rgba(22,50,156,1)] text-3xl lg:text-3xl xl:text-5xl ml-3 outline outline-2 outline-[rgba(22,50,156,1)] rounded-lg px-2 -py-2   shadow-[0px_5px_5px_rgba(0,0,0,0.8)]" 
+                     style={{ textShadow: "0 4px 3px rgba(255,255,255,0.5)" }}
                      >world-class </span> <br />
-                   <span className="" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }}>dental treatment at its </span> <br />
-                    <span className="" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }} >finest.</span> <br />
+                     
+                     
+                   <span className="" style={{ textShadow: "0 10px 10px rgba(0, 0, 0, 0.9)" }}>dental treatment at its </span> <br />
+                    <span className="" style={{ textShadow: "0 10px 10px rgba(0, 0, 0, 0.9)" }} >finest.</span> <br />
                     
                     
                 </p>
-                <p className="mt-5   absolute top-[45%] lg:top-[50%] 2xl:top-[45%] left-10 lg:left-20 ">
+                {/* <p className="mt-5   absolute top-[45%] lg:top-[50%] 2xl:top-[45%] left-10 lg:left-20 ">
                 <span className="text-base lg:text-lg xl:text-xl 2xl:text-2xl mt-5 font-medium text-white" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }}>From routine check-ups to advanced smile<br /> makeovers, we ensure healthy, beautiful smiles <br /> for you and your family.</span>
-                    </p>
-
-              <Link to="/contact">
-                    <button className="absolute bottom-10 lg:bottom-16 xl:bottom-20 2xl:bottom-28 shadow-[0px_4px_5px_rgba(255,255,255,0.8)] left-10 lg:left-20 text-white bg-[rgba(59,79,162,1)] rounded-lg py-2 lg:py-3 xl:py-4 px-4 lg:px-6 xl:px-8">
-                        Contact Us
+                    </p> */}
+                {/* tab view  */}
+                    <Link to="/contact">
+                    <button className="absolute bottom-10 lg:bottom-20 xl:bottom-28 2xl:bottom-40 shadow-[0px_3px_4px_rgba(255,255,255,0.8)] left-10 lg:left-20  text-white bg-[rgba(59,79,162,1)] rounded-lg py-2 lg:py-3 xl:py-4 px-4 lg:px-6 xl:px-8">
+                       <span className="text-xl 2xl:text-3xl">Contact Us</span> 
                     </button>
                     </Link>
+                    
 
                 </div>
 
@@ -113,24 +116,24 @@ export default function Home() {
                 {/* <img src="./images/home/banner/banner3.png" className="w-16  absolute top-8 left-[30%]"
                  data-aos-duration="1000" alt="" /> */}
 
-                <p className="text-white  font-bold text-3xl xl:text-5xl absolute leading-[3rem] xl:!leading-[3.5rem] top-[20%] left-20 " >
-                   <span className="" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }}>Experience</span>  
-                   <span className="text-[rgba(22,50,156,1)] text-3xl xl:text-5xl ml-3  mb-2 px-3 rounded-lg " 
-                     style={{ textShadow: "0 4px 7px rgba(255,255,255,0.8)" }}
+                 {/* desktop view  */}
+
+<p className="text-white  font-bold text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl absolute !leading-[2rem] lg:!leading-[3.5rem]   xl:!leading-[4rem]  2xl:!leading-[5rem] top-[20%] left-10 lg:left-20 " >
+                   <span className="" style={{ textShadow: "0 10px 10px rgba(0, 0, 0, 0.9)" }}>Experience</span>  
+                   <span className="text-[rgba(22,50,156,1)] text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl ml-5 outline outline-2  outline-[rgba(59,79,162,1)] rounded-xl px-2 -py-2  shadow-[0px_5px_5px_rgba(0,0,0,0.8)]" 
+                     style={{ textShadow: "0 4px 3px rgba(255,255,255,0.5)" }}
                      >world-class </span> <br />
-                   <span className="" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }}>dental treatment at its </span> <br />
-                    <span className="" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }}>finest.</span> <br />
+                   <span className="mt-2" style={{ textShadow: "0 10px 10px rgba(0, 0, 0, 0.9)" }}>dental treatment at its </span> <br />
+                    <span className="" style={{ textShadow: "0 10px 10px rgba(0, 0, 0, 0.9)" }} >finest.</span> <br />
                     
                     
                 </p>
-                <p className="mt-5   absolute top-[45%] 2xl:top-[43%] left-20 ">
-                <span className="text-lg xl:text-xl 2xl:text-2xl mt-5 font-medium text-white" style={{ textShadow: "0 4px 7px rgba(0, 0, 0, 0.9)" }}>From routine check-ups to advanced smile<br /> makeovers, we ensure healthy, beautiful smiles <br /> for you and your family.</span>
-                    </p>
+                
 
 
                    <Link to="/contact">
-                    <button className="absolute bottom-10 lg:bottom-24 xl:bottom-32 2xl:bottom-40 shadow-[0px_4px_5px_rgba(255,255,255,0.8)] left-10 lg:left-20 text-white bg-[rgba(59,79,162,1)] rounded-lg py-2 lg:py-3 xl:py-4 px-4 lg:px-6 xl:px-8">
-                        Contact Us
+                    <button className="absolute bottom-10 lg:bottom-20 xl:bottom-28 2xl:bottom-40 shadow-[0px_3px_4px_rgba(255,255,255,0.8)] left-10 lg:left-20  text-white bg-[rgba(59,79,162,1)] rounded-lg py-2 lg:py-3 xl:py-4 px-4 lg:px-6 xl:px-8">
+                       <span className="text-2xl 2xl:text-3xl">Contact Us</span> 
                     </button>
                     </Link>
 
@@ -144,17 +147,50 @@ export default function Home() {
             
             </section>
             {/* intro words start */}
-            <div className="container w-full justify-items-center mb-8 mt-10 ml-5" >
+            {/* sm view  */}
+            <div className="container hidden lg:block w-[90%] xl:w-full justify-self-center mb-8 mt-10 " >
 
-            <p className="text-2xl font-bold  text-justify md:text-center ">
-            <span className="bg-[rgba(88,215,155,1)] text-white rounded pl-1 pr-0 shadow shadow-[#333635] tracking-tight ">Subha Multispeciality Dental Clinic &amp; Implant Centre </span> &nbsp;,  Where Your Smile Matters Most!</p>
-            <p className= "text-justify lg:text-center text-lg mt-4 w-full lg:w-[80%] ">
-            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold banspace text-start lg:text-center text-lg text-[rgba(59,79,162,1)] "> One of the leading implantologists in the entire state of Tamil Nadu.</span>
+            <p className="text-[1.6rem] xl:text-[1.9rem] 2xl:text-[2.5rem] font-bold justify-self-center text-justify  w-full xl:w-[80%]  lg:text-center !leading-[3rem]  xl:!leading-[4rem]  2xl:!leading-[5rem] ">
+            <span className="bg-[rgba(65,185,129,1)] text-white px-3 shadow-[0px_10px_10px_rgba(0,0,0,0.5)]">Subha Multispeciality Dental Clinic &amp; Implant Centre </span> &nbsp;,  Where Your <br />Smile Matters Most!</p>
+            <p className= "text-justify lg:text-center  justify-self-center lg:text-base text-lg mt-4 w-full  ">
+            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the <br />latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold banspace text-start lg:text-center text-lg text-[rgba(59,79,162,1)] "> One of the leading <br /> implantologists in the entire state of Tamil Nadu.</span>
                </p>
             </div>
 
-            <div className="container w-full">
-                <div className="h-[100%] z-[99]  w-20 lg:w-24 xl:w-28 2xl:w-32  absolute top-40 lg:top-48 xl:top-56 2xl:top-80 hidden lg:block right-5">
+
+
+
+
+
+
+
+            {/* tab and mob view  */}
+            <div className="px-10 w-full justify-self-center mb-8 mt-5 hidden sm:block lg:hidden " >
+
+            <p className=" text-3xl md:text-5xl xl:text-3xl 2xl:text-4xl font-bold justify-self-center text-justify  w-full xl:w-[80%]  lg:text-center !leading-[4rem] md:!leading-[5rem]  xl:!leading-[4rem]  2xl:!leading-[5rem] ">
+            <span className="bg-[rgba(65,185,129,1)] text-white px-3 shadow-[0px_10px_10px_rgba(0,0,0,0.5)]">Subha Multispeciality Dental Clinic &amp; Implant Centre</span> &nbsp;,Where Your Smile Matters Most!</p>
+            <p className= "text-justify lg:text-center  justify-self-center text-lg mt-2 w-full  ">
+            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold banspace text-start lg:text-center text-lg text-[rgba(59,79,162,1)] "> One of the leading  implantologists in the entire state of Tamil Nadu.</span>
+               </p>
+            </div>
+
+
+{/* mob view  */}
+            <div className="container block sm:hidden  xl:w-full justify-self-center mb-8 mt-10 " >
+
+            <p className=" text-2xl xl:text-[1.9rem] 2xl:text-[2.5rem] font-bold justify-self-center text-justify  w-full xl:w-[80%]  lg:text-center !leading-[3rem]  xl:!leading-[4rem]  2xl:!leading-[5rem] ">
+            <span className="bg-[rgba(65,185,129,1)] text-white pl-2 pr-2 shadow-[0px_10px_10px_rgba(0,0,0,0.5)]">Subha <span className="pr-2">Multispeciality</span> <span className="pl-2 pr-2">Dental</span> <span className="pl-2 pr-2">Clinic &amp;</span>  <span className="pl-2 pr-2">Implant</span> Centre </span> &nbsp;,  Where Your Smile Matters Most!</p>
+            <p className= "text-justify lg:text-center  justify-self-center lg:text-base text-lg mt-4 w-full  ">
+            We are dedicated to providing exceptional dental care in a comfortable and welcoming environment. We utilize the latest technology and techniques to ensure the highest quality care and optimal results. <span className="font-semibold banspace text-start lg:text-center text-lg text-[rgba(59,79,162,1)] "> One of the leading  implantologists in the entire state of Tamil Nadu.</span>
+               </p>
+            </div>            
+
+            
+
+            
+
+            <div className=" relative h-auto w-full">
+                <div className="z-[99]  h-auto w-20 lg:w-20 xl:w-28 2xl:w-28  absolute top-[70%] lg:top-[70%] xl:-top-60 2xl:-top-40  hidden lg:block right-5">
          
                   <TypingEffectHead/>
                 </div>
